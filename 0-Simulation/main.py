@@ -5,6 +5,10 @@ import matplotlib.pyplot as plt
 from autograd import grad
 import json
 import os
+try:
+    from tqdm.notebook import tqdm
+except ImportError:
+    from tqdm import tqdm
 
 def plot_total_allocations(services, allocation_history, number_days, save_path=None):
     """
@@ -185,8 +189,9 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
     # 1. Define traveler groups
     # --------------------------
     travelers = [
-        Travelers(number_traveler=200, trip_length=30, value_time=25, value_wait=50), # count, km, monetary unit/h, monetary unit/h
-        Travelers(number_traveler=150, trip_length=10, value_time=30, value_wait=60),
+        Travelers(number_traveler=150, trip_length=30, value_time=25, value_wait=50), # count, km, monetary unit/h, monetary unit/h
+        Travelers(number_traveler=100, trip_length=25, value_time=60, value_wait=120),
+        Travelers(number_traveler=100, trip_length=10, value_time=30, value_wait=60),
         Travelers(number_traveler=100, trip_length=5, value_time=20, value_wait=40)
     ]
 
@@ -196,7 +201,7 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
 
     tnc = TNC(
         ASC=10.0, 
-        fare=3, # monetary units per km
+        fare=4, # monetary units per km
         detour_ratio=1.3, # 1.3 times the direct distance
         average_speed=40, # in km/h
         average_veh_travel_dist_per_day=8*40, # 320 km per veh per day
@@ -204,14 +209,14 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
         total_service_capacity=tnc_capacity, # in veh * km per day
         trip_length_per_traveler_type=[traveler.trip_length for traveler in travelers], # km
         value_waiting_time_per_traveler_type=[traveler.value_wait for traveler in travelers], # monetary units per time
-        cost_purchasing_capacity_TNC= 10, # monetary units per veh 
-        operating_cost= 10, # monetary units per veh 
+        cost_purchasing_capacity_TNC= 1300, # monetary units per veh 
+        operating_cost= 1000, # monetary units per veh 
         lambda_T=1.0 # Lagrange multiplier for the capacity constraint [$/(veh·km)]
     )   
 
     mt = MT(
         ASC=0.0, 
-        fare=9, # monetary units per segment (* n_transfer_per_length (eg. 0.3) = monetary units per km)
+        fare=3, # monetary units per segment (* n_transfer_per_length (eg. 0.3) = monetary units per km)
         detour_ratio=1.8,
         average_speed=15,
         n_transfer_per_length=0.3, # per km
@@ -220,9 +225,9 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
     )
 
     maas = MaaS(
-        ASC=5, 
-        fare=2, # additional maas operation cost * (...) monetary units per km 
-        share_TNC=0.2, # share of TNC inside MaaS (first and last kilometers)
+        ASC=5.0, 
+        fare=1.5, # additional maas operation cost * (...) monetary units per km 
+        share_TNC=0.35, # share of TNC inside MaaS (first and last kilometers)
         detour_ratio_TNC=tnc.detour_ratio,
         average_speed_TNC=tnc.average_speed,
         capacity_ratio_from_TNC=tnc.capacity_ratio_to_MaaS,
@@ -258,8 +263,10 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
     # --------------------------
     # 4. Simulation loop
     # --------------------------
-    for day in range(number_days):
-        print(f"\nDay {day + 1}/{number_days}")
+    converged_at_day = None
+    upper_level_updates = 0
+    
+    for day in tqdm(range(number_days), desc="Simulation Progress", unit="day"):
         tnc.get_allocation(allocation)
         maas.get_allocation(allocation)
         allocation = distribute_travelers(travelers, services)
@@ -273,70 +280,101 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
         
         # Check convergence of lower level and update upper level if converged
         if day >= 1 and all(np.all(np.abs(allocation_history[service.name][-1] - allocation_history[service.name][-2]) <= 0.0001) for service in services): # and check_gradients(travelers, services, utilities): not necessary to check gradients every time
-                print("\nLower level converged.")
+                # Track first convergence
+                if converged_at_day is None:
+                    converged_at_day = day
+                    tqdm.write(f"\n✓ Lower level FIRST convergence at Day {day + 1}")
+                else:
+                    tqdm.write(f"✓ Lower level reconverged at Day {day + 1}")
 
-                # allocation
-                #print(f"Allocation: {', '.join([f'{k}: {[round(v) for v in vals]}' for k, vals in allocation.items()])}")
+                upper_level_updates += 1
                 
-                step_size = 1e-6
+                # Use parameter-specific step sizes: [fare, ratio/share, multiplier]
+                # Smaller ratio/share steps help avoid oscillation near [0, 1] bounds.
+                step_sizes_T = np.array([1e-5, 1e-7, 1e-5])
+                step_sizes_M = np.array([1e-5, 1e-7, 1e-5])
 
-                # Compute utilities
+                # Define update directions: Descent (-), Descent (-), Ascent (+)
+                # Multiplying the step by [1, 1, -1] turns a subtraction into an addition for the 3rd term.
+                update_direction = np.array([1.0, 1.0, -1.0])
+
+                # Compute utilities (State A)
                 utilities = compute_utilities(travelers, services)
 
-                # === TNC update ===
+                # === Get TNC & MaaS Initial Params & Manual Gradients ===
                 tnc = next(service for service in services if service.name == "TNC")
                 params_T = np.array([tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T])
-
                 grad_tnc = tnc.gradient_objective(utilities, next(service for service in services if service.name == "MaaS"))
 
-                new_params_T = params_T - step_size * grad_tnc
-                new_params_T = project_tnc_params(new_params_T)
-
-                tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T = new_params_T
-
-                # === MaaS update ===
                 maas = next(service for service in services if service.name == "MaaS")
                 params_M = np.array([maas.fare, maas.share_TNC, maas.lambda_M])
-
                 grad_maas = maas.gradient_objective(utilities)
+                
+                # ========== GRADIENT VERIFICATION (Done BEFORE mutating objects) ==========
+                #grad_tnc_auto = grad(lambda p: tnc.compute_objective_function(p, travelers, services))(params_T)
+                #grad_maas_auto = grad(lambda p: maas.compute_objective_function(p, travelers, services))(params_M)
+                #tqdm.write(f"  [Gradient Check] TNC  Manual: {grad_tnc}, Autograd: {grad_tnc_auto}, Match: {np.allclose(grad_tnc, grad_tnc_auto, atol=1e-5)}")
+                #tqdm.write(f"  [Gradient Check] MaaS Manual: {grad_maas}, Autograd: {grad_maas_auto}, Match: {np.allclose(grad_maas, grad_maas_auto, atol=1e-5)}")
+                # =========================================================================
 
-                new_params_M = params_M - step_size * grad_maas
+                # === APPLY UPDATES (Move to State B) ===
+                new_params_T = params_T - step_sizes_T * grad_tnc * update_direction
+                new_params_T = project_tnc_params(new_params_T)
+                tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T = new_params_T
+
+                new_params_M = params_M - step_sizes_M * grad_maas * update_direction
                 new_params_M = project_maas_params(new_params_M) 
-
                 maas.fare, maas.share_TNC, maas.lambda_M = new_params_M
 
-                maas.capacity_ratio_from_TNC = tnc.capacity_ratio_to_MaaS # put this after because both service should update simultaneously 
-
-                # qualitative informations
-                print(f"Updated TNC params: fare={tnc.fare}, capacity_ratio_to_MaaS={tnc.capacity_ratio_to_MaaS}, lambda_T={tnc.lambda_T}")
-                print(f"Updated MaaS params: fare={maas.fare}, share_TNC={maas.share_TNC}, lambda_M={maas.lambda_M}")
-
-                # gradients and sizes
-                #print(f"Gradients: grad_TNC={grad_tnc}, grad_MaaS={grad_maas}")
-                #print(f"Gradient sizes: ||grad_TNC||={np.linalg.norm(grad_tnc)}, ||grad_MaaS||={np.linalg.norm(grad_maas)}")
+                maas.capacity_ratio_from_TNC = tnc.capacity_ratio_to_MaaS
+                
+                # Print update info on every upper-level update
+                tqdm.write(f"  [Update {upper_level_updates}] TNC:  fare={tnc.fare:.4f}, cap_ratio={tnc.capacity_ratio_to_MaaS:.4f}, λ_T={tnc.lambda_T:.6f}")
+                tqdm.write(f"  [Update {upper_level_updates}] MaaS: fare={maas.fare:.4f}, share_TNC={maas.share_TNC:.4f}, λ_M={maas.lambda_M:.6f}")
 
     ###########################################################################
     ############################## END of the SIMULATION ######################
     ###########################################################################
 
-    print("\nFinal allocation:")
-    print(f"{', '.join([f'{k}: {[round(v) for v in vals]}' for k, vals in allocation.items()])}")
-
-    print(f"Updated TNC params: fare={tnc.fare}, capacity_ratio_to_MaaS={tnc.capacity_ratio_to_MaaS}, lambda_T={tnc.lambda_T}")
-    print(f"Updated MaaS params: fare={maas.fare}, share_TNC={maas.share_TNC}, lambda_M={maas.lambda_M}")
+    print("\n" + "="*80)
+    print("SIMULATION SUMMARY")
+    print("="*80)
     
-    # gradients
-    print(f"Gradients: grad_TNC={grad_tnc}, grad_MaaS={grad_maas}")
-    #size of the gradients
-    print(f"Gradient sizes: ||grad_TNC||={np.linalg.norm(grad_tnc)}, ||grad_MaaS||={np.linalg.norm(grad_maas)}")
-    # tnc profit
+    if converged_at_day is not None:
+        print(f"\n✓ Convergence reached at Day {converged_at_day + 1}")
+        print(f"  Upper-level optimization updates: {upper_level_updates}")
+    else:
+        print("\n⚠ Maximum iterations reached without convergence")
+    
+    print("\nFinal Allocation:")
+    for service_name, allocation_vals in allocation.items():
+        print(f"  {service_name}: {[round(v, 2) for v in allocation_vals]}")
+
+    print(f"\nFinal TNC params:")
+    print(f"  fare={tnc.fare:.4f}, capacity_ratio_to_MaaS={tnc.capacity_ratio_to_MaaS:.4f}, lambda_T={tnc.lambda_T:.6f}")
+    print(f"\nFinal MaaS params:")
+    print(f"  fare={maas.fare:.4f}, share_TNC={maas.share_TNC:.4f}, lambda_M={maas.lambda_M:.6f}")
+    
+    # Compute profits
     income_tnc = np.sum([tnc.fare * allocation['TNC'][i] * tnc.detour_ratio * travelers[i].trip_length for i in range(len(travelers))]) + tnc.cost_purchasing_capacity_TNC * tnc.capacity_ratio_to_MaaS * tnc.total_service_capacity / tnc.average_veh_travel_dist_per_day
     outcome_tnc = tnc.operating_cost * tnc.total_service_capacity / tnc.average_veh_travel_dist_per_day
-    print(f"\nTNC income: {income_tnc}, outcome: {outcome_tnc}, profit: {income_tnc - outcome_tnc}")
-    # maas profit
+    profit_tnc = income_tnc - outcome_tnc
+    
     income_maas = np.sum([maas.fare * allocation['MaaS'][i] * travelers[i].trip_length for i in range(len(travelers))]) 
     outcome_maas = maas.cost_purchasing_capacity_TNC * maas.capacity_ratio_from_TNC * tnc.total_service_capacity / tnc.average_veh_travel_dist_per_day + maas.cost_purchasing_capacity_MT * (1 - maas.share_TNC) * np.sum(allocation['MaaS'])
-    print(f"\nMaaS income: {income_maas}, outcome: {outcome_maas}, profit: {income_maas - outcome_maas}")
+    profit_maas = income_maas - outcome_maas
+    
+    print("\nFinancial Results:")
+    print(f"  TNC:  Income=${income_tnc:.2f}, Cost=${outcome_tnc:.2f}, Profit=${profit_tnc:.2f}")
+    print(f"  MaaS: Income=${income_maas:.2f}, Cost=${outcome_maas:.2f}, Profit=${profit_maas:.2f}")
+    
+    # Gradient information (only available if convergence was reached)
+    if converged_at_day is not None:
+        print("\nGradient Information (Upper Level):")
+        print(f"  ||grad_TNC||  = {np.linalg.norm(grad_tnc):.6f}")
+        print(f"  ||grad_MaaS|| = {np.linalg.norm(grad_maas):.6f}")
+    
+    print("="*80 + "\n")
 
     # Store final results in a JSON file
     results = {
@@ -353,8 +391,8 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
             "lambda_M": maas.lambda_M,
         },
         "profits": {
-            "tnc_profit": income_tnc - outcome_tnc,
-            "maas_profit": income_maas - outcome_maas,
+            "tnc_profit": float(profit_tnc),
+            "maas_profit": float(profit_maas),
         }
     }
 

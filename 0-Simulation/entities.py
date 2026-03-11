@@ -245,7 +245,7 @@ class TNC(Service):
         ) # safer for autograd
         return vacant_veh_available
     
-    def compute_objective_function(self, params: list[float], travelers: List[Travelers], services: List[Service], service_index_T: int = 0) -> float:
+    def compute_objective_function(self, params: list[float], travelers: List['Travelers'], services: List[Service], service_index_T: int = 0) -> float:
         """
         Description
         - Compute the TNC objective function (Lagrangian formulation). See calculation details in report.
@@ -295,10 +295,10 @@ class TNC(Service):
         sum_l_PiT_Qi = np.sum(l * P_iT * Q)
         sum_PiT_Qi   = np.sum(P_iT * Q)
         term1 = -self.fare * self.detour_ratio * sum_l_PiT_Qi
-        term2 = -self.cost_purchasing_capacity_TNC * self.capacity_ratio_to_MaaS * self.total_service_capacity
-        term3 = self.operating_cost * self.total_service_capacity
+        term2 = -self.cost_purchasing_capacity_TNC * self.capacity_ratio_to_MaaS * self.total_service_capacity / self.average_veh_travel_dist_per_day
+        term3 = self.operating_cost * self.total_service_capacity / self.average_veh_travel_dist_per_day
         term4 = self.lambda_T * (
-            self.average_veh_travel_dist_per_day * sum_PiT_Qi -
+            sum_l_PiT_Qi -
             (1 - self.capacity_ratio_to_MaaS) * self.total_service_capacity
         )
 
@@ -371,19 +371,19 @@ class TNC(Service):
         grad_fT = (
             -self.detour_ratio * sum_l_PiT_Qi
             - self.fare * self.detour_ratio * np.sum(l * Q * P_iT * (1 - P_iT) * dUdf)
-            + self.lambda_T * self.average_veh_travel_dist_per_day * np.sum(Q * P_iT * (1 - P_iT) * dUdf))
+            + self.lambda_T * np.sum(l * Q * P_iT * (1 - P_iT) * dUdf))
 
         # ========= GRAD w.r.t. y_T ==========
         grad_yT = (
             -self.fare * self.detour_ratio * np.sum(l * Q * P_iT *
                 ((1 - P_iT) * dUTdy - P_iM * dUMdy))
-            - self.cost_purchasing_capacity_TNC * self.total_service_capacity
-            + self.lambda_T * self.average_veh_travel_dist_per_day * np.sum(Q * P_iT *
+            - self.cost_purchasing_capacity_TNC * self.total_service_capacity / self.average_veh_travel_dist_per_day
+            + self.lambda_T *  np.sum(l * Q * P_iT *
                 ((1 - P_iT) * dUTdy - P_iM * dUMdy))
             + self.lambda_T * self.total_service_capacity)
 
         # ========= GRAD w.r.t. λ_T ==========
-        grad_lambdaT = -(sum_l_PiT_Qi - (1 - self.capacity_ratio_to_MaaS) * self.total_service_capacity) 
+        grad_lambdaT = (sum_l_PiT_Qi - (1 - self.capacity_ratio_to_MaaS) * self.total_service_capacity) 
         
         return np.array([grad_fT, grad_yT, grad_lambdaT])
 
@@ -651,9 +651,11 @@ class MaaS(Service):
         - Returns the number of vacant vehicles based on the TNC fleet capacity alocated to MaaS [veh].
         """
         total_demand = self.share_TNC * np.sum(np.array(self.trip_length_per_traveler_type) * np.array(self.demand_per_traveler_type[self.name])) 
-        return np.array((self.capacity_ratio_from_TNC * self.total_service_capacity_TNC - total_demand) / self.average_veh_travel_dist_per_day_TNC)
+        vacant = np.array((self.capacity_ratio_from_TNC * self.total_service_capacity_TNC - total_demand) / self.average_veh_travel_dist_per_day_TNC)
+        # Protect against 0 or negative values to prevent 'nan' in gradients
+        return np.where(vacant <= 0, 1e-6, vacant)
 
-    def compute_objective_function(self, params: list[float], travelers: List[Travelers], services: List[Service], service_index_M: int = 2) -> float:
+    def compute_objective_function(self, params: list[float], travelers: List['Travelers'], services: List[Service], service_index_M: int = 2) -> float:
         """
         Description
         - Compute the MaaS objective function (Lagrangian formulation). See calculation details in report.
@@ -701,7 +703,7 @@ class MaaS(Service):
         term1 = -self.fare * sum_l_PiM_Qi
         term2 = self.cost_purchasing_capacity_MT * (1 - self.share_TNC) * sum_PiM_Qi
         # term3 = self.cost_purchasing_capacity_TNC * self.share_TNC * sum_PiM_Qi # this term is excluded
-        term4 = self.lambda_M * (self.share_TNC * sum_PiM_Qi - self.capacity_ratio_from_TNC * self.total_service_capacity_TNC)
+        term4 = self.lambda_M * (self.share_TNC * sum_PiM_Qi - (self.capacity_ratio_from_TNC * self.total_service_capacity_TNC / self.average_veh_travel_dist_per_day_TNC))
 
         # restore originals
         self.fare = fare0
@@ -773,7 +775,7 @@ class MaaS(Service):
         )
 
         # ========= GRAD w.r.t. λ_M ==========
-        grad_lambdaM = -(self.share_TNC * sum_PiM_Qi - self.capacity_ratio_from_TNC * self.total_service_capacity_TNC)
+        grad_lambdaM = (self.share_TNC * sum_PiM_Qi - (self.capacity_ratio_from_TNC * self.total_service_capacity_TNC / self.average_veh_travel_dist_per_day_TNC))
 
         return np.array([grad_fM ,grad_alpha, grad_lambdaM])
 
@@ -878,7 +880,7 @@ class Travelers:
 # --------------------------
 # Functions
 # --------------------------
-def distribute_travelers(travelers: list[Travelers], services: list[Service]) -> dict[str, list[float]]: 
+def distribute_travelers(travelers: list['Travelers'], services: list[Service]) -> dict[str, list[float]]: 
     """
     Description
     - Allocate groups of travelers among services using each group's choice model.
@@ -901,7 +903,7 @@ def distribute_travelers(travelers: list[Travelers], services: list[Service]) ->
             allocation[service.name][type_i] += traveler.travelers_per_service[index]
     return allocation
 
-def compute_utility_matrix(travelers: List[Travelers], services: List[Service]) -> np.ndarray:
+def compute_utility_matrix(travelers: List['Travelers'], services: List[Service]) -> np.ndarray:
     """
     Description
     - Compute the utility matrix U for all traveler types i and services m with an autograd-compatible numpy.
