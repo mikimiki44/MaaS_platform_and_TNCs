@@ -200,17 +200,17 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
     # --------------------------
 
     tnc = TNC(
-        ASC=10.0, 
+        ASC=20.0, 
         fare=4, # monetary units per km
         detour_ratio=1.3, # 1.3 times the direct distance
         average_speed=40, # in km/h
         average_veh_travel_dist_per_day=8*40, # 320 km per veh per day
-        capacity_ratio_to_MaaS=0.4, # TNC gives 40% of its capacity to MaaS
+        capacity_ratio_to_MaaS=0.3, # TNC gives 30% of its capacity to MaaS
         total_service_capacity=tnc_capacity, # in veh * km per day
         trip_length_per_traveler_type=[traveler.trip_length for traveler in travelers], # km
         value_waiting_time_per_traveler_type=[traveler.value_wait for traveler in travelers], # monetary units per time
-        cost_purchasing_capacity_TNC= 1300, # monetary units per veh 
-        operating_cost= 1000, # monetary units per veh 
+        cost_purchasing_capacity_TNC= 1000, # monetary units per veh 
+        operating_cost= 300, # monetary units per veh 
         lambda_T=1.0 # Lagrange multiplier for the capacity constraint [$/(veh·km)]
     )   
 
@@ -225,9 +225,9 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
     )
 
     maas = MaaS(
-        ASC=5.0, 
-        fare=1.5, # additional maas operation cost * (...) monetary units per km 
-        share_TNC=0.35, # share of TNC inside MaaS (first and last kilometers)
+        ASC=45.0, 
+        fare=2, # additional maas operation cost * (...) monetary units per km 
+        share_TNC=0.40, # share of TNC inside MaaS (first and last kilometers)
         detour_ratio_TNC=tnc.detour_ratio,
         average_speed_TNC=tnc.average_speed,
         capacity_ratio_from_TNC=tnc.capacity_ratio_to_MaaS,
@@ -241,7 +241,7 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
         average_speed_MT=mt.average_speed,
         transit_time_MT=mt.transit_time,
         n_transfer_per_length_MT=mt.n_transfer_per_length,
-        cost_purchasing_capacity_MT=5, # MM unit ??
+        cost_purchasing_capacity_MT=3, # MM unit ??
         lambda_M=1.0 # Lagrange multiplier for the capacity constraint [$/(veh·km)] 
         )
 
@@ -291,8 +291,8 @@ def run_simulation(tnc_capacity: float, output_dir: str, number_days: int):
                 
                 # Use parameter-specific step sizes: [fare, ratio/share, multiplier]
                 # Smaller ratio/share steps help avoid oscillation near [0, 1] bounds.
-                step_sizes_T = np.array([1e-5, 1e-7, 1e-5])
-                step_sizes_M = np.array([1e-5, 1e-7, 1e-5])
+                step_sizes_T = np.array([2e-6, 1e-7, 1e-5])
+                step_sizes_M = np.array([2e-6, 1e-7, 1e-7])
 
                 # Define update directions: Descent (-), Descent (-), Ascent (+)
                 # Multiplying the step by [1, 1, -1] turns a subtraction into an addition for the 3rd term.

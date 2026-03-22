@@ -703,7 +703,7 @@ class MaaS(Service):
         term1 = -self.fare * sum_l_PiM_Qi
         term2 = self.cost_purchasing_capacity_MT * (1 - self.share_TNC) * sum_PiM_Qi
         # term3 = self.cost_purchasing_capacity_TNC * self.share_TNC * sum_PiM_Qi # this term is excluded
-        term4 = self.lambda_M * (self.share_TNC * sum_PiM_Qi - (self.capacity_ratio_from_TNC * self.total_service_capacity_TNC / self.average_veh_travel_dist_per_day_TNC))
+        term4 = self.lambda_M * (self.share_TNC * sum_l_PiM_Qi - (self.capacity_ratio_from_TNC * self.total_service_capacity_TNC))
 
         # restore originals
         self.fare = fare0
@@ -764,18 +764,21 @@ class MaaS(Service):
         grad_fM = (
             - sum_l_PiM_Qi
             - self.fare * np.sum(l * Q * P_iM * (1 - P_iM) * dUdf)
-            + (self.cost_purchasing_capacity_MT * (1 - self.share_TNC) + self.lambda_M * self.share_TNC) * np.sum(Q * P_iM * (1 - P_iM) * dUdf)
+            + self.cost_purchasing_capacity_MT * (1 - self.share_TNC) * np.sum(Q * P_iM * (1 - P_iM) * dUdf)
+            + (self.lambda_M * self.share_TNC) * np.sum(l * Q * P_iM * (1 - P_iM) * dUdf)
         )
 
         # ========= GRAD w.r.t. alpha ========
-        grad_alpha = (- self.fare * np.sum(l * Q * P_iM * (1 - P_iM) * dUdalph)
-                      + (self.lambda_M - self.cost_purchasing_capacity_MT) * sum_PiM_Qi
-                      + (self.cost_purchasing_capacity_MT * (1 - self.share_TNC) + self.lambda_M * self.share_TNC) 
-                      * (np.sum(Q * P_iM * (1 - P_iM) * dUdalph))
+        grad_alpha = (
+            - self.fare * np.sum(l * Q * P_iM * (1 - P_iM) * dUdalph)
+            - self.cost_purchasing_capacity_MT * sum_PiM_Qi
+            + self.cost_purchasing_capacity_MT * (1 - self.share_TNC) * np.sum(Q * P_iM * (1 - P_iM) * dUdalph)
+            + (self.lambda_M * sum_l_PiM_Qi)
+            + (self.lambda_M * self.share_TNC) * np.sum(l * Q * P_iM * (1 - P_iM) * dUdalph)
         )
 
         # ========= GRAD w.r.t. λ_M ==========
-        grad_lambdaM = (self.share_TNC * sum_PiM_Qi - (self.capacity_ratio_from_TNC * self.total_service_capacity_TNC / self.average_veh_travel_dist_per_day_TNC))
+        grad_lambdaM = (self.share_TNC * sum_l_PiM_Qi - (self.capacity_ratio_from_TNC * self.total_service_capacity_TNC))
 
         return np.array([grad_fM ,grad_alpha, grad_lambdaM])
 
