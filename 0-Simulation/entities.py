@@ -87,6 +87,39 @@ class Service(ABC):
         time = self.trip_time(trip_length)
         wait = self.waiting_time(trip_length)        
         return np.sum(self.ASC - fare - value_time * time - value_wait * wait) # there is no sum here, but np.sum works with both floats and ArrayBox scalars, and always returns a scalar, which autograd is happy with.
+
+    def decompose_utility_components(self, trip_length: float, value_time: float, value_wait: float) -> dict[str, float]:
+        """
+        Description
+        - Decompose utility into interpretable monetary components.
+
+        Parameters
+        - trip_length: trip distance [km].
+        - value_time: value of in-vehicle time [$/hr].
+        - value_wait: value of waiting time [$/hr].
+
+        Output
+        - Returns a dict with ASC, disutility components and total utility.
+        """
+        fare = self.trip_fare(trip_length)
+        time = self.trip_time(trip_length)
+        wait = self.waiting_time(trip_length)
+
+        asc_component = np.sum(self.ASC)
+        fare_component = np.sum(fare)
+        travel_time_component = np.sum(value_time * time)
+        waiting_time_component = np.sum(value_wait * wait)
+        total_utility = np.sum(
+            self.ASC - fare - value_time * time - value_wait * wait
+        )
+
+        return {
+            "ASC": asc_component,
+            "fare_disutility": fare_component,
+            "travel_time_disutility": travel_time_component,
+            "waiting_time_disutility": waiting_time_component,
+            "total_utility": total_utility,
+        }
     
     def get_allocation(self, allocation: dict[str, list[float]]) -> None:
         """
@@ -217,7 +250,7 @@ class TNC(Service):
         Output
         - Returns expected waiting time based on an empirical formula (hours).
         """
-        A = 2.5
+        A = 0.1
         sensitivity_param = 0.5
         vacant_veh_available = self.find_vacant_veh_available()
         return A * (vacant_veh_available ** (-sensitivity_param))
@@ -355,7 +388,7 @@ class TNC(Service):
 
         dUdf = -self.detour_ratio * l
 
-        A, s = 2.5, 0.5
+        A, s = 0.1, 0.5
         vacant = self.find_vacant_veh_available()
 
         dUTdy = - np.asarray(self.value_waiting_time_per_traveler_type) * s * A * (vacant)**(-(s + 1)) * (self.total_service_capacity / self.average_veh_travel_dist_per_day)
@@ -449,15 +482,38 @@ class MT(Service):
     def trip_fare(self, trip_length: float) -> float:
         """
         Description
-        - Compute MT fare for a given trip length.
+        - Compute MT fare using discrete travel-time bands.
 
         Parameters
         - trip_length: trip distance [km].
         
         Output
         - Returns fare for that trip [$].
+
+        Fare policy (time-based, discrete)
+        - <= 20 min: 1 band
+        - <= 60 min: 2 bands
+        - <= 90 min: 3 bands
+        - <= 120 min: 4 bands
+        - > 120 min: +1 band per additional 30 min started
+
+        Notes
+        - `self.fare` is interpreted as the CHF amount per band.
+          With `self.fare=2`, this gives 2, 4, 6, 8 CHF for the first 4 bands.
         """
-        return self.fare * (self.n_transfer_per_length * trip_length + 1)
+        travel_time_min = self.trip_time(trip_length) * 60.0
+
+        if travel_time_min <= 60.0:
+            bands = 2
+        elif travel_time_min <= 90.0:
+            bands = 3
+        elif travel_time_min <= 120.0:
+            bands = 4
+        else:
+            extra_bands = int(np.ceil((travel_time_min - 120.0) / 30.0))
+            bands = 4 + extra_bands
+
+        return self.fare * bands
 
     def trip_time(self, trip_length: float) -> float:
         """
@@ -627,7 +683,7 @@ class MaaS(Service):
         Output
         - Returns expected waiting time (hours): TNC empirical waiting time plus MT waiting component.
         """
-        A = 2.5
+        A = 0.1
         sensitivity_param = 0.5
         vacant_veh_available = self.find_vacant_veh_available()
         vacant_veh_available = np.where(
@@ -638,6 +694,44 @@ class MaaS(Service):
         TNC_waiting_time = A * (vacant_veh_available ** (- sensitivity_param))
         MT_waiting_time = self.transit_time_MT * (self.n_transfer_per_length_MT * (1 - self.share_TNC) * trip_length)
         return TNC_waiting_time + MT_waiting_time
+
+    def decompose_mode_components(self, trip_length: float, value_time: float, value_wait: float) -> dict[str, float]:
+        """
+        Description
+        - Decompose MaaS utility into TNC and MT travel/waiting sub-components.
+
+        Parameters
+        - trip_length: trip distance [km].
+        - value_time: value of in-vehicle time [$/hr].
+        - value_wait: value of waiting time [$/hr].
+
+        Output
+        - Returns a dict with detailed MaaS mode-level components.
+        """
+        A = 0.1
+        sensitivity_param = 0.5
+        vacant_veh_available = self.find_vacant_veh_available()
+        vacant_veh_available = np.where(vacant_veh_available <= 0, 1e-6, vacant_veh_available)
+
+        time_tnc = self.detour_ratio_TNC * self.share_TNC * trip_length / self.average_speed_TNC
+        time_mt = self.detour_ratio_MT * (1 - self.share_TNC) * trip_length / self.average_speed_MT
+
+        wait_tnc = A * (vacant_veh_available ** (-sensitivity_param))
+        wait_mt = self.transit_time_MT * (
+            self.n_transfer_per_length_MT * (1 - self.share_TNC) * trip_length
+        )
+
+        return {
+            "trip_fare": np.sum(self.trip_fare(trip_length)),
+            "time_tnc": np.sum(time_tnc),
+            "time_mt": np.sum(time_mt),
+            "wait_tnc": np.sum(wait_tnc),
+            "wait_mt": np.sum(wait_mt),
+            "travel_time_disutility_tnc": np.sum(value_time * time_tnc),
+            "travel_time_disutility_mt": np.sum(value_time * time_mt),
+            "waiting_disutility_tnc": np.sum(value_wait * wait_tnc),
+            "waiting_disutility_mt": np.sum(value_wait * wait_mt),
+        }
 
     def find_vacant_veh_available(self) -> float:
         """
@@ -752,10 +846,10 @@ class MaaS(Service):
 
         sum_l_PiM_Qi = np.sum(l * P_iM * Q)
         sum_PiM_Qi = np.sum(P_iM * Q)
-
+    
         # Partial derivatives of utility:
         dUdf = - l
-        A, s = 2.5, 0.5
+        A, s = 0.1, 0.5
         vacant = self.find_vacant_veh_available()
         dUdalph = - np.asarray(self.value_travel_time_per_traveler_type) * (self.detour_ratio_TNC / self.average_speed_TNC * l - self.detour_ratio_MT / self.average_speed_MT * l) \
                   - np.asarray(self.value_waiting_time_per_traveler_type) * (s * A * (vacant)**(-(s + 1)) * (sum_l_PiM_Qi / self.average_veh_travel_dist_per_day_TNC) - self.transit_time_MT * self.n_transfer_per_length_MT * l)
