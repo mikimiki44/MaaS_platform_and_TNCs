@@ -250,7 +250,7 @@ class TNC(Service):
         Output
         - Returns expected waiting time based on an empirical formula (hours).
         """
-        A = 0.1
+        A = 2.5
         sensitivity_param = 0.5
         vacant_veh_available = self.find_vacant_veh_available()
         return A * (vacant_veh_available ** (-sensitivity_param))
@@ -388,7 +388,7 @@ class TNC(Service):
 
         dUdf = -self.detour_ratio * l
 
-        A, s = 0.1, 0.5
+        A, s =2.5, 0.5
         vacant = self.find_vacant_veh_available()
 
         dUTdy = - np.asarray(self.value_waiting_time_per_traveler_type) * s * A * (vacant)**(-(s + 1)) * (self.total_service_capacity / self.average_veh_travel_dist_per_day)
@@ -683,7 +683,7 @@ class MaaS(Service):
         Output
         - Returns expected waiting time (hours): TNC empirical waiting time plus MT waiting component.
         """
-        A = 0.1
+        A = 2.5
         sensitivity_param = 0.5
         vacant_veh_available = self.find_vacant_veh_available()
         vacant_veh_available = np.where(
@@ -708,7 +708,7 @@ class MaaS(Service):
         Output
         - Returns a dict with detailed MaaS mode-level components.
         """
-        A = 0.1
+        A = 2.5
         sensitivity_param = 0.5
         vacant_veh_available = self.find_vacant_veh_available()
         vacant_veh_available = np.where(vacant_veh_available <= 0, 1e-6, vacant_veh_available)
@@ -849,7 +849,7 @@ class MaaS(Service):
     
         # Partial derivatives of utility:
         dUdf = - l
-        A, s = 0.1, 0.5
+        A, s =2.5, 0.5
         vacant = self.find_vacant_veh_available()
         dUdalph = - np.asarray(self.value_travel_time_per_traveler_type) * (self.detour_ratio_TNC / self.average_speed_TNC * l - self.detour_ratio_MT / self.average_speed_MT * l) \
                   - np.asarray(self.value_waiting_time_per_traveler_type) * (s * A * (vacant)**(-(s + 1)) * (sum_l_PiM_Qi / self.average_veh_travel_dist_per_day_TNC) - self.transit_time_MT * self.n_transfer_per_length_MT * l)
