@@ -81,6 +81,42 @@ def plot_per_type_allocations(services, allocation_by_type, travelers, number_da
     else:
         plt.show()
 
+
+def plot_gradient_evolution(gradient_history, save_path=None):
+    """
+    Description
+    - Plot upper-level gradient norm evolution across updates.
+
+    Parameters
+    - gradient_history: list of dicts with keys: update_idx, day, grad_tnc_norm, grad_maas_norm.
+    - save_path: path to save the plot image. If None, the plot is shown instead.
+
+    Output
+    - Shows a plot or saves it to the specified path.
+    """
+    if not gradient_history:
+        return
+
+    updates = [item["update_idx"] for item in gradient_history]
+    grad_tnc_norm = [item["grad_tnc_norm"] for item in gradient_history]
+    grad_maas_norm = [item["grad_maas_norm"] for item in gradient_history]
+
+    plt.figure(figsize=(8, 5))
+    plt.plot(updates, grad_tnc_norm, label="||grad_TNC||", linewidth=2)
+    plt.plot(updates, grad_maas_norm, label="||grad_MaaS||", linewidth=2)
+    plt.title("Upper-Level Gradient Norm Evolution")
+    plt.xlabel("Upper-Level Update Index")
+    plt.ylabel("Gradient Norm")
+    plt.grid(True, linestyle="--", alpha=0.6)
+    plt.legend()
+    plt.tight_layout()
+
+    if save_path:
+        plt.savefig(save_path, dpi=300)
+        plt.close()
+    else:
+        plt.show()
+
 def compute_utilities(travelers: list[Travelers], services: list[Service]) -> np.ndarray:
     """
     Description
@@ -383,10 +419,7 @@ def run_simulation(
     # 1. Define traveler groups
     # --------------------------
     travelers = [
-        Travelers(number_traveler=150, trip_length=10, value_time=25, value_wait=30), # count, km, monetary unit/h, monetary unit/h
-        Travelers(number_traveler=100, trip_length=20, value_time=25, value_wait=30),
-        Travelers(number_traveler=100, trip_length=5, value_time=30, value_wait=35),
-        Travelers(number_traveler=100, trip_length=3, value_time=20, value_wait=25)
+        Travelers(number_traveler=80000, trip_length=20, value_time=20, value_wait=30), # count, km, monetary unit/h, monetary unit/h
     ]
 
     # --------------------------
@@ -394,32 +427,32 @@ def run_simulation(
     # --------------------------
 
     tnc = TNC(
-        ASC=6, 
-        fare=2, # monetary units per km
+        ASC=20, 
+        fare=1.5, # monetary units per km
         detour_ratio=1.4, # 1.4 times the direct distance
-        average_speed=30, # in km/h
+        average_speed=40, # in km/h
         average_veh_travel_dist_per_day=8*40, # 320 km per veh per day
-        capacity_ratio_to_MaaS=0.4, # TNC gives 40% of its capacity to MaaS
+        capacity_ratio_to_MaaS=0.3, # TNC gives 30% of its capacity to MaaS
         total_service_capacity=tnc_capacity, # in veh * km per day
         trip_length_per_traveler_type=[traveler.trip_length for traveler in travelers], # km
         value_waiting_time_per_traveler_type=[traveler.value_wait for traveler in travelers], # monetary units per time
         cost_purchasing_capacity_TNC= 300, # monetary units per veh 
         operating_cost= 250, # monetary units per veh 
-        lambda_T=1.0 # Lagrange multiplier for the capacity constraint [$/(veh·km)]
+        lambda_T=0 # Lagrange multiplier for the capacity constraint [$/(veh·km)]
     )   
 
     mt = MT(
         ASC=0.0,
         fare=2,
         detour_ratio=1.5, # 1.5 times the direct distance
-        average_speed=25,
-        n_transfer_per_length=0.15, # per km
+        average_speed=20, # in km/h
+        n_transfer_per_length=0.2, # per km
         access_time=1/6, # hours
         transit_time=1/12 # hours
     )
 
     maas = MaaS(
-        ASC=4, 
+        ASC=5, 
         fare=1, # additional maas operation cost * (...) monetary units per km 
         share_TNC=0.30, # share of TNC inside MaaS (first and last kilometers)
         detour_ratio_TNC=tnc.detour_ratio,
@@ -435,8 +468,8 @@ def run_simulation(
         average_speed_MT=mt.average_speed,
         transit_time_MT=mt.transit_time,
         n_transfer_per_length_MT=mt.n_transfer_per_length,
-        cost_purchasing_capacity_MT=3.5, # MM unit ??
-        lambda_M=1.0 # Lagrange multiplier for the capacity constraint [$/(veh·km)] 
+        cost_purchasing_capacity_MT=4, # MM unit ??
+        lambda_M=0 # Lagrange multiplier for the capacity constraint [$/(veh·km)] 
         )
 
     services = [tnc, mt, maas]
@@ -453,28 +486,44 @@ def run_simulation(
     # store allocation history
     allocation_history = {service.name: [] for service in services}
     allocation_by_type = {service.name: [[] for _ in travelers] for service in services}
-    
+
+    tnc.get_allocation(allocation)
+    maas.get_allocation(allocation)
+
     # --------------------------
     # 4. Simulation loop
     # --------------------------
     converged_at_day = None
     upper_level_updates = 0
     debug_snapshots: list[dict] = []
+    gradient_history: list[dict[str, float | int]] = []
+    total_travelers = float(sum(traveler.number_traveler for traveler in travelers))
+    upper_level_relative_tolerance = 6e-5
     
     for day in tqdm(range(number_days), desc="Simulation Progress", unit="day"):
-        tnc.get_allocation(allocation)
-        maas.get_allocation(allocation)
         allocation = distribute_travelers(travelers, services)
         for t_idx in range(len(travelers)):
             for service in services:
                 # smooth allocations
-                allocation[service.name][t_idx] = 0.99*allocation_by_type[service.name][t_idx][day-1]+ 0.01*allocation[service.name][t_idx] if day >=1 else allocation[service.name][t_idx]
+                allocation[service.name][t_idx] = 0.999*allocation_by_type[service.name][t_idx][day-1]+ 0.001*allocation[service.name][t_idx] if day >=1 else allocation[service.name][t_idx]
+
+        tnc.get_allocation(allocation)
+        maas.get_allocation(allocation)
 
         # Store allocations
         allocation_history, allocation_by_type = store_allocations(day, travelers, services, allocation, allocation_history, allocation_by_type) 
 
-        # Check convergence of lower level and update upper level if converged
-        if day >= 1 and all(np.all(np.abs(allocation_history[service.name][-1] - allocation_history[service.name][-2]) <= 0.0000001) for service in services): # and check_gradients(travelers, services, utilities): not necessary to check gradients every time
+        # Check convergence of lower level using relative error and update upper level if converged
+        if day >= 1:
+            max_relative_change = max(
+                abs(allocation_history[service.name][-1] - allocation_history[service.name][-2])
+                / max(total_travelers, 1.0)
+                for service in services
+            )
+        else:
+            max_relative_change = np.inf
+
+        if day >= 1 and max_relative_change <= upper_level_relative_tolerance: # and check_gradients(travelers, services, utilities): not necessary to check gradients every time
                 # Track first convergence
                 if converged_at_day is None:
                     converged_at_day = day
@@ -486,8 +535,8 @@ def run_simulation(
                 
                 # Use parameter-specific step sizes: [fare, ratio/share, multiplier]
                 # Smaller ratio/share steps help avoid oscillation near [0, 1] bounds.
-                step_sizes_T = np.array([2e-6, 1e-7, 1e-5])
-                step_sizes_M = np.array([2e-6, 1e-7, 1e-7])
+                step_sizes_T = np.array([2e-10, 1e-10, 1e-5])
+                step_sizes_M = np.array([2e-10, 1e-10, 1e-5])
 
                 # Define update directions: Descent (-), Descent (-), Ascent (+)
                 # Multiplying the step by [1, 1, -1] turns a subtraction into an addition for the 3rd term.
@@ -504,6 +553,13 @@ def run_simulation(
                 maas = next(service for service in services if service.name == "MaaS")
                 params_M = np.array([maas.fare, maas.share_TNC, maas.lambda_M])
                 grad_maas = maas.gradient_objective(utilities)
+
+                gradient_history.append({
+                    "update_idx": int(upper_level_updates),
+                    "day": int(day + 1),
+                    "grad_tnc_norm": float(np.linalg.norm(grad_tnc)),
+                    "grad_maas_norm": float(np.linalg.norm(grad_maas)),
+                })
                 
                 # ========== GRADIENT VERIFICATION (Done BEFORE mutating objects) ==========
                 #grad_tnc_auto = grad(lambda p: tnc.compute_objective_function(p, travelers, services))(params_T)
@@ -611,6 +667,9 @@ def run_simulation(
     with open(os.path.join(output_dir, "final_results.json"), "w") as f:
         json.dump(results, f, indent=4)
 
+    with open(os.path.join(output_dir, "gradient_history.json"), "w") as f:
+        json.dump({"events": gradient_history}, f, indent=4)
+
     # Plot results 
     plot_total_allocations(
         services,
@@ -625,6 +684,11 @@ def run_simulation(
         travelers,
         number_days,
         save_path=os.path.join(output_dir, "allocation_by_type.png"),
+    )
+
+    plot_gradient_evolution(
+        gradient_history,
+        save_path=os.path.join(output_dir, "gradient_evolution.png"),
     )
 
 
