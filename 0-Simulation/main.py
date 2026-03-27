@@ -419,7 +419,7 @@ def run_simulation(
     # 1. Define traveler groups
     # --------------------------
     travelers = [
-        Travelers(number_traveler=80000, trip_length=20, value_time=20, value_wait=30), # count, km, monetary unit/h, monetary unit/h
+        Travelers(number_traveler=80000, trip_length=20, value_time=25, value_wait=40), # count, km, monetary unit/h, monetary unit/h
     ]
 
     # --------------------------
@@ -427,17 +427,17 @@ def run_simulation(
     # --------------------------
 
     tnc = TNC(
-        ASC=20, 
-        fare=1.5, # monetary units per km
+        ASC=10, 
+        fare=2, # monetary units per km
         detour_ratio=1.4, # 1.4 times the direct distance
         average_speed=40, # in km/h
         average_veh_travel_dist_per_day=8*40, # 320 km per veh per day
-        capacity_ratio_to_MaaS=0.3, # TNC gives 30% of its capacity to MaaS
+        capacity_ratio_to_MaaS=0.4, # TNC gives 40% of its capacity to MaaS
         total_service_capacity=tnc_capacity, # in veh * km per day
         trip_length_per_traveler_type=[traveler.trip_length for traveler in travelers], # km
         value_waiting_time_per_traveler_type=[traveler.value_wait for traveler in travelers], # monetary units per time
-        cost_purchasing_capacity_TNC= 300, # monetary units per veh 
-        operating_cost= 250, # monetary units per veh 
+        cost_purchasing_capacity_TNC= 700, # monetary units per veh 
+        operating_cost= 300, # monetary units per veh 
         lambda_T=0 # Lagrange multiplier for the capacity constraint [$/(veh·km)]
     )   
 
@@ -468,7 +468,7 @@ def run_simulation(
         average_speed_MT=mt.average_speed,
         transit_time_MT=mt.transit_time,
         n_transfer_per_length_MT=mt.n_transfer_per_length,
-        cost_purchasing_capacity_MT=4, # MM unit ??
+        cost_purchasing_capacity_MT=3, # MM unit ??
         lambda_M=0 # Lagrange multiplier for the capacity constraint [$/(veh·km)] 
         )
 
@@ -498,7 +498,7 @@ def run_simulation(
     debug_snapshots: list[dict] = []
     gradient_history: list[dict[str, float | int]] = []
     total_travelers = float(sum(traveler.number_traveler for traveler in travelers))
-    upper_level_relative_tolerance = 6e-5
+    upper_level_relative_tolerance = 4e-5
     
     for day in tqdm(range(number_days), desc="Simulation Progress", unit="day"):
         allocation = distribute_travelers(travelers, services)
@@ -535,8 +535,8 @@ def run_simulation(
                 
                 # Use parameter-specific step sizes: [fare, ratio/share, multiplier]
                 # Smaller ratio/share steps help avoid oscillation near [0, 1] bounds.
-                step_sizes_T = np.array([2e-10, 1e-10, 1e-5])
-                step_sizes_M = np.array([2e-10, 1e-10, 1e-5])
+                step_sizes_T = np.array([1e-8, 1e-10, 1e-5])
+                step_sizes_M = np.array([1e-8, 1e-10, 1e-5])
 
                 # Define update directions: Descent (-), Descent (-), Ascent (+)
                 # Multiplying the step by [1, 1, -1] turns a subtraction into an addition for the 3rd term.

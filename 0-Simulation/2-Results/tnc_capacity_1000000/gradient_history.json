@@ -1,0 +1,40 @@
+{
+    "events": [
+        {
+            "update_idx": 1,
+            "day": 349,
+            "grad_tnc_norm": 147670205.8233405,
+            "grad_maas_norm": 46189931.680652805
+        },
+        {
+            "update_idx": 2,
+            "day": 606,
+            "grad_tnc_norm": 74780361.13572654,
+            "grad_maas_norm": 8019364.057717414
+        },
+        {
+            "update_idx": 3,
+            "day": 712,
+            "grad_tnc_norm": 181963712.7547089,
+            "grad_maas_norm": 5227258.545395157
+        },
+        {
+            "update_idx": 4,
+            "day": 755,
+            "grad_tnc_norm": 403889680.3581306,
+            "grad_maas_norm": 5209694.281581589
+        },
+        {
+            "update_idx": 5,
+            "day": 807,
+            "grad_tnc_norm": 595346370.6036155,
+            "grad_maas_norm": 12452396.594350308
+        },
+        {
+            "update_idx": 6,
+            "day": 952,
+            "grad_tnc_norm": 1684585809.134129,
+            "grad_maas_norm": 128088677.6946362
+        }
+    ]
+}
