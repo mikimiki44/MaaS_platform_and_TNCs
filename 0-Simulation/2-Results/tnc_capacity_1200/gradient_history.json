@@ -1,0 +1,142 @@
+{
+    "events": [
+        {
+            "update_idx": 1,
+            "day": 223,
+            "grad_tnc_norm": 11417.672913472268,
+            "grad_maas_norm": 18118.86210768864
+        },
+        {
+            "update_idx": 2,
+            "day": 394,
+            "grad_tnc_norm": 13209.360656983894,
+            "grad_maas_norm": 17785.36356386092
+        },
+        {
+            "update_idx": 3,
+            "day": 565,
+            "grad_tnc_norm": 15636.933490513184,
+            "grad_maas_norm": 16990.49755279435
+        },
+        {
+            "update_idx": 4,
+            "day": 740,
+            "grad_tnc_norm": 18801.381638790182,
+            "grad_maas_norm": 15961.035432231649
+        },
+        {
+            "update_idx": 5,
+            "day": 916,
+            "grad_tnc_norm": 22757.58164200907,
+            "grad_maas_norm": 14896.596544093829
+        },
+        {
+            "update_idx": 6,
+            "day": 1087,
+            "grad_tnc_norm": 27449.739016009127,
+            "grad_maas_norm": 13937.015366726053
+        },
+        {
+            "update_idx": 7,
+            "day": 1248,
+            "grad_tnc_norm": 32825.14390404529,
+            "grad_maas_norm": 13135.961489523737
+        },
+        {
+            "update_idx": 8,
+            "day": 1395,
+            "grad_tnc_norm": 39045.81191577457,
+            "grad_maas_norm": 12485.55035372846
+        },
+        {
+            "update_idx": 9,
+            "day": 1527,
+            "grad_tnc_norm": 46553.06311381329,
+            "grad_maas_norm": 11964.827575802332
+        },
+        {
+            "update_idx": 10,
+            "day": 1645,
+            "grad_tnc_norm": 55933.01087664671,
+            "grad_maas_norm": 11570.159857350378
+        },
+        {
+            "update_idx": 11,
+            "day": 1751,
+            "grad_tnc_norm": 67746.51557344095,
+            "grad_maas_norm": 11312.305739376443
+        },
+        {
+            "update_idx": 12,
+            "day": 1846,
+            "grad_tnc_norm": 82440.32588631497,
+            "grad_maas_norm": 11199.599276456975
+        },
+        {
+            "update_idx": 13,
+            "day": 1931,
+            "grad_tnc_norm": 100370.48753173277,
+            "grad_maas_norm": 11224.336966868634
+        },
+        {
+            "update_idx": 14,
+            "day": 2006,
+            "grad_tnc_norm": 121825.45343310015,
+            "grad_maas_norm": 11361.373957024602
+        },
+        {
+            "update_idx": 15,
+            "day": 2071,
+            "grad_tnc_norm": 147090.06430911797,
+            "grad_maas_norm": 11574.859794009786
+        },
+        {
+            "update_idx": 16,
+            "day": 2128,
+            "grad_tnc_norm": 176509.85471719506,
+            "grad_maas_norm": 11828.100040964584
+        },
+        {
+            "update_idx": 17,
+            "day": 2184,
+            "grad_tnc_norm": 210402.90665708168,
+            "grad_maas_norm": 12082.937208002657
+        },
+        {
+            "update_idx": 18,
+            "day": 2241,
+            "grad_tnc_norm": 248789.76064008896,
+            "grad_maas_norm": 12289.091474546207
+        },
+        {
+            "update_idx": 19,
+            "day": 2311,
+            "grad_tnc_norm": 291426.8547107739,
+            "grad_maas_norm": 12393.011104257384
+        },
+        {
+            "update_idx": 20,
+            "day": 2387,
+            "grad_tnc_norm": 338655.8704957166,
+            "grad_maas_norm": 12366.156755571685
+        },
+        {
+            "update_idx": 21,
+            "day": 2467,
+            "grad_tnc_norm": 390130.7976088588,
+            "grad_maas_norm": 12147.59130400267
+        },
+        {
+            "update_idx": 22,
+            "day": 2549,
+            "grad_tnc_norm": 445087.12274038326,
+            "grad_maas_norm": 11661.997012174523
+        },
+        {
+            "update_idx": 23,
+            "day": 2637,
+            "grad_tnc_norm": 502036.30233808584,
+            "grad_maas_norm": 10823.870530043907
+        }
+    ]
+}

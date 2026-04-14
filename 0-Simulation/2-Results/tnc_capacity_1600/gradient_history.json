@@ -1,0 +1,6934 @@
+{
+    "events": [
+        {
+            "update_idx": 1,
+            "day": 200,
+            "grad_tnc_norm": 12295.2529269043,
+            "grad_maas_norm": 20164.38370234369
+        },
+        {
+            "update_idx": 2,
+            "day": 394,
+            "grad_tnc_norm": 13959.879085947447,
+            "grad_maas_norm": 19316.376456554994
+        },
+        {
+            "update_idx": 3,
+            "day": 587,
+            "grad_tnc_norm": 16345.671185193005,
+            "grad_maas_norm": 18090.523154018258
+        },
+        {
+            "update_idx": 4,
+            "day": 784,
+            "grad_tnc_norm": 19557.54531682979,
+            "grad_maas_norm": 16840.179271633224
+        },
+        {
+            "update_idx": 5,
+            "day": 985,
+            "grad_tnc_norm": 23529.057805743378,
+            "grad_maas_norm": 15797.19344102653
+        },
+        {
+            "update_idx": 6,
+            "day": 1187,
+            "grad_tnc_norm": 27833.86107611837,
+            "grad_maas_norm": 15091.46574017475
+        },
+        {
+            "update_idx": 7,
+            "day": 1383,
+            "grad_tnc_norm": 31791.816958974898,
+            "grad_maas_norm": 14749.659364213509
+        },
+        {
+            "update_idx": 8,
+            "day": 1567,
+            "grad_tnc_norm": 34854.85559653499,
+            "grad_maas_norm": 14714.276363844845
+        },
+        {
+            "update_idx": 9,
+            "day": 1731,
+            "grad_tnc_norm": 36894.24316533429,
+            "grad_maas_norm": 14887.833462199906
+        },
+        {
+            "update_idx": 10,
+            "day": 1868,
+            "grad_tnc_norm": 38134.96866803722,
+            "grad_maas_norm": 15168.473264872475
+        },
+        {
+            "update_idx": 11,
+            "day": 1976,
+            "grad_tnc_norm": 38936.24501135576,
+            "grad_maas_norm": 15470.551328136893
+        },
+        {
+            "update_idx": 12,
+            "day": 2070,
+            "grad_tnc_norm": 39694.141655083346,
+            "grad_maas_norm": 15722.500788061849
+        },
+        {
+            "update_idx": 13,
+            "day": 2157,
+            "grad_tnc_norm": 40614.848896541545,
+            "grad_maas_norm": 15903.135585121663
+        },
+        {
+            "update_idx": 14,
+            "day": 2239,
+            "grad_tnc_norm": 41800.30078052336,
+            "grad_maas_norm": 16013.16923160326
+        },
+        {
+            "update_idx": 15,
+            "day": 2317,
+            "grad_tnc_norm": 43311.96173493086,
+            "grad_maas_norm": 16059.355125313625
+        },
+        {
+            "update_idx": 16,
+            "day": 2392,
+            "grad_tnc_norm": 45187.12705312983,
+            "grad_maas_norm": 16050.42703418551
+        },
+        {
+            "update_idx": 17,
+            "day": 2465,
+            "grad_tnc_norm": 47443.73807783701,
+            "grad_maas_norm": 15995.31070204472
+        },
+        {
+            "update_idx": 18,
+            "day": 2535,
+            "grad_tnc_norm": 50081.247023060896,
+            "grad_maas_norm": 15902.343556112857
+        },
+        {
+            "update_idx": 19,
+            "day": 2603,
+            "grad_tnc_norm": 53094.96153647284,
+            "grad_maas_norm": 15777.82505332921
+        },
+        {
+            "update_idx": 20,
+            "day": 2670,
+            "grad_tnc_norm": 56470.052671316276,
+            "grad_maas_norm": 15626.944241177118
+        },
+        {
+            "update_idx": 21,
+            "day": 2736,
+            "grad_tnc_norm": 60184.86329176591,
+            "grad_maas_norm": 15453.799978549645
+        },
+        {
+            "update_idx": 22,
+            "day": 2800,
+            "grad_tnc_norm": 64214.64365263886,
+            "grad_maas_norm": 15261.453503786312
+        },
+        {
+            "update_idx": 23,
+            "day": 2863,
+            "grad_tnc_norm": 68534.72038563379,
+            "grad_maas_norm": 15052.031134169858
+        },
+        {
+            "update_idx": 24,
+            "day": 2926,
+            "grad_tnc_norm": 73119.15104580045,
+            "grad_maas_norm": 14827.09755194897
+        },
+        {
+            "update_idx": 25,
+            "day": 2988,
+            "grad_tnc_norm": 77941.52860445749,
+            "grad_maas_norm": 14587.789831109278
+        },
+        {
+            "update_idx": 26,
+            "day": 3049,
+            "grad_tnc_norm": 82976.86994782013,
+            "grad_maas_norm": 14334.840540868561
+        },
+        {
+            "update_idx": 27,
+            "day": 3110,
+            "grad_tnc_norm": 88201.31828102744,
+            "grad_maas_norm": 14068.712424646046
+        },
+        {
+            "update_idx": 28,
+            "day": 3170,
+            "grad_tnc_norm": 93591.78287709702,
+            "grad_maas_norm": 13789.697288406589
+        },
+        {
+            "update_idx": 29,
+            "day": 3230,
+            "grad_tnc_norm": 99126.68956394859,
+            "grad_maas_norm": 13497.930026767353
+        },
+        {
+            "update_idx": 30,
+            "day": 3289,
+            "grad_tnc_norm": 104785.37413555324,
+            "grad_maas_norm": 13193.464963863145
+        },
+        {
+            "update_idx": 31,
+            "day": 3348,
+            "grad_tnc_norm": 110548.4457060204,
+            "grad_maas_norm": 12876.288233592431
+        },
+        {
+            "update_idx": 32,
+            "day": 3407,
+            "grad_tnc_norm": 116397.41471655104,
+            "grad_maas_norm": 12546.361643827599
+        },
+        {
+            "update_idx": 33,
+            "day": 3466,
+            "grad_tnc_norm": 122314.7405064829,
+            "grad_maas_norm": 12203.63989660048
+        },
+        {
+            "update_idx": 34,
+            "day": 3524,
+            "grad_tnc_norm": 128283.74927422556,
+            "grad_maas_norm": 11848.091629284241
+        },
+        {
+            "update_idx": 35,
+            "day": 3582,
+            "grad_tnc_norm": 134288.6970848373,
+            "grad_maas_norm": 11479.712726165708
+        },
+        {
+            "update_idx": 36,
+            "day": 3640,
+            "grad_tnc_norm": 140314.70100437241,
+            "grad_maas_norm": 11098.545129375634
+        },
+        {
+            "update_idx": 37,
+            "day": 3698,
+            "grad_tnc_norm": 146347.89305559042,
+            "grad_maas_norm": 10704.687234074976
+        },
+        {
+            "update_idx": 38,
+            "day": 3756,
+            "grad_tnc_norm": 152375.62699847223,
+            "grad_maas_norm": 10298.305037797136
+        },
+        {
+            "update_idx": 39,
+            "day": 3814,
+            "grad_tnc_norm": 158386.81788400147,
+            "grad_maas_norm": 9879.642545004719
+        },
+        {
+            "update_idx": 40,
+            "day": 3872,
+            "grad_tnc_norm": 164372.45760669623,
+            "grad_maas_norm": 9449.032325940258
+        },
+        {
+            "update_idx": 41,
+            "day": 3930,
+            "grad_tnc_norm": 170326.36521679987,
+            "grad_maas_norm": 9006.907564239717
+        },
+        {
+            "update_idx": 42,
+            "day": 3988,
+            "grad_tnc_norm": 176246.25415977638,
+            "grad_maas_norm": 8553.817646998867
+        },
+        {
+            "update_idx": 43,
+            "day": 4046,
+            "grad_tnc_norm": 182135.23514877196,
+            "grad_maas_norm": 8090.450503832893
+        },
+        {
+            "update_idx": 44,
+            "day": 4104,
+            "grad_tnc_norm": 188003.9323262978,
+            "grad_maas_norm": 7617.666751792231
+        },
+        {
+            "update_idx": 45,
+            "day": 4162,
+            "grad_tnc_norm": 193873.48855269965,
+            "grad_maas_norm": 7136.553717066919
+        },
+        {
+            "update_idx": 46,
+            "day": 4221,
+            "grad_tnc_norm": 199779.9043772712,
+            "grad_maas_norm": 6648.512412442824
+        },
+        {
+            "update_idx": 47,
+            "day": 4280,
+            "grad_tnc_norm": 205780.45576165174,
+            "grad_maas_norm": 6155.399005706864
+        },
+        {
+            "update_idx": 48,
+            "day": 4340,
+            "grad_tnc_norm": 211963.49395157362,
+            "grad_maas_norm": 5659.756700122166
+        },
+        {
+            "update_idx": 49,
+            "day": 4400,
+            "grad_tnc_norm": 218464.02500603342,
+            "grad_maas_norm": 5165.198148428329
+        },
+        {
+            "update_idx": 50,
+            "day": 4461,
+            "grad_tnc_norm": 225489.63953354975,
+            "grad_maas_norm": 4677.038228968729
+        },
+        {
+            "update_idx": 51,
+            "day": 4523,
+            "grad_tnc_norm": 233366.3552777195,
+            "grad_maas_norm": 4203.328329531858
+        },
+        {
+            "update_idx": 52,
+            "day": 4587,
+            "grad_tnc_norm": 242625.38348631226,
+            "grad_maas_norm": 3756.4725345746024
+        },
+        {
+            "update_idx": 53,
+            "day": 4653,
+            "grad_tnc_norm": 254182.73940619174,
+            "grad_maas_norm": 3355.402054641216
+        },
+        {
+            "update_idx": 54,
+            "day": 4722,
+            "grad_tnc_norm": 269753.6320115536,
+            "grad_maas_norm": 3027.069610897706
+        },
+        {
+            "update_idx": 55,
+            "day": 4796,
+            "grad_tnc_norm": 292934.2060719682,
+            "grad_maas_norm": 2800.921325139796
+        },
+        {
+            "update_idx": 56,
+            "day": 4879,
+            "grad_tnc_norm": 331244.9651725449,
+            "grad_maas_norm": 2647.7724960431783
+        },
+        {
+            "update_idx": 57,
+            "day": 4991,
+            "grad_tnc_norm": 303025.6266854309,
+            "grad_maas_norm": 1328.1580463146302
+        },
+        {
+            "update_idx": 58,
+            "day": 5139,
+            "grad_tnc_norm": 75802.01102155568,
+            "grad_maas_norm": 10.287314786534434
+        },
+        {
+            "update_idx": 59,
+            "day": 5189,
+            "grad_tnc_norm": 3791.9712681222036,
+            "grad_maas_norm": 3.0135547868636285
+        },
+        {
+            "update_idx": 60,
+            "day": 5239,
+            "grad_tnc_norm": 35292.24787161035,
+            "grad_maas_norm": 2.715262234384661
+        },
+        {
+            "update_idx": 61,
+            "day": 5289,
+            "grad_tnc_norm": 18256.36585127701,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 62,
+            "day": 5339,
+            "grad_tnc_norm": 22402.580588390887,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 63,
+            "day": 5389,
+            "grad_tnc_norm": 22398.71018919432,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 64,
+            "day": 5439,
+            "grad_tnc_norm": 22382.99408870182,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 65,
+            "day": 5489,
+            "grad_tnc_norm": 22367.049853454137,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 66,
+            "day": 5539,
+            "grad_tnc_norm": 22350.905311578652,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 67,
+            "day": 5589,
+            "grad_tnc_norm": 22334.561283505478,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 68,
+            "day": 5639,
+            "grad_tnc_norm": 22318.018531187292,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 69,
+            "day": 5689,
+            "grad_tnc_norm": 22301.277821762622,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 70,
+            "day": 5739,
+            "grad_tnc_norm": 22284.339927839435,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 71,
+            "day": 5789,
+            "grad_tnc_norm": 22267.205627381976,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 72,
+            "day": 5839,
+            "grad_tnc_norm": 22249.875703918242,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 73,
+            "day": 5889,
+            "grad_tnc_norm": 22232.35094642107,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 74,
+            "day": 5939,
+            "grad_tnc_norm": 22214.63214940589,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 75,
+            "day": 5989,
+            "grad_tnc_norm": 22196.7201129793,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 76,
+            "day": 6039,
+            "grad_tnc_norm": 22178.61564283591,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 77,
+            "day": 6089,
+            "grad_tnc_norm": 22160.319550246073,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 78,
+            "day": 6139,
+            "grad_tnc_norm": 22141.83265224933,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 79,
+            "day": 6189,
+            "grad_tnc_norm": 22123.155771468464,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 80,
+            "day": 6239,
+            "grad_tnc_norm": 22104.289736297364,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 81,
+            "day": 6289,
+            "grad_tnc_norm": 22085.235380897782,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 82,
+            "day": 6339,
+            "grad_tnc_norm": 22065.993545196776,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 83,
+            "day": 6389,
+            "grad_tnc_norm": 22046.56507488747,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 84,
+            "day": 6439,
+            "grad_tnc_norm": 22026.950821589777,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 85,
+            "day": 6489,
+            "grad_tnc_norm": 22007.151642765475,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 86,
+            "day": 6539,
+            "grad_tnc_norm": 21987.16840168348,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 87,
+            "day": 6589,
+            "grad_tnc_norm": 21967.001967722408,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 88,
+            "day": 6639,
+            "grad_tnc_norm": 21946.65321618539,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 89,
+            "day": 6689,
+            "grad_tnc_norm": 21926.123028213155,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 90,
+            "day": 6739,
+            "grad_tnc_norm": 21905.41229115742,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 91,
+            "day": 6789,
+            "grad_tnc_norm": 21884.52189827767,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 92,
+            "day": 6839,
+            "grad_tnc_norm": 21863.45274908305,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 93,
+            "day": 6889,
+            "grad_tnc_norm": 21842.205749020486,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 94,
+            "day": 6939,
+            "grad_tnc_norm": 21820.78180982098,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 95,
+            "day": 6989,
+            "grad_tnc_norm": 21799.18184930527,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 96,
+            "day": 7039,
+            "grad_tnc_norm": 21777.406791461835,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 97,
+            "day": 7089,
+            "grad_tnc_norm": 21755.457566611294,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 98,
+            "day": 7139,
+            "grad_tnc_norm": 21733.33511127532,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 99,
+            "day": 7189,
+            "grad_tnc_norm": 21711.04036824214,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 100,
+            "day": 7239,
+            "grad_tnc_norm": 21688.574286639723,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 101,
+            "day": 7289,
+            "grad_tnc_norm": 21665.937821862983,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 102,
+            "day": 7339,
+            "grad_tnc_norm": 21643.13193582867,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 103,
+            "day": 7389,
+            "grad_tnc_norm": 21620.157596686622,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 104,
+            "day": 7439,
+            "grad_tnc_norm": 21597.015779069694,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 105,
+            "day": 7489,
+            "grad_tnc_norm": 21573.70746407859,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 106,
+            "day": 7539,
+            "grad_tnc_norm": 21550.233639214577,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 107,
+            "day": 7589,
+            "grad_tnc_norm": 21526.595298582757,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 108,
+            "day": 7639,
+            "grad_tnc_norm": 21502.793442713093,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 109,
+            "day": 7689,
+            "grad_tnc_norm": 21478.829078700273,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 110,
+            "day": 7739,
+            "grad_tnc_norm": 21454.703220272426,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 111,
+            "day": 7789,
+            "grad_tnc_norm": 21430.416887625164,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 112,
+            "day": 7839,
+            "grad_tnc_norm": 21405.971107755064,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 113,
+            "day": 7889,
+            "grad_tnc_norm": 21381.36691411656,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 114,
+            "day": 7939,
+            "grad_tnc_norm": 21356.605346936936,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 115,
+            "day": 7989,
+            "grad_tnc_norm": 21331.687453127204,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 116,
+            "day": 8039,
+            "grad_tnc_norm": 21306.614286241685,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 117,
+            "day": 8089,
+            "grad_tnc_norm": 21281.38690663314,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 118,
+            "day": 8139,
+            "grad_tnc_norm": 21256.006381345836,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 119,
+            "day": 8189,
+            "grad_tnc_norm": 21230.473784262223,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 120,
+            "day": 8239,
+            "grad_tnc_norm": 21204.79019595801,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 121,
+            "day": 8289,
+            "grad_tnc_norm": 21178.95670396375,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 122,
+            "day": 8339,
+            "grad_tnc_norm": 21152.97440247856,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 123,
+            "day": 8389,
+            "grad_tnc_norm": 21126.844392666255,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 124,
+            "day": 8439,
+            "grad_tnc_norm": 21100.567782513575,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 125,
+            "day": 8489,
+            "grad_tnc_norm": 21074.145686870055,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 126,
+            "day": 8539,
+            "grad_tnc_norm": 21047.57922749308,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 127,
+            "day": 8589,
+            "grad_tnc_norm": 21020.869533072495,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 128,
+            "day": 8639,
+            "grad_tnc_norm": 20994.017739202027,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 129,
+            "day": 8689,
+            "grad_tnc_norm": 20967.024988446137,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 130,
+            "day": 8739,
+            "grad_tnc_norm": 20939.89243028608,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 131,
+            "day": 8789,
+            "grad_tnc_norm": 20912.621221178717,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 132,
+            "day": 8839,
+            "grad_tnc_norm": 20885.212524615723,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 133,
+            "day": 8889,
+            "grad_tnc_norm": 20857.667511022955,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 134,
+            "day": 8939,
+            "grad_tnc_norm": 20829.98735782775,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 135,
+            "day": 8989,
+            "grad_tnc_norm": 20802.173249501262,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 136,
+            "day": 9039,
+            "grad_tnc_norm": 20774.226377502077,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 137,
+            "day": 9089,
+            "grad_tnc_norm": 20746.14794036609,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 138,
+            "day": 9139,
+            "grad_tnc_norm": 20717.9391436093,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 139,
+            "day": 9189,
+            "grad_tnc_norm": 20689.60119982229,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 140,
+            "day": 9239,
+            "grad_tnc_norm": 20661.135328645032,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 141,
+            "day": 9289,
+            "grad_tnc_norm": 20632.542756748502,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 142,
+            "day": 9339,
+            "grad_tnc_norm": 20603.82471789146,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 143,
+            "day": 9389,
+            "grad_tnc_norm": 20574.982452824628,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 144,
+            "day": 9439,
+            "grad_tnc_norm": 20546.017209451642,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 145,
+            "day": 9489,
+            "grad_tnc_norm": 20516.930242662555,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 146,
+            "day": 9539,
+            "grad_tnc_norm": 20487.72281442391,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 147,
+            "day": 9589,
+            "grad_tnc_norm": 20458.396193789074,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 148,
+            "day": 9639,
+            "grad_tnc_norm": 20428.95165682422,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 149,
+            "day": 9689,
+            "grad_tnc_norm": 20399.390486687225,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 150,
+            "day": 9739,
+            "grad_tnc_norm": 20369.713973545586,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 151,
+            "day": 9789,
+            "grad_tnc_norm": 20339.923414617257,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 152,
+            "day": 9839,
+            "grad_tnc_norm": 20310.020114170235,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 153,
+            "day": 9889,
+            "grad_tnc_norm": 20280.005383456737,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 154,
+            "day": 9939,
+            "grad_tnc_norm": 20249.880540785645,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 155,
+            "day": 9989,
+            "grad_tnc_norm": 20219.64691144831,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 156,
+            "day": 10039,
+            "grad_tnc_norm": 20189.305827720935,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 157,
+            "day": 10089,
+            "grad_tnc_norm": 20158.858628855367,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 158,
+            "day": 10139,
+            "grad_tnc_norm": 20128.306661076127,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 159,
+            "day": 10189,
+            "grad_tnc_norm": 20097.651277549907,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 160,
+            "day": 10239,
+            "grad_tnc_norm": 20066.893838369437,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 161,
+            "day": 10289,
+            "grad_tnc_norm": 20036.035710517557,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 162,
+            "day": 10339,
+            "grad_tnc_norm": 20005.078267886092,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 163,
+            "day": 10389,
+            "grad_tnc_norm": 19974.022891215027,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 164,
+            "day": 10439,
+            "grad_tnc_norm": 19942.8709680958,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 165,
+            "day": 10489,
+            "grad_tnc_norm": 19911.623892939242,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 166,
+            "day": 10539,
+            "grad_tnc_norm": 19880.28306690835,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 167,
+            "day": 10589,
+            "grad_tnc_norm": 19848.84989797105,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 168,
+            "day": 10639,
+            "grad_tnc_norm": 19817.32580078831,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 169,
+            "day": 10689,
+            "grad_tnc_norm": 19785.71219675256,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 170,
+            "day": 10739,
+            "grad_tnc_norm": 19754.010513896657,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 171,
+            "day": 10789,
+            "grad_tnc_norm": 19722.22218688571,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 172,
+            "day": 10839,
+            "grad_tnc_norm": 19690.348656981492,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 173,
+            "day": 10889,
+            "grad_tnc_norm": 19658.391371999904,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 174,
+            "day": 10939,
+            "grad_tnc_norm": 19626.351786266037,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 175,
+            "day": 10989,
+            "grad_tnc_norm": 19594.23136055716,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 176,
+            "day": 11039,
+            "grad_tnc_norm": 19562.0315621219,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 177,
+            "day": 11089,
+            "grad_tnc_norm": 19529.75386453236,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 178,
+            "day": 11139,
+            "grad_tnc_norm": 19497.399747760457,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 179,
+            "day": 11189,
+            "grad_tnc_norm": 19464.97069800473,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 180,
+            "day": 11239,
+            "grad_tnc_norm": 19432.46820772065,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 181,
+            "day": 11289,
+            "grad_tnc_norm": 19399.893775507822,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 182,
+            "day": 11339,
+            "grad_tnc_norm": 19367.248906141223,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 183,
+            "day": 11389,
+            "grad_tnc_norm": 19334.53511043254,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 184,
+            "day": 11439,
+            "grad_tnc_norm": 19301.753905172398,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 185,
+            "day": 11489,
+            "grad_tnc_norm": 19268.906813134847,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 186,
+            "day": 11539,
+            "grad_tnc_norm": 19235.995362947866,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 187,
+            "day": 11589,
+            "grad_tnc_norm": 19203.02108904612,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 188,
+            "day": 11639,
+            "grad_tnc_norm": 19169.985531635237,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 189,
+            "day": 11689,
+            "grad_tnc_norm": 19136.890236551077,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 190,
+            "day": 11739,
+            "grad_tnc_norm": 19103.736755249964,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 191,
+            "day": 11789,
+            "grad_tnc_norm": 19070.526644750018,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 192,
+            "day": 11839,
+            "grad_tnc_norm": 19037.261467432112,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 193,
+            "day": 11889,
+            "grad_tnc_norm": 19003.942791112477,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 194,
+            "day": 11939,
+            "grad_tnc_norm": 18970.572188869384,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 195,
+            "day": 11989,
+            "grad_tnc_norm": 18937.151238961076,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 196,
+            "day": 12039,
+            "grad_tnc_norm": 18903.68152481474,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 197,
+            "day": 12089,
+            "grad_tnc_norm": 18870.164634804343,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 198,
+            "day": 12139,
+            "grad_tnc_norm": 18836.602162290732,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 199,
+            "day": 12189,
+            "grad_tnc_norm": 18802.995705485435,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 200,
+            "day": 12239,
+            "grad_tnc_norm": 18769.346867285316,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 201,
+            "day": 12289,
+            "grad_tnc_norm": 18735.657255270595,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 202,
+            "day": 12339,
+            "grad_tnc_norm": 18701.928481540774,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 203,
+            "day": 12389,
+            "grad_tnc_norm": 18668.162162643534,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 204,
+            "day": 12439,
+            "grad_tnc_norm": 18634.359919465933,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 205,
+            "day": 12489,
+            "grad_tnc_norm": 18600.52337709487,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 206,
+            "day": 12539,
+            "grad_tnc_norm": 18566.65416473515,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 207,
+            "day": 12589,
+            "grad_tnc_norm": 18532.75391558843,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 208,
+            "day": 12639,
+            "grad_tnc_norm": 18498.8242667291,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 209,
+            "day": 12689,
+            "grad_tnc_norm": 18464.866859000416,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 210,
+            "day": 12739,
+            "grad_tnc_norm": 18430.883336850722,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 211,
+            "day": 12789,
+            "grad_tnc_norm": 18396.875348258643,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 212,
+            "day": 12839,
+            "grad_tnc_norm": 18362.84454459829,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 213,
+            "day": 12889,
+            "grad_tnc_norm": 18328.79258047442,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 214,
+            "day": 12939,
+            "grad_tnc_norm": 18294.72111361665,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 215,
+            "day": 12989,
+            "grad_tnc_norm": 18260.63180473503,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 216,
+            "day": 13039,
+            "grad_tnc_norm": 18226.526317372856,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 217,
+            "day": 13089,
+            "grad_tnc_norm": 18192.40631780958,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 218,
+            "day": 13139,
+            "grad_tnc_norm": 18158.273474838243,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 219,
+            "day": 13189,
+            "grad_tnc_norm": 18124.12945970342,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 220,
+            "day": 13239,
+            "grad_tnc_norm": 18089.975945885897,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 221,
+            "day": 13289,
+            "grad_tnc_norm": 18055.814608982208,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 222,
+            "day": 13339,
+            "grad_tnc_norm": 18021.64712654433,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 223,
+            "day": 13389,
+            "grad_tnc_norm": 17987.475177925167,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 224,
+            "day": 13439,
+            "grad_tnc_norm": 17953.300444114422,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 225,
+            "day": 13489,
+            "grad_tnc_norm": 17919.124607564157,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 226,
+            "day": 13539,
+            "grad_tnc_norm": 17884.94935204729,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 227,
+            "day": 13589,
+            "grad_tnc_norm": 17850.776362450273,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 228,
+            "day": 13639,
+            "grad_tnc_norm": 17816.60732466163,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 229,
+            "day": 13689,
+            "grad_tnc_norm": 17782.44392532089,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 230,
+            "day": 13739,
+            "grad_tnc_norm": 17748.287851743167,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 231,
+            "day": 13789,
+            "grad_tnc_norm": 17714.140791610847,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 232,
+            "day": 13839,
+            "grad_tnc_norm": 17680.00443289902,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 233,
+            "day": 13889,
+            "grad_tnc_norm": 17645.880463649602,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 234,
+            "day": 13939,
+            "grad_tnc_norm": 17611.77057177273,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 235,
+            "day": 13989,
+            "grad_tnc_norm": 17577.676444881035,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 236,
+            "day": 14039,
+            "grad_tnc_norm": 17543.59977007795,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 237,
+            "day": 14089,
+            "grad_tnc_norm": 17509.542233779834,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 238,
+            "day": 14139,
+            "grad_tnc_norm": 17475.505521498202,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 239,
+            "day": 14189,
+            "grad_tnc_norm": 17441.49131764634,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 240,
+            "day": 14239,
+            "grad_tnc_norm": 17407.501305366048,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 241,
+            "day": 14289,
+            "grad_tnc_norm": 17373.537166256265,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 242,
+            "day": 14339,
+            "grad_tnc_norm": 17339.600580237082,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 243,
+            "day": 14389,
+            "grad_tnc_norm": 17305.693225294122,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 244,
+            "day": 14439,
+            "grad_tnc_norm": 17271.81677728488,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 245,
+            "day": 14489,
+            "grad_tnc_norm": 17237.972909705506,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 246,
+            "day": 14539,
+            "grad_tnc_norm": 17204.16329350558,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 247,
+            "day": 14589,
+            "grad_tnc_norm": 17170.389596834615,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 248,
+            "day": 14639,
+            "grad_tnc_norm": 17136.65348485277,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 249,
+            "day": 14689,
+            "grad_tnc_norm": 17102.95661947838,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 250,
+            "day": 14739,
+            "grad_tnc_norm": 17069.300659184664,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 251,
+            "day": 14789,
+            "grad_tnc_norm": 17035.68725875983,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 252,
+            "day": 14839,
+            "grad_tnc_norm": 17002.118069073513,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 253,
+            "day": 14889,
+            "grad_tnc_norm": 16968.594736847834,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 254,
+            "day": 14939,
+            "grad_tnc_norm": 16935.118904462626,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 255,
+            "day": 14989,
+            "grad_tnc_norm": 16901.69220965529,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 256,
+            "day": 15039,
+            "grad_tnc_norm": 16868.316285331657,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 257,
+            "day": 15089,
+            "grad_tnc_norm": 16834.992759297482,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 258,
+            "day": 15139,
+            "grad_tnc_norm": 16801.723254048586,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 259,
+            "day": 15189,
+            "grad_tnc_norm": 16768.509386508824,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 260,
+            "day": 15239,
+            "grad_tnc_norm": 16735.352767790082,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 261,
+            "day": 15289,
+            "grad_tnc_norm": 16702.255002961625,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 262,
+            "day": 15339,
+            "grad_tnc_norm": 16669.217690786252,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 263,
+            "day": 15389,
+            "grad_tnc_norm": 16636.242423479773,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 264,
+            "day": 15439,
+            "grad_tnc_norm": 16603.33078648048,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 265,
+            "day": 15489,
+            "grad_tnc_norm": 16570.484358166905,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 266,
+            "day": 15539,
+            "grad_tnc_norm": 16537.704709654176,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 267,
+            "day": 15589,
+            "grad_tnc_norm": 16504.993404488836,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 268,
+            "day": 15639,
+            "grad_tnc_norm": 16472.351998452217,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 269,
+            "day": 15689,
+            "grad_tnc_norm": 16439.782039260874,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 270,
+            "day": 15739,
+            "grad_tnc_norm": 16407.28506637054,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 271,
+            "day": 15789,
+            "grad_tnc_norm": 16374.862610665603,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 272,
+            "day": 15839,
+            "grad_tnc_norm": 16342.516194222548,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 273,
+            "day": 15889,
+            "grad_tnc_norm": 16310.247330108456,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 274,
+            "day": 15939,
+            "grad_tnc_norm": 16278.05752204077,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 275,
+            "day": 15989,
+            "grad_tnc_norm": 16245.948264216951,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 276,
+            "day": 16039,
+            "grad_tnc_norm": 16213.921041000634,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 277,
+            "day": 16089,
+            "grad_tnc_norm": 16181.977326696291,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 278,
+            "day": 16139,
+            "grad_tnc_norm": 16150.118585316413,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 279,
+            "day": 16189,
+            "grad_tnc_norm": 16118.346270273547,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 280,
+            "day": 16239,
+            "grad_tnc_norm": 16086.661824183439,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 281,
+            "day": 16289,
+            "grad_tnc_norm": 16055.06667859916,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 282,
+            "day": 16339,
+            "grad_tnc_norm": 16023.56225374179,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 283,
+            "day": 16389,
+            "grad_tnc_norm": 15992.14995827149,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 284,
+            "day": 16439,
+            "grad_tnc_norm": 15960.83118903773,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 285,
+            "day": 16489,
+            "grad_tnc_norm": 15929.607330830186,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 286,
+            "day": 16539,
+            "grad_tnc_norm": 15898.479756143008,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 287,
+            "day": 16589,
+            "grad_tnc_norm": 15867.449824892448,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 288,
+            "day": 16639,
+            "grad_tnc_norm": 15836.51888424132,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 289,
+            "day": 16689,
+            "grad_tnc_norm": 15805.688268296895,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 290,
+            "day": 16739,
+            "grad_tnc_norm": 15774.959297901705,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 291,
+            "day": 16789,
+            "grad_tnc_norm": 15744.33328039927,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 292,
+            "day": 16839,
+            "grad_tnc_norm": 15713.811509391515,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 293,
+            "day": 16889,
+            "grad_tnc_norm": 15683.395264486253,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 294,
+            "day": 16939,
+            "grad_tnc_norm": 15653.085811127241,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 295,
+            "day": 16989,
+            "grad_tnc_norm": 15622.884400299845,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 296,
+            "day": 17039,
+            "grad_tnc_norm": 15592.79226834075,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 297,
+            "day": 17089,
+            "grad_tnc_norm": 15562.810636715454,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 298,
+            "day": 17139,
+            "grad_tnc_norm": 15532.940711792548,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 299,
+            "day": 17189,
+            "grad_tnc_norm": 15503.183684611764,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 300,
+            "day": 17239,
+            "grad_tnc_norm": 15473.540730725907,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 301,
+            "day": 17289,
+            "grad_tnc_norm": 15444.013009901,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 302,
+            "day": 17339,
+            "grad_tnc_norm": 15414.601666001709,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 303,
+            "day": 17389,
+            "grad_tnc_norm": 15385.307826734443,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 304,
+            "day": 17439,
+            "grad_tnc_norm": 15356.132603456388,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 305,
+            "day": 17489,
+            "grad_tnc_norm": 15327.077090999202,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 306,
+            "day": 17539,
+            "grad_tnc_norm": 15298.14236745057,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 307,
+            "day": 17589,
+            "grad_tnc_norm": 15269.329493982967,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 308,
+            "day": 17639,
+            "grad_tnc_norm": 15240.639514671378,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 309,
+            "day": 17689,
+            "grad_tnc_norm": 15212.073456300806,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 310,
+            "day": 17739,
+            "grad_tnc_norm": 15183.632328215535,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 311,
+            "day": 17789,
+            "grad_tnc_norm": 15155.317122115268,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 312,
+            "day": 17839,
+            "grad_tnc_norm": 15127.128811921228,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 313,
+            "day": 17889,
+            "grad_tnc_norm": 15099.06835358767,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 314,
+            "day": 17939,
+            "grad_tnc_norm": 15071.136684976998,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 315,
+            "day": 17989,
+            "grad_tnc_norm": 15043.33472567341,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 316,
+            "day": 18039,
+            "grad_tnc_norm": 15015.663376867235,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 317,
+            "day": 18089,
+            "grad_tnc_norm": 14988.12352119604,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 318,
+            "day": 18139,
+            "grad_tnc_norm": 14960.716022604149,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 319,
+            "day": 18189,
+            "grad_tnc_norm": 14933.441726227968,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 320,
+            "day": 18239,
+            "grad_tnc_norm": 14906.301458274509,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 321,
+            "day": 18289,
+            "grad_tnc_norm": 14879.296025868476,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 322,
+            "day": 18339,
+            "grad_tnc_norm": 14852.426216978127,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 323,
+            "day": 18389,
+            "grad_tnc_norm": 14825.692800281167,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 324,
+            "day": 18439,
+            "grad_tnc_norm": 14799.096525070709,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 325,
+            "day": 18489,
+            "grad_tnc_norm": 14772.638121160111,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 326,
+            "day": 18539,
+            "grad_tnc_norm": 14746.318298784245,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 327,
+            "day": 18589,
+            "grad_tnc_norm": 14720.13774852815,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 328,
+            "day": 18639,
+            "grad_tnc_norm": 14694.097141232585,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 329,
+            "day": 18689,
+            "grad_tnc_norm": 14668.197127927007,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 330,
+            "day": 18739,
+            "grad_tnc_norm": 14642.438339767832,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 331,
+            "day": 18789,
+            "grad_tnc_norm": 14616.821387969763,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 332,
+            "day": 18839,
+            "grad_tnc_norm": 14591.346863756366,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 333,
+            "day": 18889,
+            "grad_tnc_norm": 14566.015338311412,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 334,
+            "day": 18939,
+            "grad_tnc_norm": 14540.82736273795,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 335,
+            "day": 18989,
+            "grad_tnc_norm": 14515.783468012462,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 336,
+            "day": 19039,
+            "grad_tnc_norm": 14490.884164979458,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 337,
+            "day": 19089,
+            "grad_tnc_norm": 14466.129944295142,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 338,
+            "day": 19139,
+            "grad_tnc_norm": 14441.521276436928,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 339,
+            "day": 19189,
+            "grad_tnc_norm": 14417.058611696097,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 340,
+            "day": 19239,
+            "grad_tnc_norm": 14392.74238014498,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 341,
+            "day": 19289,
+            "grad_tnc_norm": 14368.572991672898,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 342,
+            "day": 19339,
+            "grad_tnc_norm": 14344.550835979782,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 343,
+            "day": 19389,
+            "grad_tnc_norm": 14320.67628258741,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 344,
+            "day": 19439,
+            "grad_tnc_norm": 14296.949680868049,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 345,
+            "day": 19489,
+            "grad_tnc_norm": 14273.3713600869,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 346,
+            "day": 19539,
+            "grad_tnc_norm": 14249.941629401479,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 347,
+            "day": 19589,
+            "grad_tnc_norm": 14226.660777941554,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 348,
+            "day": 19639,
+            "grad_tnc_norm": 14203.529074831344,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 349,
+            "day": 19689,
+            "grad_tnc_norm": 14180.546769257771,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 350,
+            "day": 19739,
+            "grad_tnc_norm": 14157.714090521273,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 351,
+            "day": 19789,
+            "grad_tnc_norm": 14135.031248107742,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 352,
+            "day": 19839,
+            "grad_tnc_norm": 14112.498431756354,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 353,
+            "day": 19889,
+            "grad_tnc_norm": 14090.115811548392,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 354,
+            "day": 19939,
+            "grad_tnc_norm": 14067.883537974636,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 355,
+            "day": 19989,
+            "grad_tnc_norm": 14045.801742051985,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 356,
+            "day": 20039,
+            "grad_tnc_norm": 14023.870535393235,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 357,
+            "day": 20089,
+            "grad_tnc_norm": 14002.090010326532,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 358,
+            "day": 20139,
+            "grad_tnc_norm": 13980.460240004673,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 359,
+            "day": 20189,
+            "grad_tnc_norm": 13958.981278501737,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 360,
+            "day": 20239,
+            "grad_tnc_norm": 13937.6531609569,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 361,
+            "day": 20289,
+            "grad_tnc_norm": 13916.475903681936,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 362,
+            "day": 20339,
+            "grad_tnc_norm": 13895.449504304921,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 363,
+            "day": 20389,
+            "grad_tnc_norm": 13874.573941895333,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 364,
+            "day": 20439,
+            "grad_tnc_norm": 13853.849177116048,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 365,
+            "day": 20489,
+            "grad_tnc_norm": 13833.275152361724,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 366,
+            "day": 20539,
+            "grad_tnc_norm": 13812.851791906114,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 367,
+            "day": 20589,
+            "grad_tnc_norm": 13792.579002085215,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 368,
+            "day": 20639,
+            "grad_tnc_norm": 13772.456671427113,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 369,
+            "day": 20689,
+            "grad_tnc_norm": 13752.484670840971,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 370,
+            "day": 20739,
+            "grad_tnc_norm": 13732.662853769965,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 371,
+            "day": 20789,
+            "grad_tnc_norm": 13712.991056390627,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 372,
+            "day": 20839,
+            "grad_tnc_norm": 13693.469097765399,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 373,
+            "day": 20889,
+            "grad_tnc_norm": 13674.096780052148,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 374,
+            "day": 20939,
+            "grad_tnc_norm": 13654.873888678072,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 375,
+            "day": 20989,
+            "grad_tnc_norm": 13635.800192530285,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 376,
+            "day": 21039,
+            "grad_tnc_norm": 13616.875444167266,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 377,
+            "day": 21089,
+            "grad_tnc_norm": 13598.099380003352,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 378,
+            "day": 21139,
+            "grad_tnc_norm": 13579.471720524889,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 379,
+            "day": 21189,
+            "grad_tnc_norm": 13560.992170497315,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 380,
+            "day": 21239,
+            "grad_tnc_norm": 13542.660419156504,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 381,
+            "day": 21289,
+            "grad_tnc_norm": 13524.476140454366,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 382,
+            "day": 21339,
+            "grad_tnc_norm": 13506.438993253068,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 383,
+            "day": 21389,
+            "grad_tnc_norm": 13488.54862154338,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 384,
+            "day": 21439,
+            "grad_tnc_norm": 13470.80465469871,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 385,
+            "day": 21489,
+            "grad_tnc_norm": 13453.206707656587,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 386,
+            "day": 21539,
+            "grad_tnc_norm": 13435.754381183971,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 387,
+            "day": 21589,
+            "grad_tnc_norm": 13418.447262083066,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 388,
+            "day": 21639,
+            "grad_tnc_norm": 13401.28492345097,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 389,
+            "day": 21689,
+            "grad_tnc_norm": 13384.266924880303,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 390,
+            "day": 21739,
+            "grad_tnc_norm": 13367.392812725424,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 391,
+            "day": 21789,
+            "grad_tnc_norm": 13350.662120332576,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 392,
+            "day": 21839,
+            "grad_tnc_norm": 13334.074368276044,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 393,
+            "day": 21889,
+            "grad_tnc_norm": 13317.629064598183,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 394,
+            "day": 21939,
+            "grad_tnc_norm": 13301.325705075507,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 395,
+            "day": 21989,
+            "grad_tnc_norm": 13285.16377342901,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 396,
+            "day": 22039,
+            "grad_tnc_norm": 13269.142741599673,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 397,
+            "day": 22089,
+            "grad_tnc_norm": 13253.262069982728,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 398,
+            "day": 22139,
+            "grad_tnc_norm": 13237.521207674601,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 399,
+            "day": 22189,
+            "grad_tnc_norm": 13221.919592728162,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 400,
+            "day": 22239,
+            "grad_tnc_norm": 13206.456652400493,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 401,
+            "day": 22289,
+            "grad_tnc_norm": 13191.131803403441,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 402,
+            "day": 22339,
+            "grad_tnc_norm": 13175.944452137408,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 403,
+            "day": 22389,
+            "grad_tnc_norm": 13160.893994982147,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 404,
+            "day": 22439,
+            "grad_tnc_norm": 13145.979818499516,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 405,
+            "day": 22489,
+            "grad_tnc_norm": 13131.201299725219,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 406,
+            "day": 22539,
+            "grad_tnc_norm": 13116.557806383342,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 407,
+            "day": 22589,
+            "grad_tnc_norm": 13102.048697172888,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 408,
+            "day": 22639,
+            "grad_tnc_norm": 13087.673321983335,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 409,
+            "day": 22689,
+            "grad_tnc_norm": 13073.431022169214,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 410,
+            "day": 22739,
+            "grad_tnc_norm": 13059.321130793838,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 411,
+            "day": 22789,
+            "grad_tnc_norm": 13045.34297285934,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 412,
+            "day": 22839,
+            "grad_tnc_norm": 13031.495865581412,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 413,
+            "day": 22889,
+            "grad_tnc_norm": 13017.77911861255,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 414,
+            "day": 22939,
+            "grad_tnc_norm": 13004.19203430518,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 415,
+            "day": 22989,
+            "grad_tnc_norm": 12990.733907942526,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 416,
+            "day": 23039,
+            "grad_tnc_norm": 12977.404027990333,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 417,
+            "day": 23089,
+            "grad_tnc_norm": 12964.201676330122,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 418,
+            "day": 23139,
+            "grad_tnc_norm": 12951.126128508573,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 419,
+            "day": 23189,
+            "grad_tnc_norm": 12938.176653965762,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 420,
+            "day": 23239,
+            "grad_tnc_norm": 12925.352516279994,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 421,
+            "day": 23289,
+            "grad_tnc_norm": 12912.652973402137,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 422,
+            "day": 23339,
+            "grad_tnc_norm": 12900.077277890214,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 423,
+            "day": 23389,
+            "grad_tnc_norm": 12887.624677129788,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 424,
+            "day": 23439,
+            "grad_tnc_norm": 12875.29441357801,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 425,
+            "day": 23489,
+            "grad_tnc_norm": 12863.085724980234,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 426,
+            "day": 23539,
+            "grad_tnc_norm": 12850.997844607773,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 427,
+            "day": 23589,
+            "grad_tnc_norm": 12839.030001468966,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 428,
+            "day": 23639,
+            "grad_tnc_norm": 12827.181420531264,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 429,
+            "day": 23689,
+            "grad_tnc_norm": 12815.451322950777,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 430,
+            "day": 23739,
+            "grad_tnc_norm": 12803.838926279213,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 431,
+            "day": 23789,
+            "grad_tnc_norm": 12792.343444674967,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 432,
+            "day": 23839,
+            "grad_tnc_norm": 12780.964089125853,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 433,
+            "day": 23889,
+            "grad_tnc_norm": 12769.700067648339,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 434,
+            "day": 23939,
+            "grad_tnc_norm": 12758.550585500621,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 435,
+            "day": 23989,
+            "grad_tnc_norm": 12747.514845374793,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 436,
+            "day": 24039,
+            "grad_tnc_norm": 12736.5920476166,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 437,
+            "day": 24089,
+            "grad_tnc_norm": 12725.78139041011,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 438,
+            "day": 24139,
+            "grad_tnc_norm": 12715.08206996978,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 439,
+            "day": 24189,
+            "grad_tnc_norm": 12704.493280749855,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 440,
+            "day": 24239,
+            "grad_tnc_norm": 12694.014215614792,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 441,
+            "day": 24289,
+            "grad_tnc_norm": 12683.644066043471,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 442,
+            "day": 24339,
+            "grad_tnc_norm": 12673.38202229655,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 443,
+            "day": 24389,
+            "grad_tnc_norm": 12663.227273620865,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 444,
+            "day": 24439,
+            "grad_tnc_norm": 12653.179008397972,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 445,
+            "day": 24489,
+            "grad_tnc_norm": 12643.236414344066,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 446,
+            "day": 24539,
+            "grad_tnc_norm": 12633.398678676916,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 447,
+            "day": 24589,
+            "grad_tnc_norm": 12623.6649882742,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 448,
+            "day": 24639,
+            "grad_tnc_norm": 12614.034529850342,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 449,
+            "day": 24689,
+            "grad_tnc_norm": 12604.506490117923,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 450,
+            "day": 24739,
+            "grad_tnc_norm": 12595.080055946197,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 451,
+            "day": 24789,
+            "grad_tnc_norm": 12585.754414522264,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 452,
+            "day": 24839,
+            "grad_tnc_norm": 12576.52875349736,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 453,
+            "day": 24889,
+            "grad_tnc_norm": 12567.402261148538,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 454,
+            "day": 24939,
+            "grad_tnc_norm": 12558.37412651603,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 455,
+            "day": 24989,
+            "grad_tnc_norm": 12549.443539560143,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 456,
+            "day": 25039,
+            "grad_tnc_norm": 12540.609691291258,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 457,
+            "day": 25089,
+            "grad_tnc_norm": 12531.871773917213,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 458,
+            "day": 25139,
+            "grad_tnc_norm": 12523.228980973088,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 459,
+            "day": 25189,
+            "grad_tnc_norm": 12514.680507464456,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 460,
+            "day": 25239,
+            "grad_tnc_norm": 12506.225549983812,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 461,
+            "day": 25289,
+            "grad_tnc_norm": 12497.86330684527,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 462,
+            "day": 25339,
+            "grad_tnc_norm": 12489.59297820736,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 463,
+            "day": 25389,
+            "grad_tnc_norm": 12481.413766192754,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 464,
+            "day": 25439,
+            "grad_tnc_norm": 12473.324875013059,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 465,
+            "day": 25489,
+            "grad_tnc_norm": 12465.325511066721,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 466,
+            "day": 25539,
+            "grad_tnc_norm": 12457.414883070722,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 467,
+            "day": 25589,
+            "grad_tnc_norm": 12449.59220215597,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 468,
+            "day": 25639,
+            "grad_tnc_norm": 12441.856681982443,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 469,
+            "day": 25689,
+            "grad_tnc_norm": 12434.207538835857,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 470,
+            "day": 25739,
+            "grad_tnc_norm": 12426.643991731207,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 471,
+            "day": 25789,
+            "grad_tnc_norm": 12419.165262507393,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 472,
+            "day": 25839,
+            "grad_tnc_norm": 12411.770575928142,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 473,
+            "day": 25889,
+            "grad_tnc_norm": 12404.459159771272,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 474,
+            "day": 25939,
+            "grad_tnc_norm": 12397.230244904491,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 475,
+            "day": 25989,
+            "grad_tnc_norm": 12390.083065403793,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 476,
+            "day": 26039,
+            "grad_tnc_norm": 12383.016858605002,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 477,
+            "day": 26089,
+            "grad_tnc_norm": 12376.030865200137,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 478,
+            "day": 26139,
+            "grad_tnc_norm": 12369.124329311437,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 479,
+            "day": 26189,
+            "grad_tnc_norm": 12362.296498576587,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 480,
+            "day": 26239,
+            "grad_tnc_norm": 12355.546624204826,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 481,
+            "day": 26289,
+            "grad_tnc_norm": 12348.873961066734,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 482,
+            "day": 26339,
+            "grad_tnc_norm": 12342.277767746222,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 483,
+            "day": 26389,
+            "grad_tnc_norm": 12335.757306615404,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 484,
+            "day": 26439,
+            "grad_tnc_norm": 12329.311843899348,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 485,
+            "day": 26489,
+            "grad_tnc_norm": 12322.940649727718,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 486,
+            "day": 26539,
+            "grad_tnc_norm": 12316.642998204892,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 487,
+            "day": 26589,
+            "grad_tnc_norm": 12310.418167453015,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 488,
+            "day": 26639,
+            "grad_tnc_norm": 12304.265439684546,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 489,
+            "day": 26689,
+            "grad_tnc_norm": 12298.184101224613,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 490,
+            "day": 26739,
+            "grad_tnc_norm": 12292.173442596468,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 491,
+            "day": 26789,
+            "grad_tnc_norm": 12286.23275853658,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 492,
+            "day": 26839,
+            "grad_tnc_norm": 12280.361348063272,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 493,
+            "day": 26889,
+            "grad_tnc_norm": 12274.55851450358,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 494,
+            "day": 26939,
+            "grad_tnc_norm": 12268.823565539999,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 495,
+            "day": 26989,
+            "grad_tnc_norm": 12263.155813250489,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 496,
+            "day": 27039,
+            "grad_tnc_norm": 12257.55457414258,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 497,
+            "day": 27089,
+            "grad_tnc_norm": 12252.01916919096,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 498,
+            "day": 27139,
+            "grad_tnc_norm": 12246.548923868746,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 499,
+            "day": 27189,
+            "grad_tnc_norm": 12241.14316817054,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 500,
+            "day": 27239,
+            "grad_tnc_norm": 12235.801236658146,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 501,
+            "day": 27289,
+            "grad_tnc_norm": 12230.522468472325,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 502,
+            "day": 27339,
+            "grad_tnc_norm": 12225.306207366659,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 503,
+            "day": 27389,
+            "grad_tnc_norm": 12220.15180172602,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 504,
+            "day": 27439,
+            "grad_tnc_norm": 12215.058604588807,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 505,
+            "day": 27489,
+            "grad_tnc_norm": 12210.025973675778,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 506,
+            "day": 27539,
+            "grad_tnc_norm": 12205.05327139238,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 507,
+            "day": 27589,
+            "grad_tnc_norm": 12200.139864862349,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 508,
+            "day": 27639,
+            "grad_tnc_norm": 12195.285125927534,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 509,
+            "day": 27689,
+            "grad_tnc_norm": 12190.48843117594,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 510,
+            "day": 27739,
+            "grad_tnc_norm": 12185.74916194505,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 511,
+            "day": 27789,
+            "grad_tnc_norm": 12181.066704326766,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 512,
+            "day": 27839,
+            "grad_tnc_norm": 12176.440449194908,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 513,
+            "day": 27889,
+            "grad_tnc_norm": 12171.869792197469,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 514,
+            "day": 27939,
+            "grad_tnc_norm": 12167.354133764713,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 515,
+            "day": 27989,
+            "grad_tnc_norm": 12162.892879124278,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 516,
+            "day": 28039,
+            "grad_tnc_norm": 12158.485438288933,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 517,
+            "day": 28089,
+            "grad_tnc_norm": 12154.131226077001,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 518,
+            "day": 28139,
+            "grad_tnc_norm": 12149.829662094326,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 519,
+            "day": 28189,
+            "grad_tnc_norm": 12145.580170755493,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 520,
+            "day": 28239,
+            "grad_tnc_norm": 12141.382181257968,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 521,
+            "day": 28289,
+            "grad_tnc_norm": 12137.23512761029,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 522,
+            "day": 28339,
+            "grad_tnc_norm": 12133.138448593681,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 523,
+            "day": 28389,
+            "grad_tnc_norm": 12129.091587785491,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 524,
+            "day": 28439,
+            "grad_tnc_norm": 12125.09399353631,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 525,
+            "day": 28489,
+            "grad_tnc_norm": 12121.145118981109,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 526,
+            "day": 28539,
+            "grad_tnc_norm": 12117.24442201166,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 527,
+            "day": 28589,
+            "grad_tnc_norm": 12113.39136527576,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 528,
+            "day": 28639,
+            "grad_tnc_norm": 12109.585416173488,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 529,
+            "day": 28689,
+            "grad_tnc_norm": 12105.826046839145,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 530,
+            "day": 28739,
+            "grad_tnc_norm": 12102.112734131868,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 531,
+            "day": 28789,
+            "grad_tnc_norm": 12098.444959622484,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 532,
+            "day": 28839,
+            "grad_tnc_norm": 12094.82220958944,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 533,
+            "day": 28889,
+            "grad_tnc_norm": 12091.243974985447,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 534,
+            "day": 28939,
+            "grad_tnc_norm": 12087.70975144449,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 535,
+            "day": 28989,
+            "grad_tnc_norm": 12084.219039249007,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 536,
+            "day": 29039,
+            "grad_tnc_norm": 12080.77134332745,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 537,
+            "day": 29089,
+            "grad_tnc_norm": 12077.366173222517,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 538,
+            "day": 29139,
+            "grad_tnc_norm": 12074.003043090812,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 539,
+            "day": 29189,
+            "grad_tnc_norm": 12070.681471670136,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 540,
+            "day": 29239,
+            "grad_tnc_norm": 12067.400982269,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 541,
+            "day": 29289,
+            "grad_tnc_norm": 12064.161102735734,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 542,
+            "day": 29339,
+            "grad_tnc_norm": 12060.961365460033,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 543,
+            "day": 29389,
+            "grad_tnc_norm": 12057.801307332695,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 544,
+            "day": 29439,
+            "grad_tnc_norm": 12054.68046972602,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 545,
+            "day": 29489,
+            "grad_tnc_norm": 12051.59839848666,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 546,
+            "day": 29539,
+            "grad_tnc_norm": 12048.554643893855,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 547,
+            "day": 29589,
+            "grad_tnc_norm": 12045.54876065536,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 548,
+            "day": 29639,
+            "grad_tnc_norm": 12042.580307865495,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 549,
+            "day": 29689,
+            "grad_tnc_norm": 12039.648849000421,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 550,
+            "day": 29739,
+            "grad_tnc_norm": 12036.753951881985,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 551,
+            "day": 29789,
+            "grad_tnc_norm": 12033.895188649512,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 552,
+            "day": 29839,
+            "grad_tnc_norm": 12031.072135755068,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 553,
+            "day": 29889,
+            "grad_tnc_norm": 12028.284373913466,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 554,
+            "day": 29939,
+            "grad_tnc_norm": 12025.531488093902,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 555,
+            "day": 29989,
+            "grad_tnc_norm": 12022.81306748281,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 556,
+            "day": 30039,
+            "grad_tnc_norm": 12020.128705471212,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 557,
+            "day": 30089,
+            "grad_tnc_norm": 12017.477999613966,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 558,
+            "day": 30139,
+            "grad_tnc_norm": 12014.860551610846,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 559,
+            "day": 30189,
+            "grad_tnc_norm": 12012.275967278318,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 560,
+            "day": 30239,
+            "grad_tnc_norm": 12009.723856523075,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 561,
+            "day": 30289,
+            "grad_tnc_norm": 12007.203833309419,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 562,
+            "day": 30339,
+            "grad_tnc_norm": 12004.71551563825,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 563,
+            "day": 30389,
+            "grad_tnc_norm": 12002.258525515264,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 564,
+            "day": 30439,
+            "grad_tnc_norm": 11999.832488924572,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 565,
+            "day": 30489,
+            "grad_tnc_norm": 11997.437035796898,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 566,
+            "day": 30539,
+            "grad_tnc_norm": 11995.07179998512,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 567,
+            "day": 30589,
+            "grad_tnc_norm": 11992.736419236271,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 568,
+            "day": 30639,
+            "grad_tnc_norm": 11990.430535157113,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 569,
+            "day": 30689,
+            "grad_tnc_norm": 11988.153793191368,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 570,
+            "day": 30739,
+            "grad_tnc_norm": 11985.905842581376,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 571,
+            "day": 30789,
+            "grad_tnc_norm": 11983.686336355799,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 572,
+            "day": 30839,
+            "grad_tnc_norm": 11981.494931285428,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 573,
+            "day": 30889,
+            "grad_tnc_norm": 11979.331287853696,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 574,
+            "day": 30939,
+            "grad_tnc_norm": 11977.19507024261,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 575,
+            "day": 30989,
+            "grad_tnc_norm": 11975.085946282265,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 576,
+            "day": 31039,
+            "grad_tnc_norm": 11973.003587436482,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 577,
+            "day": 31089,
+            "grad_tnc_norm": 11970.947668770856,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 578,
+            "day": 31139,
+            "grad_tnc_norm": 11968.91786891635,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 579,
+            "day": 31189,
+            "grad_tnc_norm": 11966.913870049388,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 580,
+            "day": 31239,
+            "grad_tnc_norm": 11964.93535785223,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 581,
+            "day": 31289,
+            "grad_tnc_norm": 11962.98202149263,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 582,
+            "day": 31339,
+            "grad_tnc_norm": 11961.053553587011,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 583,
+            "day": 31389,
+            "grad_tnc_norm": 11959.149650173109,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 584,
+            "day": 31439,
+            "grad_tnc_norm": 11957.270010683505,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 585,
+            "day": 31489,
+            "grad_tnc_norm": 11955.414337913904,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 586,
+            "day": 31539,
+            "grad_tnc_norm": 11953.582337987611,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 587,
+            "day": 31589,
+            "grad_tnc_norm": 11951.77372034091,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 588,
+            "day": 31639,
+            "grad_tnc_norm": 11949.98819767568,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 589,
+            "day": 31689,
+            "grad_tnc_norm": 11948.225485946301,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 590,
+            "day": 31739,
+            "grad_tnc_norm": 11946.485304314047,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 591,
+            "day": 31789,
+            "grad_tnc_norm": 11944.767375135822,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 592,
+            "day": 31839,
+            "grad_tnc_norm": 11943.071423920452,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 593,
+            "day": 31889,
+            "grad_tnc_norm": 11941.397179304535,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 594,
+            "day": 31939,
+            "grad_tnc_norm": 11939.744373028594,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 595,
+            "day": 31989,
+            "grad_tnc_norm": 11938.112739897128,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 596,
+            "day": 32039,
+            "grad_tnc_norm": 11936.502017758445,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 597,
+            "day": 32089,
+            "grad_tnc_norm": 11934.91194747684,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 598,
+            "day": 32139,
+            "grad_tnc_norm": 11933.342272893351,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 599,
+            "day": 32189,
+            "grad_tnc_norm": 11931.792740816005,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 600,
+            "day": 32239,
+            "grad_tnc_norm": 11930.263100966777,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 601,
+            "day": 32289,
+            "grad_tnc_norm": 11928.753105976904,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 602,
+            "day": 32339,
+            "grad_tnc_norm": 11927.2625113412,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 603,
+            "day": 32389,
+            "grad_tnc_norm": 11925.791075403307,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 604,
+            "day": 32439,
+            "grad_tnc_norm": 11924.338559320086,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 605,
+            "day": 32489,
+            "grad_tnc_norm": 11922.904727028677,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 606,
+            "day": 32539,
+            "grad_tnc_norm": 11921.48934523919,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 607,
+            "day": 32589,
+            "grad_tnc_norm": 11920.092183377348,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 608,
+            "day": 32639,
+            "grad_tnc_norm": 11918.713013589884,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 609,
+            "day": 32689,
+            "grad_tnc_norm": 11917.35161069337,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 610,
+            "day": 32739,
+            "grad_tnc_norm": 11916.007752150217,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 611,
+            "day": 32789,
+            "grad_tnc_norm": 11914.681218054571,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 612,
+            "day": 32839,
+            "grad_tnc_norm": 11913.371791096983,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 613,
+            "day": 32889,
+            "grad_tnc_norm": 11912.079256533885,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 614,
+            "day": 32939,
+            "grad_tnc_norm": 11910.803402169497,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 615,
+            "day": 32989,
+            "grad_tnc_norm": 11909.544018322069,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 616,
+            "day": 33039,
+            "grad_tnc_norm": 11908.300897806692,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 617,
+            "day": 33089,
+            "grad_tnc_norm": 11907.073835902705,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 618,
+            "day": 33139,
+            "grad_tnc_norm": 11905.862630327385,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 619,
+            "day": 33189,
+            "grad_tnc_norm": 11904.667081213971,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 620,
+            "day": 33239,
+            "grad_tnc_norm": 11903.486991085434,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 621,
+            "day": 33289,
+            "grad_tnc_norm": 11902.322164832272,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 622,
+            "day": 33339,
+            "grad_tnc_norm": 11901.172409675462,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 623,
+            "day": 33389,
+            "grad_tnc_norm": 11900.037535158373,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 624,
+            "day": 33439,
+            "grad_tnc_norm": 11898.917353111012,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 625,
+            "day": 33489,
+            "grad_tnc_norm": 11897.811677627345,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 626,
+            "day": 33539,
+            "grad_tnc_norm": 11896.720325043625,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 627,
+            "day": 33589,
+            "grad_tnc_norm": 11895.643113913724,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 628,
+            "day": 33639,
+            "grad_tnc_norm": 11894.579864982728,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 629,
+            "day": 33689,
+            "grad_tnc_norm": 11893.530401163433,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 630,
+            "day": 33739,
+            "grad_tnc_norm": 11892.494547517272,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 631,
+            "day": 33789,
+            "grad_tnc_norm": 11891.472131229699,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 632,
+            "day": 33839,
+            "grad_tnc_norm": 11890.46298157456,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 633,
+            "day": 33889,
+            "grad_tnc_norm": 11889.466929913855,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 634,
+            "day": 33939,
+            "grad_tnc_norm": 11888.483809653677,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 635,
+            "day": 33989,
+            "grad_tnc_norm": 11887.513456239478,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 636,
+            "day": 34039,
+            "grad_tnc_norm": 11886.555707115096,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 637,
+            "day": 34089,
+            "grad_tnc_norm": 11885.610401715241,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 638,
+            "day": 34139,
+            "grad_tnc_norm": 11884.67738143939,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 639,
+            "day": 34189,
+            "grad_tnc_norm": 11883.756489625002,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 640,
+            "day": 34239,
+            "grad_tnc_norm": 11882.847571530201,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 641,
+            "day": 34289,
+            "grad_tnc_norm": 11881.950474315601,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 642,
+            "day": 34339,
+            "grad_tnc_norm": 11881.06504701664,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 643,
+            "day": 34389,
+            "grad_tnc_norm": 11880.191140523215,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 644,
+            "day": 34439,
+            "grad_tnc_norm": 11879.328607558127,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 645,
+            "day": 34489,
+            "grad_tnc_norm": 11878.477302669718,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 646,
+            "day": 34539,
+            "grad_tnc_norm": 11877.637082184488,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 647,
+            "day": 34589,
+            "grad_tnc_norm": 11876.807804215396,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 648,
+            "day": 34639,
+            "grad_tnc_norm": 11875.989328621636,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 649,
+            "day": 34689,
+            "grad_tnc_norm": 11875.18151699684,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 650,
+            "day": 34739,
+            "grad_tnc_norm": 11874.384232652117,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 651,
+            "day": 34789,
+            "grad_tnc_norm": 11873.597340582046,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 652,
+            "day": 34839,
+            "grad_tnc_norm": 11872.820707469538,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 653,
+            "day": 34889,
+            "grad_tnc_norm": 11872.054201637413,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 654,
+            "day": 34939,
+            "grad_tnc_norm": 11871.29769305717,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 655,
+            "day": 34989,
+            "grad_tnc_norm": 11870.55105331354,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 656,
+            "day": 35039,
+            "grad_tnc_norm": 11869.814155581063,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 657,
+            "day": 35089,
+            "grad_tnc_norm": 11869.08687462627,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 658,
+            "day": 35139,
+            "grad_tnc_norm": 11868.369086769011,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 659,
+            "day": 35189,
+            "grad_tnc_norm": 11867.660669877258,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 660,
+            "day": 35239,
+            "grad_tnc_norm": 11866.961503341045,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 661,
+            "day": 35289,
+            "grad_tnc_norm": 11866.271468056013,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 662,
+            "day": 35339,
+            "grad_tnc_norm": 11865.59044641093,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 663,
+            "day": 35389,
+            "grad_tnc_norm": 11864.918322265403,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 664,
+            "day": 35439,
+            "grad_tnc_norm": 11864.254980931391,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 665,
+            "day": 35489,
+            "grad_tnc_norm": 11863.60030916649,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 666,
+            "day": 35539,
+            "grad_tnc_norm": 11862.954195134944,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 667,
+            "day": 35589,
+            "grad_tnc_norm": 11862.31652842105,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 668,
+            "day": 35639,
+            "grad_tnc_norm": 11861.687199983724,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 669,
+            "day": 35689,
+            "grad_tnc_norm": 11861.066102159702,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 670,
+            "day": 35739,
+            "grad_tnc_norm": 11860.453128637833,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 671,
+            "day": 35789,
+            "grad_tnc_norm": 11859.84817444452,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 672,
+            "day": 35839,
+            "grad_tnc_norm": 11859.251135929671,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 673,
+            "day": 35889,
+            "grad_tnc_norm": 11858.661910753566,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 674,
+            "day": 35939,
+            "grad_tnc_norm": 11858.08039785995,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 675,
+            "day": 35989,
+            "grad_tnc_norm": 11857.506497474302,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 676,
+            "day": 36039,
+            "grad_tnc_norm": 11856.94011107926,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 677,
+            "day": 36089,
+            "grad_tnc_norm": 11856.381141406018,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 678,
+            "day": 36139,
+            "grad_tnc_norm": 11855.82949240967,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 679,
+            "day": 36189,
+            "grad_tnc_norm": 11855.285069271562,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 680,
+            "day": 36239,
+            "grad_tnc_norm": 11854.747778365205,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 681,
+            "day": 36289,
+            "grad_tnc_norm": 11854.217527251381,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 682,
+            "day": 36339,
+            "grad_tnc_norm": 11853.694224659337,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 683,
+            "day": 36389,
+            "grad_tnc_norm": 11853.177780492915,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 684,
+            "day": 36439,
+            "grad_tnc_norm": 11852.668105776658,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 685,
+            "day": 36489,
+            "grad_tnc_norm": 11852.165112681088,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 686,
+            "day": 36539,
+            "grad_tnc_norm": 11851.668714490615,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 687,
+            "day": 36589,
+            "grad_tnc_norm": 11851.178825582461,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 688,
+            "day": 36639,
+            "grad_tnc_norm": 11850.695361437705,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 689,
+            "day": 36689,
+            "grad_tnc_norm": 11850.21823860137,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 690,
+            "day": 36739,
+            "grad_tnc_norm": 11849.74737468664,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 691,
+            "day": 36789,
+            "grad_tnc_norm": 11849.2826883551,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 692,
+            "day": 36839,
+            "grad_tnc_norm": 11848.82409931116,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 693,
+            "day": 36889,
+            "grad_tnc_norm": 11848.37152827143,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 694,
+            "day": 36939,
+            "grad_tnc_norm": 11847.92489697588,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 695,
+            "day": 36989,
+            "grad_tnc_norm": 11847.48412815679,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 696,
+            "day": 37039,
+            "grad_tnc_norm": 11847.049145536766,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 697,
+            "day": 37089,
+            "grad_tnc_norm": 11846.619873809272,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 698,
+            "day": 37139,
+            "grad_tnc_norm": 11846.196238639546,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 699,
+            "day": 37189,
+            "grad_tnc_norm": 11845.778166631031,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 700,
+            "day": 37239,
+            "grad_tnc_norm": 11845.365585342404,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 701,
+            "day": 37289,
+            "grad_tnc_norm": 11844.958423241857,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 702,
+            "day": 37339,
+            "grad_tnc_norm": 11844.556609729476,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 703,
+            "day": 37389,
+            "grad_tnc_norm": 11844.160075103619,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 704,
+            "day": 37439,
+            "grad_tnc_norm": 11843.768750552781,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 705,
+            "day": 37489,
+            "grad_tnc_norm": 11843.382568154386,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 706,
+            "day": 37539,
+            "grad_tnc_norm": 11843.001460853891,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 707,
+            "day": 37589,
+            "grad_tnc_norm": 11842.625362459967,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 708,
+            "day": 37639,
+            "grad_tnc_norm": 11842.254207630183,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 709,
+            "day": 37689,
+            "grad_tnc_norm": 11841.88793186317,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 710,
+            "day": 37739,
+            "grad_tnc_norm": 11841.52647148326,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 711,
+            "day": 37789,
+            "grad_tnc_norm": 11841.169763636562,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 712,
+            "day": 37839,
+            "grad_tnc_norm": 11840.817746276083,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 713,
+            "day": 37889,
+            "grad_tnc_norm": 11840.47035815618,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 714,
+            "day": 37939,
+            "grad_tnc_norm": 11840.12753881467,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 715,
+            "day": 37989,
+            "grad_tnc_norm": 11839.789228572752,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 716,
+            "day": 38039,
+            "grad_tnc_norm": 11839.455368520037,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 717,
+            "day": 38089,
+            "grad_tnc_norm": 11839.125900503816,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 718,
+            "day": 38139,
+            "grad_tnc_norm": 11838.800767121045,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 719,
+            "day": 38189,
+            "grad_tnc_norm": 11838.479911706609,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 720,
+            "day": 38239,
+            "grad_tnc_norm": 11838.16327833505,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 721,
+            "day": 38289,
+            "grad_tnc_norm": 11837.8508117953,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 722,
+            "day": 38339,
+            "grad_tnc_norm": 11837.542457590427,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 723,
+            "day": 38389,
+            "grad_tnc_norm": 11837.238161927147,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 724,
+            "day": 38439,
+            "grad_tnc_norm": 11836.93787170833,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 725,
+            "day": 38489,
+            "grad_tnc_norm": 11836.641534526036,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 726,
+            "day": 38539,
+            "grad_tnc_norm": 11836.349098642284,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 727,
+            "day": 38589,
+            "grad_tnc_norm": 11836.060512997052,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 728,
+            "day": 38639,
+            "grad_tnc_norm": 11835.775727181772,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 729,
+            "day": 38689,
+            "grad_tnc_norm": 11835.494691448259,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 730,
+            "day": 38739,
+            "grad_tnc_norm": 11835.217356691093,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 731,
+            "day": 38789,
+            "grad_tnc_norm": 11834.943674433614,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 732,
+            "day": 38839,
+            "grad_tnc_norm": 11834.673596832477,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 733,
+            "day": 38889,
+            "grad_tnc_norm": 11834.4070766694,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 734,
+            "day": 38939,
+            "grad_tnc_norm": 11834.144067327934,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 735,
+            "day": 38989,
+            "grad_tnc_norm": 11833.884522800116,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 736,
+            "day": 39039,
+            "grad_tnc_norm": 11833.628397677381,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 737,
+            "day": 39089,
+            "grad_tnc_norm": 11833.375647135097,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 738,
+            "day": 39139,
+            "grad_tnc_norm": 11833.126226935163,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 739,
+            "day": 39189,
+            "grad_tnc_norm": 11832.880093412574,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 740,
+            "day": 39239,
+            "grad_tnc_norm": 11832.63720346634,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 741,
+            "day": 39289,
+            "grad_tnc_norm": 11832.397514555683,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 742,
+            "day": 39339,
+            "grad_tnc_norm": 11832.160984695744,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 743,
+            "day": 39389,
+            "grad_tnc_norm": 11831.927572446253,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 744,
+            "day": 39439,
+            "grad_tnc_norm": 11831.697236899896,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 745,
+            "day": 39489,
+            "grad_tnc_norm": 11831.46993768715,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 746,
+            "day": 39539,
+            "grad_tnc_norm": 11831.24563496383,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 747,
+            "day": 39589,
+            "grad_tnc_norm": 11831.02428939964,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 748,
+            "day": 39639,
+            "grad_tnc_norm": 11830.805862178073,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 749,
+            "day": 39689,
+            "grad_tnc_norm": 11830.590314986019,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 750,
+            "day": 39739,
+            "grad_tnc_norm": 11830.377610017173,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 751,
+            "day": 39789,
+            "grad_tnc_norm": 11830.167709942898,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 752,
+            "day": 39839,
+            "grad_tnc_norm": 11829.960577932296,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 753,
+            "day": 39889,
+            "grad_tnc_norm": 11829.756177630969,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 754,
+            "day": 39939,
+            "grad_tnc_norm": 11829.554473154463,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 755,
+            "day": 39989,
+            "grad_tnc_norm": 11829.355429091314,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 756,
+            "day": 40039,
+            "grad_tnc_norm": 11829.159010489457,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 757,
+            "day": 40089,
+            "grad_tnc_norm": 11828.965182852555,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 758,
+            "day": 40139,
+            "grad_tnc_norm": 11828.773912130804,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 759,
+            "day": 40189,
+            "grad_tnc_norm": 11828.585164722355,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 760,
+            "day": 40239,
+            "grad_tnc_norm": 11828.398907461555,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 761,
+            "day": 40289,
+            "grad_tnc_norm": 11828.215107617556,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 762,
+            "day": 40339,
+            "grad_tnc_norm": 11828.033732884456,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 763,
+            "day": 40389,
+            "grad_tnc_norm": 11827.85475138012,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 764,
+            "day": 40439,
+            "grad_tnc_norm": 11827.678131637143,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 765,
+            "day": 40489,
+            "grad_tnc_norm": 11827.503842595392,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 766,
+            "day": 40539,
+            "grad_tnc_norm": 11827.331853608848,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 767,
+            "day": 40589,
+            "grad_tnc_norm": 11827.162134424012,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 768,
+            "day": 40639,
+            "grad_tnc_norm": 11826.994655190209,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 769,
+            "day": 40689,
+            "grad_tnc_norm": 11826.829386433157,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 770,
+            "day": 40739,
+            "grad_tnc_norm": 11826.66629908042,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 771,
+            "day": 40789,
+            "grad_tnc_norm": 11826.505364428094,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 772,
+            "day": 40839,
+            "grad_tnc_norm": 11826.346554151653,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 773,
+            "day": 40889,
+            "grad_tnc_norm": 11826.189840297517,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 774,
+            "day": 40939,
+            "grad_tnc_norm": 11826.035195274979,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 775,
+            "day": 40989,
+            "grad_tnc_norm": 11825.882591856704,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 776,
+            "day": 41039,
+            "grad_tnc_norm": 11825.73200317288,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 777,
+            "day": 41089,
+            "grad_tnc_norm": 11825.58340269721,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 778,
+            "day": 41139,
+            "grad_tnc_norm": 11825.436764260316,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 779,
+            "day": 41189,
+            "grad_tnc_norm": 11825.292062031165,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 780,
+            "day": 41239,
+            "grad_tnc_norm": 11825.149270516271,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 781,
+            "day": 41289,
+            "grad_tnc_norm": 11825.008364555377,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 782,
+            "day": 41339,
+            "grad_tnc_norm": 11824.869319318317,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 783,
+            "day": 41389,
+            "grad_tnc_norm": 11824.732110303496,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 784,
+            "day": 41439,
+            "grad_tnc_norm": 11824.596713327956,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 785,
+            "day": 41489,
+            "grad_tnc_norm": 11824.46310451919,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 786,
+            "day": 41539,
+            "grad_tnc_norm": 11824.331260328969,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 787,
+            "day": 41589,
+            "grad_tnc_norm": 11824.201157505613,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 788,
+            "day": 41639,
+            "grad_tnc_norm": 11824.072773116262,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 789,
+            "day": 41689,
+            "grad_tnc_norm": 11823.9460845151,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 790,
+            "day": 41739,
+            "grad_tnc_norm": 11823.821069358275,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 791,
+            "day": 41789,
+            "grad_tnc_norm": 11823.697705599267,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 792,
+            "day": 41839,
+            "grad_tnc_norm": 11823.575971474027,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 793,
+            "day": 41889,
+            "grad_tnc_norm": 11823.455845507393,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 794,
+            "day": 41939,
+            "grad_tnc_norm": 11823.337306503681,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 795,
+            "day": 41989,
+            "grad_tnc_norm": 11823.220333550502,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 796,
+            "day": 42039,
+            "grad_tnc_norm": 11823.104905999431,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 797,
+            "day": 42089,
+            "grad_tnc_norm": 11822.991003483601,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 798,
+            "day": 42139,
+            "grad_tnc_norm": 11822.87860590017,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 799,
+            "day": 42189,
+            "grad_tnc_norm": 11822.767693407577,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 800,
+            "day": 42239,
+            "grad_tnc_norm": 11822.65824642687,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 801,
+            "day": 42289,
+            "grad_tnc_norm": 11822.550245634078,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 802,
+            "day": 42339,
+            "grad_tnc_norm": 11822.443671962457,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 803,
+            "day": 42389,
+            "grad_tnc_norm": 11822.338506590944,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 804,
+            "day": 42439,
+            "grad_tnc_norm": 11822.234730951306,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 805,
+            "day": 42489,
+            "grad_tnc_norm": 11822.132326713814,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 806,
+            "day": 42539,
+            "grad_tnc_norm": 11822.031275792584,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 807,
+            "day": 42589,
+            "grad_tnc_norm": 11821.931560339484,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 808,
+            "day": 42639,
+            "grad_tnc_norm": 11821.833162736268,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 809,
+            "day": 42689,
+            "grad_tnc_norm": 11821.736065605122,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 810,
+            "day": 42739,
+            "grad_tnc_norm": 11821.64025178624,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 811,
+            "day": 42789,
+            "grad_tnc_norm": 11821.545704350321,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 812,
+            "day": 42839,
+            "grad_tnc_norm": 11821.452406594828,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 813,
+            "day": 42889,
+            "grad_tnc_norm": 11821.360342029266,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 814,
+            "day": 42939,
+            "grad_tnc_norm": 11821.269494382574,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 815,
+            "day": 42989,
+            "grad_tnc_norm": 11821.17984759927,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 816,
+            "day": 43039,
+            "grad_tnc_norm": 11821.091385832808,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 817,
+            "day": 43089,
+            "grad_tnc_norm": 11821.004093448288,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 818,
+            "day": 43139,
+            "grad_tnc_norm": 11820.917955011522,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 819,
+            "day": 43189,
+            "grad_tnc_norm": 11820.832955294292,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 820,
+            "day": 43239,
+            "grad_tnc_norm": 11820.749079269404,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 821,
+            "day": 43289,
+            "grad_tnc_norm": 11820.66631210581,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 822,
+            "day": 43339,
+            "grad_tnc_norm": 11820.584639167551,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 823,
+            "day": 43389,
+            "grad_tnc_norm": 11820.504046010958,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 824,
+            "day": 43439,
+            "grad_tnc_norm": 11820.424518384452,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 825,
+            "day": 43489,
+            "grad_tnc_norm": 11820.346042219426,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 826,
+            "day": 43539,
+            "grad_tnc_norm": 11820.26860364,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 827,
+            "day": 43589,
+            "grad_tnc_norm": 11820.192188945815,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 828,
+            "day": 43639,
+            "grad_tnc_norm": 11820.11678462098,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 829,
+            "day": 43689,
+            "grad_tnc_norm": 11820.042377322365,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 830,
+            "day": 43739,
+            "grad_tnc_norm": 11819.96895389031,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 831,
+            "day": 43789,
+            "grad_tnc_norm": 11819.896501332698,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 832,
+            "day": 43839,
+            "grad_tnc_norm": 11819.8250068278,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 833,
+            "day": 43889,
+            "grad_tnc_norm": 11819.754457728077,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 834,
+            "day": 43939,
+            "grad_tnc_norm": 11819.684841548886,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 835,
+            "day": 43989,
+            "grad_tnc_norm": 11819.616145969841,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 836,
+            "day": 44039,
+            "grad_tnc_norm": 11819.548358830602,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 837,
+            "day": 44089,
+            "grad_tnc_norm": 11819.481468137623,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 838,
+            "day": 44139,
+            "grad_tnc_norm": 11819.415462050438,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 839,
+            "day": 44189,
+            "grad_tnc_norm": 11819.350328886116,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 840,
+            "day": 44239,
+            "grad_tnc_norm": 11819.286057114816,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 841,
+            "day": 44289,
+            "grad_tnc_norm": 11819.222635354881,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 842,
+            "day": 44339,
+            "grad_tnc_norm": 11819.160052385521,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 843,
+            "day": 44389,
+            "grad_tnc_norm": 11819.098297123914,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 844,
+            "day": 44439,
+            "grad_tnc_norm": 11819.037358633077,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 845,
+            "day": 44489,
+            "grad_tnc_norm": 11818.977226127263,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 846,
+            "day": 44539,
+            "grad_tnc_norm": 11818.917888956898,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 847,
+            "day": 44589,
+            "grad_tnc_norm": 11818.859336617206,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 848,
+            "day": 44639,
+            "grad_tnc_norm": 11818.801558737252,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 849,
+            "day": 44689,
+            "grad_tnc_norm": 11818.744545084584,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 850,
+            "day": 44739,
+            "grad_tnc_norm": 11818.688285565824,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 851,
+            "day": 44789,
+            "grad_tnc_norm": 11818.632770211365,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 852,
+            "day": 44839,
+            "grad_tnc_norm": 11818.577989191417,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 853,
+            "day": 44889,
+            "grad_tnc_norm": 11818.52393280426,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 854,
+            "day": 44939,
+            "grad_tnc_norm": 11818.47059147449,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 855,
+            "day": 44989,
+            "grad_tnc_norm": 11818.417955750634,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 856,
+            "day": 45039,
+            "grad_tnc_norm": 11818.366016309692,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 857,
+            "day": 45089,
+            "grad_tnc_norm": 11818.31476395172,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 858,
+            "day": 45139,
+            "grad_tnc_norm": 11818.264189595891,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 859,
+            "day": 45189,
+            "grad_tnc_norm": 11818.214284280677,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 860,
+            "day": 45239,
+            "grad_tnc_norm": 11818.16503916696,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 861,
+            "day": 45289,
+            "grad_tnc_norm": 11818.116445524956,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 862,
+            "day": 45339,
+            "grad_tnc_norm": 11818.068494748293,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 863,
+            "day": 45389,
+            "grad_tnc_norm": 11818.021178340638,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 864,
+            "day": 45439,
+            "grad_tnc_norm": 11817.974487913914,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 865,
+            "day": 45489,
+            "grad_tnc_norm": 11817.928415196626,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 866,
+            "day": 45539,
+            "grad_tnc_norm": 11817.882952022215,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 867,
+            "day": 45589,
+            "grad_tnc_norm": 11817.838090337333,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 868,
+            "day": 45639,
+            "grad_tnc_norm": 11817.79382218497,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 869,
+            "day": 45689,
+            "grad_tnc_norm": 11817.750139726739,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 870,
+            "day": 45739,
+            "grad_tnc_norm": 11817.707035212654,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 871,
+            "day": 45789,
+            "grad_tnc_norm": 11817.66450101025,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 872,
+            "day": 45839,
+            "grad_tnc_norm": 11817.622529570855,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 873,
+            "day": 45889,
+            "grad_tnc_norm": 11817.581113464472,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 874,
+            "day": 45939,
+            "grad_tnc_norm": 11817.540245342247,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 875,
+            "day": 45989,
+            "grad_tnc_norm": 11817.499917965222,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 876,
+            "day": 46039,
+            "grad_tnc_norm": 11817.460124178126,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 877,
+            "day": 46089,
+            "grad_tnc_norm": 11817.420856930079,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 878,
+            "day": 46139,
+            "grad_tnc_norm": 11817.382109258604,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 879,
+            "day": 46189,
+            "grad_tnc_norm": 11817.343874295533,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 880,
+            "day": 46239,
+            "grad_tnc_norm": 11817.30614525851,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 881,
+            "day": 46289,
+            "grad_tnc_norm": 11817.26891546049,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 882,
+            "day": 46339,
+            "grad_tnc_norm": 11817.232178300153,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 883,
+            "day": 46389,
+            "grad_tnc_norm": 11817.195927262237,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 884,
+            "day": 46439,
+            "grad_tnc_norm": 11817.160155918971,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 885,
+            "day": 46489,
+            "grad_tnc_norm": 11817.124857928085,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 886,
+            "day": 46539,
+            "grad_tnc_norm": 11817.09002702985,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 887,
+            "day": 46589,
+            "grad_tnc_norm": 11817.055657047027,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 888,
+            "day": 46639,
+            "grad_tnc_norm": 11817.021741884419,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 889,
+            "day": 46689,
+            "grad_tnc_norm": 11816.988275529578,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 890,
+            "day": 46739,
+            "grad_tnc_norm": 11816.955252043672,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 891,
+            "day": 46789,
+            "grad_tnc_norm": 11816.922665572183,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 892,
+            "day": 46839,
+            "grad_tnc_norm": 11816.890510334797,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 893,
+            "day": 46889,
+            "grad_tnc_norm": 11816.858780629374,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 894,
+            "day": 46939,
+            "grad_tnc_norm": 11816.82747082606,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 895,
+            "day": 46989,
+            "grad_tnc_norm": 11816.796575373137,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 896,
+            "day": 47039,
+            "grad_tnc_norm": 11816.766088788843,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 897,
+            "day": 47089,
+            "grad_tnc_norm": 11816.736005667773,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 898,
+            "day": 47139,
+            "grad_tnc_norm": 11816.706320672854,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 899,
+            "day": 47189,
+            "grad_tnc_norm": 11816.67702853755,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 900,
+            "day": 47239,
+            "grad_tnc_norm": 11816.648124065005,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 901,
+            "day": 47289,
+            "grad_tnc_norm": 11816.619602129298,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 902,
+            "day": 47339,
+            "grad_tnc_norm": 11816.591457671211,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 903,
+            "day": 47389,
+            "grad_tnc_norm": 11816.563685692883,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 904,
+            "day": 47439,
+            "grad_tnc_norm": 11816.536281270883,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 905,
+            "day": 47489,
+            "grad_tnc_norm": 11816.509239544548,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 906,
+            "day": 47539,
+            "grad_tnc_norm": 11816.482555716575,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 907,
+            "day": 47589,
+            "grad_tnc_norm": 11816.456225046106,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 908,
+            "day": 47639,
+            "grad_tnc_norm": 11816.430242871545,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 909,
+            "day": 47689,
+            "grad_tnc_norm": 11816.404604574773,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 910,
+            "day": 47739,
+            "grad_tnc_norm": 11816.379305610113,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 911,
+            "day": 47789,
+            "grad_tnc_norm": 11816.354341489272,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 912,
+            "day": 47839,
+            "grad_tnc_norm": 11816.329707778566,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 913,
+            "day": 47889,
+            "grad_tnc_norm": 11816.305400112431,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 914,
+            "day": 47939,
+            "grad_tnc_norm": 11816.281414174673,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 915,
+            "day": 47989,
+            "grad_tnc_norm": 11816.257745709483,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 916,
+            "day": 48039,
+            "grad_tnc_norm": 11816.234390515167,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 917,
+            "day": 48089,
+            "grad_tnc_norm": 11816.211344448375,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 918,
+            "day": 48139,
+            "grad_tnc_norm": 11816.188603420474,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 919,
+            "day": 48189,
+            "grad_tnc_norm": 11816.166163395279,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 920,
+            "day": 48239,
+            "grad_tnc_norm": 11816.14402038947,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 921,
+            "day": 48289,
+            "grad_tnc_norm": 11816.12217047442,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 922,
+            "day": 48339,
+            "grad_tnc_norm": 11816.10060977144,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 923,
+            "day": 48389,
+            "grad_tnc_norm": 11816.079334454313,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 924,
+            "day": 48439,
+            "grad_tnc_norm": 11816.05834074765,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 925,
+            "day": 48489,
+            "grad_tnc_norm": 11816.037624927088,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 926,
+            "day": 48539,
+            "grad_tnc_norm": 11816.01718330994,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 927,
+            "day": 48589,
+            "grad_tnc_norm": 11815.997012272404,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 928,
+            "day": 48639,
+            "grad_tnc_norm": 11815.977108235802,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 929,
+            "day": 48689,
+            "grad_tnc_norm": 11815.957467665561,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 930,
+            "day": 48739,
+            "grad_tnc_norm": 11815.938087077508,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 931,
+            "day": 48789,
+            "grad_tnc_norm": 11815.918963024766,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 932,
+            "day": 48839,
+            "grad_tnc_norm": 11815.900092121234,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 933,
+            "day": 48889,
+            "grad_tnc_norm": 11815.881471011837,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 934,
+            "day": 48939,
+            "grad_tnc_norm": 11815.863096393683,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 935,
+            "day": 48989,
+            "grad_tnc_norm": 11815.84496500362,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 936,
+            "day": 49039,
+            "grad_tnc_norm": 11815.827073626071,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 937,
+            "day": 49089,
+            "grad_tnc_norm": 11815.809419080644,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 938,
+            "day": 49139,
+            "grad_tnc_norm": 11815.79199823842,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 939,
+            "day": 49189,
+            "grad_tnc_norm": 11815.774808000095,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 940,
+            "day": 49239,
+            "grad_tnc_norm": 11815.757845320239,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 941,
+            "day": 49289,
+            "grad_tnc_norm": 11815.741107186905,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 942,
+            "day": 49339,
+            "grad_tnc_norm": 11815.724590623278,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 943,
+            "day": 49389,
+            "grad_tnc_norm": 11815.708292705844,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 944,
+            "day": 49439,
+            "grad_tnc_norm": 11815.692210532648,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 945,
+            "day": 49489,
+            "grad_tnc_norm": 11815.676341254482,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 946,
+            "day": 49539,
+            "grad_tnc_norm": 11815.66068205053,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 947,
+            "day": 49589,
+            "grad_tnc_norm": 11815.645230140834,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 948,
+            "day": 49639,
+            "grad_tnc_norm": 11815.629982785782,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 949,
+            "day": 49689,
+            "grad_tnc_norm": 11815.614937276816,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 950,
+            "day": 49739,
+            "grad_tnc_norm": 11815.600090937667,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 951,
+            "day": 49789,
+            "grad_tnc_norm": 11815.585441137744,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 952,
+            "day": 49839,
+            "grad_tnc_norm": 11815.570985274337,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 953,
+            "day": 49889,
+            "grad_tnc_norm": 11815.556720781731,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 954,
+            "day": 49939,
+            "grad_tnc_norm": 11815.542645127149,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 955,
+            "day": 49989,
+            "grad_tnc_norm": 11815.528755812038,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 956,
+            "day": 50039,
+            "grad_tnc_norm": 11815.51505036631,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 957,
+            "day": 50089,
+            "grad_tnc_norm": 11815.501526360911,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 958,
+            "day": 50139,
+            "grad_tnc_norm": 11815.488181390901,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 959,
+            "day": 50189,
+            "grad_tnc_norm": 11815.475013090389,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 960,
+            "day": 50239,
+            "grad_tnc_norm": 11815.462019117616,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 961,
+            "day": 50289,
+            "grad_tnc_norm": 11815.44919716866,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 962,
+            "day": 50339,
+            "grad_tnc_norm": 11815.436544963286,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 963,
+            "day": 50389,
+            "grad_tnc_norm": 11815.4240602607,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 964,
+            "day": 50439,
+            "grad_tnc_norm": 11815.411740836304,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 965,
+            "day": 50489,
+            "grad_tnc_norm": 11815.399584508727,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 966,
+            "day": 50539,
+            "grad_tnc_norm": 11815.387589115657,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 967,
+            "day": 50589,
+            "grad_tnc_norm": 11815.375752527938,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 968,
+            "day": 50639,
+            "grad_tnc_norm": 11815.364072642256,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 969,
+            "day": 50689,
+            "grad_tnc_norm": 11815.352547389351,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 970,
+            "day": 50739,
+            "grad_tnc_norm": 11815.341174716054,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 971,
+            "day": 50789,
+            "grad_tnc_norm": 11815.329952608578,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 972,
+            "day": 50839,
+            "grad_tnc_norm": 11815.318879068747,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 973,
+            "day": 50889,
+            "grad_tnc_norm": 11815.30795213461,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 974,
+            "day": 50939,
+            "grad_tnc_norm": 11815.29716986415,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 975,
+            "day": 50989,
+            "grad_tnc_norm": 11815.286530342553,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 976,
+            "day": 51039,
+            "grad_tnc_norm": 11815.276031680281,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 977,
+            "day": 51089,
+            "grad_tnc_norm": 11815.265672011588,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 978,
+            "day": 51139,
+            "grad_tnc_norm": 11815.255449496268,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 979,
+            "day": 51189,
+            "grad_tnc_norm": 11815.245362319758,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 980,
+            "day": 51239,
+            "grad_tnc_norm": 11815.235408695109,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 981,
+            "day": 51289,
+            "grad_tnc_norm": 11815.225586848814,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 982,
+            "day": 51339,
+            "grad_tnc_norm": 11815.215895037023,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 983,
+            "day": 51389,
+            "grad_tnc_norm": 11815.206331539232,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 984,
+            "day": 51439,
+            "grad_tnc_norm": 11815.196894659379,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 985,
+            "day": 51489,
+            "grad_tnc_norm": 11815.187582720842,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 986,
+            "day": 51539,
+            "grad_tnc_norm": 11815.178394063667,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 987,
+            "day": 51589,
+            "grad_tnc_norm": 11815.169327065178,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 988,
+            "day": 51639,
+            "grad_tnc_norm": 11815.160380108977,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 989,
+            "day": 51689,
+            "grad_tnc_norm": 11815.151551607712,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 990,
+            "day": 51739,
+            "grad_tnc_norm": 11815.142839992068,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 991,
+            "day": 51789,
+            "grad_tnc_norm": 11815.13424371544,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 992,
+            "day": 51839,
+            "grad_tnc_norm": 11815.125761251715,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 993,
+            "day": 51889,
+            "grad_tnc_norm": 11815.117391094527,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 994,
+            "day": 51939,
+            "grad_tnc_norm": 11815.109131758038,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 995,
+            "day": 51989,
+            "grad_tnc_norm": 11815.100981772926,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 996,
+            "day": 52039,
+            "grad_tnc_norm": 11815.092939692748,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 997,
+            "day": 52089,
+            "grad_tnc_norm": 11815.085004088985,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 998,
+            "day": 52139,
+            "grad_tnc_norm": 11815.077173550457,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 999,
+            "day": 52189,
+            "grad_tnc_norm": 11815.069446688207,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1000,
+            "day": 52239,
+            "grad_tnc_norm": 11815.061822129534,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1001,
+            "day": 52289,
+            "grad_tnc_norm": 11815.05429852314,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1002,
+            "day": 52339,
+            "grad_tnc_norm": 11815.046874526046,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1003,
+            "day": 52389,
+            "grad_tnc_norm": 11815.039548823514,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1004,
+            "day": 52439,
+            "grad_tnc_norm": 11815.032320116057,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1005,
+            "day": 52489,
+            "grad_tnc_norm": 11815.02518711697,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1006,
+            "day": 52539,
+            "grad_tnc_norm": 11815.018148557798,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1007,
+            "day": 52589,
+            "grad_tnc_norm": 11815.011203191787,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1008,
+            "day": 52639,
+            "grad_tnc_norm": 11815.004349782379,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1009,
+            "day": 52689,
+            "grad_tnc_norm": 11814.997587115004,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1010,
+            "day": 52739,
+            "grad_tnc_norm": 11814.990913987584,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1011,
+            "day": 52789,
+            "grad_tnc_norm": 11814.984329213858,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1012,
+            "day": 52839,
+            "grad_tnc_norm": 11814.977831622802,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1013,
+            "day": 52889,
+            "grad_tnc_norm": 11814.971420063008,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1014,
+            "day": 52939,
+            "grad_tnc_norm": 11814.965093391631,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1015,
+            "day": 52989,
+            "grad_tnc_norm": 11814.958850491843,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1016,
+            "day": 53039,
+            "grad_tnc_norm": 11814.952690246439,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1017,
+            "day": 53089,
+            "grad_tnc_norm": 11814.946611568756,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1018,
+            "day": 53139,
+            "grad_tnc_norm": 11814.940613373208,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1019,
+            "day": 53189,
+            "grad_tnc_norm": 11814.934694597148,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1020,
+            "day": 53239,
+            "grad_tnc_norm": 11814.92885418741,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1021,
+            "day": 53289,
+            "grad_tnc_norm": 11814.923091108627,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1022,
+            "day": 53339,
+            "grad_tnc_norm": 11814.917404336034,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1023,
+            "day": 53389,
+            "grad_tnc_norm": 11814.911792855068,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1024,
+            "day": 53439,
+            "grad_tnc_norm": 11814.906255676724,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1025,
+            "day": 53489,
+            "grad_tnc_norm": 11814.900791815586,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1026,
+            "day": 53539,
+            "grad_tnc_norm": 11814.895400295129,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1027,
+            "day": 53589,
+            "grad_tnc_norm": 11814.89008016282,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1028,
+            "day": 53639,
+            "grad_tnc_norm": 11814.884830473555,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1029,
+            "day": 53689,
+            "grad_tnc_norm": 11814.879650292069,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1030,
+            "day": 53739,
+            "grad_tnc_norm": 11814.87453870047,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1031,
+            "day": 53789,
+            "grad_tnc_norm": 11814.869494788496,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1032,
+            "day": 53839,
+            "grad_tnc_norm": 11814.86451766325,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1033,
+            "day": 53889,
+            "grad_tnc_norm": 11814.859606438711,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1034,
+            "day": 53939,
+            "grad_tnc_norm": 11814.854760240145,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1035,
+            "day": 53989,
+            "grad_tnc_norm": 11814.849978210148,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1036,
+            "day": 54039,
+            "grad_tnc_norm": 11814.845259496124,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1037,
+            "day": 54089,
+            "grad_tnc_norm": 11814.8406032631,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1038,
+            "day": 54139,
+            "grad_tnc_norm": 11814.836008681415,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1039,
+            "day": 54189,
+            "grad_tnc_norm": 11814.83147493545,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1040,
+            "day": 54239,
+            "grad_tnc_norm": 11814.827001220398,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1041,
+            "day": 54289,
+            "grad_tnc_norm": 11814.822586742694,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1042,
+            "day": 54339,
+            "grad_tnc_norm": 11814.818230715486,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1043,
+            "day": 54389,
+            "grad_tnc_norm": 11814.813932364448,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1044,
+            "day": 54439,
+            "grad_tnc_norm": 11814.809690929016,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1045,
+            "day": 54489,
+            "grad_tnc_norm": 11814.80550565264,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1046,
+            "day": 54539,
+            "grad_tnc_norm": 11814.801375792646,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1047,
+            "day": 54589,
+            "grad_tnc_norm": 11814.797300616885,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1048,
+            "day": 54639,
+            "grad_tnc_norm": 11814.793279400375,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1049,
+            "day": 54689,
+            "grad_tnc_norm": 11814.789311430237,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1050,
+            "day": 54739,
+            "grad_tnc_norm": 11814.78539599569,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1051,
+            "day": 54789,
+            "grad_tnc_norm": 11814.78153240717,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1052,
+            "day": 54839,
+            "grad_tnc_norm": 11814.777719976615,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1053,
+            "day": 54889,
+            "grad_tnc_norm": 11814.77395802609,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1054,
+            "day": 54939,
+            "grad_tnc_norm": 11814.770245888054,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1055,
+            "day": 54989,
+            "grad_tnc_norm": 11814.766582904313,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1056,
+            "day": 55039,
+            "grad_tnc_norm": 11814.762968419593,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1057,
+            "day": 55089,
+            "grad_tnc_norm": 11814.759401794143,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1058,
+            "day": 55139,
+            "grad_tnc_norm": 11814.755882395815,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1059,
+            "day": 55189,
+            "grad_tnc_norm": 11814.752409597535,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1060,
+            "day": 55239,
+            "grad_tnc_norm": 11814.74898278279,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1061,
+            "day": 55289,
+            "grad_tnc_norm": 11814.745601343375,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1062,
+            "day": 55339,
+            "grad_tnc_norm": 11814.74226467968,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1063,
+            "day": 55389,
+            "grad_tnc_norm": 11814.738972195832,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1064,
+            "day": 55439,
+            "grad_tnc_norm": 11814.735723306767,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1065,
+            "day": 55489,
+            "grad_tnc_norm": 11814.732517437375,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1066,
+            "day": 55539,
+            "grad_tnc_norm": 11814.729354016332,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1067,
+            "day": 55589,
+            "grad_tnc_norm": 11814.726232485242,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1068,
+            "day": 55639,
+            "grad_tnc_norm": 11814.723152286346,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1069,
+            "day": 55689,
+            "grad_tnc_norm": 11814.72011287202,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1070,
+            "day": 55739,
+            "grad_tnc_norm": 11814.717113703278,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1071,
+            "day": 55789,
+            "grad_tnc_norm": 11814.71415424793,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1072,
+            "day": 55839,
+            "grad_tnc_norm": 11814.711233977127,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1073,
+            "day": 55889,
+            "grad_tnc_norm": 11814.708352376827,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1074,
+            "day": 55939,
+            "grad_tnc_norm": 11814.705508931827,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1075,
+            "day": 55989,
+            "grad_tnc_norm": 11814.7027031371,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1076,
+            "day": 56039,
+            "grad_tnc_norm": 11814.699934497567,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1077,
+            "day": 56089,
+            "grad_tnc_norm": 11814.697202512702,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1078,
+            "day": 56139,
+            "grad_tnc_norm": 11814.694506706956,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1079,
+            "day": 56189,
+            "grad_tnc_norm": 11814.691846594877,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1080,
+            "day": 56239,
+            "grad_tnc_norm": 11814.689221708215,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1081,
+            "day": 56289,
+            "grad_tnc_norm": 11814.686631576094,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1082,
+            "day": 56339,
+            "grad_tnc_norm": 11814.684075742442,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1083,
+            "day": 56389,
+            "grad_tnc_norm": 11814.681553752736,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1084,
+            "day": 56439,
+            "grad_tnc_norm": 11814.679065155478,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1085,
+            "day": 56489,
+            "grad_tnc_norm": 11814.676609510641,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1086,
+            "day": 56539,
+            "grad_tnc_norm": 11814.674186382666,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1087,
+            "day": 56589,
+            "grad_tnc_norm": 11814.671795339997,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1088,
+            "day": 56639,
+            "grad_tnc_norm": 11814.66943595657,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1089,
+            "day": 56689,
+            "grad_tnc_norm": 11814.667107813817,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1090,
+            "day": 56739,
+            "grad_tnc_norm": 11814.664810502916,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1091,
+            "day": 56789,
+            "grad_tnc_norm": 11814.662543609935,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1092,
+            "day": 56839,
+            "grad_tnc_norm": 11814.660306734073,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1093,
+            "day": 56889,
+            "grad_tnc_norm": 11814.658099475879,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1094,
+            "day": 56939,
+            "grad_tnc_norm": 11814.65592144643,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1095,
+            "day": 56989,
+            "grad_tnc_norm": 11814.653772255864,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1096,
+            "day": 57039,
+            "grad_tnc_norm": 11814.651651524304,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1097,
+            "day": 57089,
+            "grad_tnc_norm": 11814.64955887658,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1098,
+            "day": 57139,
+            "grad_tnc_norm": 11814.647493936125,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1099,
+            "day": 57189,
+            "grad_tnc_norm": 11814.645456338467,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1100,
+            "day": 57239,
+            "grad_tnc_norm": 11814.643445722495,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1101,
+            "day": 57289,
+            "grad_tnc_norm": 11814.641461728475,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1102,
+            "day": 57339,
+            "grad_tnc_norm": 11814.639504005814,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1103,
+            "day": 57389,
+            "grad_tnc_norm": 11814.63757220837,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1104,
+            "day": 57439,
+            "grad_tnc_norm": 11814.635665989166,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1105,
+            "day": 57489,
+            "grad_tnc_norm": 11814.633785011463,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1106,
+            "day": 57539,
+            "grad_tnc_norm": 11814.631928939029,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1107,
+            "day": 57589,
+            "grad_tnc_norm": 11814.63009744686,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1108,
+            "day": 57639,
+            "grad_tnc_norm": 11814.62829020427,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1109,
+            "day": 57689,
+            "grad_tnc_norm": 11814.626506893661,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1110,
+            "day": 57739,
+            "grad_tnc_norm": 11814.624747194912,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1111,
+            "day": 57789,
+            "grad_tnc_norm": 11814.623010797584,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1112,
+            "day": 57839,
+            "grad_tnc_norm": 11814.621297394671,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1113,
+            "day": 57889,
+            "grad_tnc_norm": 11814.619606678163,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1114,
+            "day": 57939,
+            "grad_tnc_norm": 11814.617938350499,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1115,
+            "day": 57989,
+            "grad_tnc_norm": 11814.61629211333,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1116,
+            "day": 58039,
+            "grad_tnc_norm": 11814.614667676728,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1117,
+            "day": 58089,
+            "grad_tnc_norm": 11814.613064749366,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1118,
+            "day": 58139,
+            "grad_tnc_norm": 11814.611483045137,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1119,
+            "day": 58189,
+            "grad_tnc_norm": 11814.609922287673,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1120,
+            "day": 58239,
+            "grad_tnc_norm": 11814.60838219457,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1121,
+            "day": 58289,
+            "grad_tnc_norm": 11814.606862497472,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1122,
+            "day": 58339,
+            "grad_tnc_norm": 11814.605362920696,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1123,
+            "day": 58389,
+            "grad_tnc_norm": 11814.603883204769,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1124,
+            "day": 58439,
+            "grad_tnc_norm": 11814.602423078517,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1125,
+            "day": 58489,
+            "grad_tnc_norm": 11814.60098228902,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1126,
+            "day": 58539,
+            "grad_tnc_norm": 11814.599560576597,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1127,
+            "day": 58589,
+            "grad_tnc_norm": 11814.598157691413,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1128,
+            "day": 58639,
+            "grad_tnc_norm": 11814.596773382635,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1129,
+            "day": 58689,
+            "grad_tnc_norm": 11814.595407403076,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1130,
+            "day": 58739,
+            "grad_tnc_norm": 11814.594059511235,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1131,
+            "day": 58789,
+            "grad_tnc_norm": 11814.592729467931,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1132,
+            "day": 58839,
+            "grad_tnc_norm": 11814.591417037156,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1133,
+            "day": 58889,
+            "grad_tnc_norm": 11814.590121985637,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1134,
+            "day": 58939,
+            "grad_tnc_norm": 11814.588844082109,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1135,
+            "day": 58989,
+            "grad_tnc_norm": 11814.587583100838,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1136,
+            "day": 59039,
+            "grad_tnc_norm": 11814.586338815641,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1137,
+            "day": 59089,
+            "grad_tnc_norm": 11814.585111006509,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1138,
+            "day": 59139,
+            "grad_tnc_norm": 11814.5838994573,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1139,
+            "day": 59189,
+            "grad_tnc_norm": 11814.582703950904,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1140,
+            "day": 59239,
+            "grad_tnc_norm": 11814.581524274092,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1141,
+            "day": 59289,
+            "grad_tnc_norm": 11814.58036021958,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1142,
+            "day": 59339,
+            "grad_tnc_norm": 11814.579211577127,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1143,
+            "day": 59389,
+            "grad_tnc_norm": 11814.57807814732,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1144,
+            "day": 59439,
+            "grad_tnc_norm": 11814.576959722528,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1145,
+            "day": 59489,
+            "grad_tnc_norm": 11814.575856109215,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1146,
+            "day": 59539,
+            "grad_tnc_norm": 11814.574767111288,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1147,
+            "day": 59589,
+            "grad_tnc_norm": 11814.573692532389,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1148,
+            "day": 59639,
+            "grad_tnc_norm": 11814.572632180147,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1149,
+            "day": 59689,
+            "grad_tnc_norm": 11814.57158587244,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1150,
+            "day": 59739,
+            "grad_tnc_norm": 11814.570553416914,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1151,
+            "day": 59789,
+            "grad_tnc_norm": 11814.569534635459,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1152,
+            "day": 59839,
+            "grad_tnc_norm": 11814.56852934243,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1153,
+            "day": 59889,
+            "grad_tnc_norm": 11814.567537361569,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1154,
+            "day": 59939,
+            "grad_tnc_norm": 11814.56655851808,
+            "grad_maas_norm": 0.0
+        },
+        {
+            "update_idx": 1155,
+            "day": 59989,
+            "grad_tnc_norm": 11814.565592633042,
+            "grad_maas_norm": 0.0
+        }
+    ]
+}

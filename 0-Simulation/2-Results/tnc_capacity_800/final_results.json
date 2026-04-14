@@ -1,0 +1,28 @@
+{
+    "tnc_capacity": 800,
+    "final_allocation": {
+        "TNC": [
+            28.697516209965187
+        ],
+        "MT": [
+            33.49949959879162
+        ],
+        "MaaS": [
+            17.80298419124311
+        ]
+    },
+    "tnc_params": {
+        "fare": 1.5280056836881635,
+        "capacity_ratio_to_MaaS": 0.26692267278940623,
+        "lambda_T": 0.0
+    },
+    "maas_params": {
+        "fare": 1.4675816509028279,
+        "share_TNC": 0.5006138962244066,
+        "lambda_M": 0.0
+    },
+    "profits": {
+        "tnc_profit": 811.4524415304379,
+        "maas_profit": 162.2216288883422
+    }
+}

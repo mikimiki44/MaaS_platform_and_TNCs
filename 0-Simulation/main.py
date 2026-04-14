@@ -419,7 +419,7 @@ def run_simulation(
     # 1. Define traveler groups
     # --------------------------
     travelers = [
-        Travelers(number_traveler=80000, trip_length=20, value_time=25, value_wait=40), # count, km, monetary unit/h, monetary unit/h
+        Travelers(number_traveler=80, trip_length=20, value_time=25, value_wait=35), # count, km, monetary unit/h, monetary unit/h
     ]
 
     # --------------------------
@@ -431,13 +431,13 @@ def run_simulation(
         fare=2, # monetary units per km
         detour_ratio=1.4, # 1.4 times the direct distance
         average_speed=40, # in km/h
-        average_veh_travel_dist_per_day=8*40, # 320 km per veh per day
+        average_veh_travel_dist_per_day=8*40/1000, # 320 km per veh per day
         capacity_ratio_to_MaaS=0.4, # TNC gives 40% of its capacity to MaaS
         total_service_capacity=tnc_capacity, # in veh * km per day
         trip_length_per_traveler_type=[traveler.trip_length for traveler in travelers], # km
         value_waiting_time_per_traveler_type=[traveler.value_wait for traveler in travelers], # monetary units per time
-        cost_purchasing_capacity_TNC= 700, # monetary units per veh 
-        operating_cost= 300, # monetary units per veh 
+        cost_purchasing_capacity_TNC= 0.50, # monetary units per veh 
+        operating_cost= 0.300, # monetary units per veh 
         lambda_T=0 # Lagrange multiplier for the capacity constraint [$/(veh·km)]
     )   
 
@@ -446,15 +446,15 @@ def run_simulation(
         fare=2,
         detour_ratio=1.5, # 1.5 times the direct distance
         average_speed=20, # in km/h
-        n_transfer_per_length=0.2, # per km
+        n_transfer_per_length=0.15, # per km
         access_time=1/6, # hours
         transit_time=1/12 # hours
     )
 
     maas = MaaS(
         ASC=5, 
-        fare=1, # additional maas operation cost * (...) monetary units per km 
-        share_TNC=0.30, # share of TNC inside MaaS (first and last kilometers)
+        fare=1.7, # additional maas operation cost * (...) monetary units per km 
+        share_TNC=0.50, # share of TNC inside MaaS (first and last kilometers)
         detour_ratio_TNC=tnc.detour_ratio,
         average_speed_TNC=tnc.average_speed,
         capacity_ratio_from_TNC=tnc.capacity_ratio_to_MaaS,
@@ -498,14 +498,16 @@ def run_simulation(
     debug_snapshots: list[dict] = []
     gradient_history: list[dict[str, float | int]] = []
     total_travelers = float(sum(traveler.number_traveler for traveler in travelers))
-    upper_level_relative_tolerance = 4e-5
+    upper_level_relative_tolerance = 1e-4
+    convergence_stability_window = 50
+    stable_convergence_days = 0
     
     for day in tqdm(range(number_days), desc="Simulation Progress", unit="day"):
         allocation = distribute_travelers(travelers, services)
         for t_idx in range(len(travelers)):
             for service in services:
                 # smooth allocations
-                allocation[service.name][t_idx] = 0.999*allocation_by_type[service.name][t_idx][day-1]+ 0.001*allocation[service.name][t_idx] if day >=1 else allocation[service.name][t_idx]
+                allocation[service.name][t_idx] = 0.99*allocation_by_type[service.name][t_idx][day-1]+ 0.01*allocation[service.name][t_idx] if day >=1 else allocation[service.name][t_idx]
 
         tnc.get_allocation(allocation)
         maas.get_allocation(allocation)
@@ -522,78 +524,90 @@ def run_simulation(
             )
         else:
             max_relative_change = np.inf
+        #print(allocation)
+        if day >= 1 and max_relative_change <= upper_level_relative_tolerance:
+            stable_convergence_days += 1
+        else:
+            stable_convergence_days = 0
 
-        if day >= 1 and max_relative_change <= upper_level_relative_tolerance: # and check_gradients(travelers, services, utilities): not necessary to check gradients every time
-                # Track first convergence
-                if converged_at_day is None:
-                    converged_at_day = day
-                    tqdm.write(f"\n✓ Lower level FIRST convergence at Day {day + 1}")
-                else:
-                    tqdm.write(f"✓ Lower level reconverged at Day {day + 1}")
+        if day >= 1 and stable_convergence_days >= convergence_stability_window: # and check_gradients(travelers, services, utilities): not necessary to check gradients every time
+            # Track first convergence
+            if converged_at_day is None:
+                converged_at_day = day
+                tqdm.write(
+                    f"\n✓ Lower level FIRST convergence at Day {day + 1} "
+                    f"(stable for {convergence_stability_window} iterations)"
+                )
+            else:
+                tqdm.write(
+                    f"✓ Lower level reconverged at Day {day + 1} "
+                    f"(stable for {convergence_stability_window} iterations)"
+                )
 
-                upper_level_updates += 1
-                
-                # Use parameter-specific step sizes: [fare, ratio/share, multiplier]
-                # Smaller ratio/share steps help avoid oscillation near [0, 1] bounds.
-                step_sizes_T = np.array([1e-8, 1e-10, 1e-5])
-                step_sizes_M = np.array([1e-8, 1e-10, 1e-5])
+            upper_level_updates += 1
+            stable_convergence_days = 0
+            
+            # Use parameter-specific step sizes: [fare, ratio/share, multiplier]
+            # Smaller ratio/share steps help avoid oscillation near [0, 1] bounds.
+            step_sizes_T = np.array([1e-6, 6e-8, 1e-5])
+            step_sizes_M = np.array([1e-6, 6e-7, 1e-5])
 
-                # Define update directions: Descent (-), Descent (-), Ascent (+)
-                # Multiplying the step by [1, 1, -1] turns a subtraction into an addition for the 3rd term.
-                update_direction = np.array([1.0, 1.0, -1.0])
+            # Define update directions: Descent (-), Descent (-), Ascent (+)
+            # Multiplying the step by [1, 1, -1] turns a subtraction into an addition for the 3rd term.
+            update_direction = np.array([1.0, 1.0, -1.0])
 
-                # Compute utilities (State A)
-                utilities = compute_utilities(travelers, services)
+            # Compute utilities (State A)
+            utilities = compute_utilities(travelers, services)
 
-                # === Get TNC & MaaS Initial Params & Manual Gradients ===
-                tnc = next(service for service in services if service.name == "TNC")
-                params_T = np.array([tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T])
-                grad_tnc = tnc.gradient_objective(utilities, next(service for service in services if service.name == "MaaS"))
+            # === Get TNC & MaaS Initial Params & Manual Gradients ===
+            tnc = next(service for service in services if service.name == "TNC")
+            params_T = np.array([tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T])
+            grad_tnc = tnc.gradient_objective(utilities, next(service for service in services if service.name == "MaaS"))
 
-                maas = next(service for service in services if service.name == "MaaS")
-                params_M = np.array([maas.fare, maas.share_TNC, maas.lambda_M])
-                grad_maas = maas.gradient_objective(utilities)
+            maas = next(service for service in services if service.name == "MaaS")
+            params_M = np.array([maas.fare, maas.share_TNC, maas.lambda_M])
+            grad_maas = maas.gradient_objective(utilities)
 
-                gradient_history.append({
-                    "update_idx": int(upper_level_updates),
-                    "day": int(day + 1),
-                    "grad_tnc_norm": float(np.linalg.norm(grad_tnc)),
-                    "grad_maas_norm": float(np.linalg.norm(grad_maas)),
-                })
-                
-                # ========== GRADIENT VERIFICATION (Done BEFORE mutating objects) ==========
-                #grad_tnc_auto = grad(lambda p: tnc.compute_objective_function(p, travelers, services))(params_T)
-                #grad_maas_auto = grad(lambda p: maas.compute_objective_function(p, travelers, services))(params_M)
-                #tqdm.write(f"  [Gradient Check] TNC  Manual: {grad_tnc}, Autograd: {grad_tnc_auto}, Match: {np.allclose(grad_tnc, grad_tnc_auto, atol=1e-5)}")
-                #tqdm.write(f"  [Gradient Check] MaaS Manual: {grad_maas}, Autograd: {grad_maas_auto}, Match: {np.allclose(grad_maas, grad_maas_auto, atol=1e-5)}")
-                # =========================================================================
+            gradient_history.append({
+                "update_idx": int(upper_level_updates),
+                "day": int(day + 1),
+                "grad_tnc_norm": float(np.linalg.norm(grad_tnc)),
+                "grad_maas_norm": float(np.linalg.norm(grad_maas)),
+            })
+            
+            # ========== GRADIENT VERIFICATION (Done BEFORE mutating objects) ==========
+            #grad_tnc_auto = grad(lambda p: tnc.compute_objective_function(p, travelers, services))(params_T)
+            #grad_maas_auto = grad(lambda p: maas.compute_objective_function(p, travelers, services))(params_M)
+            #tqdm.write(f"  [Gradient Check] TNC  Manual: {grad_tnc}, Autograd: {grad_tnc_auto}, Match: {np.allclose(grad_tnc, grad_tnc_auto, atol=1e-5)}")
+            #tqdm.write(f"  [Gradient Check] MaaS Manual: {grad_maas}, Autograd: {grad_maas_auto}, Match: {np.allclose(grad_maas, grad_maas_auto, atol=1e-5)}")
+            # =========================================================================
 
-                if debug_enabled:
-                    probabilities_pre = compute_choice_probabilities(utilities)
-                    snapshot_pre = build_debug_snapshot(
-                        day=day,
-                        travelers=travelers,
-                        services=services,
-                        allocation=allocation,
-                        utilities=utilities,
-                        probabilities=probabilities_pre,
-                    )
-                    debug_snapshots.append(snapshot_pre)
+            if debug_enabled:
+                probabilities_pre = compute_choice_probabilities(utilities)
+                snapshot_pre = build_debug_snapshot(
+                    day=day,
+                    travelers=travelers,
+                    services=services,
+                    allocation=allocation,
+                    utilities=utilities,
+                    probabilities=probabilities_pre,
+                )
+                debug_snapshots.append(snapshot_pre)
 
-                # === APPLY UPDATES (Move to State B) ===
-                new_params_T = params_T - step_sizes_T * grad_tnc * update_direction
-                new_params_T = project_tnc_params(new_params_T)
-                tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T = new_params_T
+            # === APPLY UPDATES (Move to State B) ===
+            new_params_T = params_T - step_sizes_T * grad_tnc * update_direction
+            new_params_T = project_tnc_params(new_params_T)
+            tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T = new_params_T
 
-                new_params_M = params_M - step_sizes_M * grad_maas * update_direction
-                new_params_M = project_maas_params(new_params_M) 
-                maas.fare, maas.share_TNC, maas.lambda_M = new_params_M
+            new_params_M = params_M - step_sizes_M * grad_maas * update_direction
+            new_params_M = project_maas_params(new_params_M) 
+            maas.fare, maas.share_TNC, maas.lambda_M = new_params_M
 
-                maas.capacity_ratio_from_TNC = tnc.capacity_ratio_to_MaaS
-                
-                # Print update info on every upper-level update
-                tqdm.write(f"  [Update {upper_level_updates}] TNC:  fare={tnc.fare:.4f}, cap_ratio={tnc.capacity_ratio_to_MaaS:.4f}, λ_T={tnc.lambda_T:.6f}")
-                tqdm.write(f"  [Update {upper_level_updates}] MaaS: fare={maas.fare:.4f}, share_TNC={maas.share_TNC:.4f}, λ_M={maas.lambda_M:.6f}")
+            maas.capacity_ratio_from_TNC = tnc.capacity_ratio_to_MaaS
+            
+            # Print update info on every upper-level update
+            tqdm.write(f"  [Update {upper_level_updates}] TNC:  fare={tnc.fare:.4f}, cap_ratio={tnc.capacity_ratio_to_MaaS:.4f}, λ_T={tnc.lambda_T:.6f}")
+            tqdm.write(f"  [Update {upper_level_updates}] MaaS: fare={maas.fare:.4f}, share_TNC={maas.share_TNC:.4f}, λ_M={maas.lambda_M:.6f}")
 
     ###########################################################################
     ############################## END of the SIMULATION ######################

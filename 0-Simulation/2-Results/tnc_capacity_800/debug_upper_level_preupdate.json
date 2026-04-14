@@ -1,0 +1,2554 @@
+{
+    "events": [
+        {
+            "day": 256,
+            "update_day": 257,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 5.931446092984073,
+                    "MT": 56.132687526761345,
+                    "MaaS": 17.935866380254524
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        5.931446092984073
+                    ],
+                    "MT": [
+                        56.132687526761345
+                    ],
+                    "MaaS": [
+                        17.935866380254524
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 118.62892185968147,
+                    "capacity_for_tnc_vkm": 480.0
+                },
+                "maas": {
+                    "demand_vkm": 179.35866380254524,
+                    "purchased_tnc_capacity_vkm": 320.0
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.07439406710337484,
+                "maas_mean_hr": 0.2442500324515331
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.07823709380740715,
+                        0.697058656160533,
+                        0.22470425003205982
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 56.0,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 2.6037923486181196,
+                            "total_utility": -66.10379234861811
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 34.0,
+                            "travel_time_disutility": 27.500000000000004,
+                            "waiting_time_disutility": 8.54875113580366,
+                            "total_utility": -65.04875113580366,
+                            "mode_split": {
+                                "trip_fare": 34.0,
+                                "time_tnc": 0.35,
+                                "time_mt": 0.75,
+                                "wait_tnc": 0.11925003245153311,
+                                "wait_mt": 0.125,
+                                "travel_time_disutility_tnc": 8.75,
+                                "travel_time_disutility_mt": 18.75,
+                                "waiting_disutility_tnc": 4.173751135803659,
+                                "waiting_disutility_mt": 4.375
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 332.1609812071081,
+                    "capacity_sale_revenue": 500.0,
+                    "operating_cost": 750.0,
+                    "net_profit": 82.16098120710808
+                },
+                "maas": {
+                    "rider_revenue": 609.8194569286538,
+                    "tnc_capacity_purchase_cost": 500.0,
+                    "mt_capacity_purchase_cost": 26.903799570381786,
+                    "net_profit": 82.91565735827206
+                }
+            }
+        },
+        {
+            "day": 389,
+            "update_day": 390,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 6.901011631417228,
+                    "MT": 53.8783052306645,
+                    "MaaS": 19.22068313791818
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        6.901011631417228
+                    ],
+                    "MT": [
+                        53.8783052306645
+                    ],
+                    "MaaS": [
+                        19.22068313791818
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 138.02023262834456,
+                    "capacity_for_tnc_vkm": 480.02957180994645
+                },
+                "maas": {
+                    "demand_vkm": 194.6655193827938,
+                    "purchased_tnc_capacity_vkm": 319.9704281900535
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.07647086718135636,
+                "maas_mean_hr": 0.24973812922654645
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.08958195464507276,
+                        0.6695326741462039,
+                        0.24088537120872328
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 55.75161238241584,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 2.6764803513474726,
+                            "total_utility": -65.92809273376332
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 33.82600979594945,
+                            "travel_time_disutility": 27.37208113333071,
+                            "waiting_time_disutility": 8.740834522929125,
+                            "total_utility": -64.93892545220929,
+                            "mode_split": {
+                                "trip_fare": 33.82600979594945,
+                                "time_tnc": 0.35447716033342513,
+                                "time_mt": 0.7404060849998033,
+                                "wait_tnc": 0.12633711505991257,
+                                "wait_mt": 0.12340101416663388,
+                                "travel_time_disutility_tnc": 8.861929008335629,
+                                "travel_time_disutility_mt": 18.510152124995084,
+                                "waiting_disutility_tnc": 4.42179902709694,
+                                "waiting_disutility_mt": 4.3190354958321855
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 384.7425255213165,
+                    "capacity_sale_revenue": 499.9537940469586,
+                    "operating_cost": 750.0,
+                    "net_profit": 134.69631956827516
+                },
+                "maas": {
+                    "rider_revenue": 650.1590161080608,
+                    "tnc_capacity_purchase_cost": 499.9537940469586,
+                    "mt_capacity_purchase_cost": 28.462221506335467,
+                    "net_profit": 121.74300055476671
+                }
+            }
+        },
+        {
+            "day": 520,
+            "update_day": 521,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 8.013394078979195,
+                    "MT": 51.66477256522067,
+                    "MaaS": 20.321833355800056
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        8.013394078979195
+                    ],
+                    "MT": [
+                        51.66477256522067
+                    ],
+                    "MaaS": [
+                        20.321833355800056
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 160.2678815795839,
+                    "capacity_for_tnc_vkm": 480.0894370425343
+                },
+                "maas": {
+                    "demand_vkm": 208.3647100536213,
+                    "purchased_tnc_capacity_vkm": 319.91056295746574
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.07907899335131749,
+                "maas_mean_hr": 0.2557368296849171
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.10367486144598669,
+                        0.6418822775958615,
+                        0.2544428609581519
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 55.472047148310665,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 2.767764767296112,
+                            "total_utility": -65.73981191560678
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 33.64444996156756,
+                            "travel_time_disutility": 27.246756288888086,
+                            "waiting_time_disutility": 8.950789038972099,
+                            "total_utility": -64.84199528942774,
+                            "mode_split": {
+                                "trip_fare": 33.64444996156756,
+                                "time_tnc": 0.35886352988891707,
+                                "time_mt": 0.7310067216666063,
+                                "wait_tnc": 0.1339023760738161,
+                                "wait_mt": 0.12183445361110103,
+                                "travel_time_disutility_tnc": 8.971588247222927,
+                                "travel_time_disutility_mt": 18.275168041665157,
+                                "waiting_disutility_tnc": 4.686583162583564,
+                                "waiting_disutility_mt": 4.2642058763885355
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 444.51937416712735,
+                    "capacity_sale_revenue": 499.8602546210402,
+                    "operating_cost": 750.0,
+                    "net_profit": 194.37962878816757
+                },
+                "maas": {
+                    "rider_revenue": 683.7169054665296,
+                    "tnc_capacity_purchase_cost": 499.8602546210402,
+                    "mt_capacity_purchase_cost": 29.710793559356976,
+                    "net_profit": 154.14585728613244
+                }
+            }
+        },
+        {
+            "day": 651,
+            "update_day": 652,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 9.34925711089409,
+                    "MT": 49.4283535891366,
+                    "MaaS": 21.222389299969205
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        9.34925711089409
+                    ],
+                    "MT": [
+                        49.4283535891366
+                    ],
+                    "MaaS": [
+                        21.222389299969205
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 186.9851422178818,
+                    "capacity_for_tnc_vkm": 480.19239318514894
+                },
+                "maas": {
+                    "demand_vkm": 220.1261000551554,
+                    "purchased_tnc_capacity_vkm": 319.80760681485106
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.08259003397441766,
+                "maas_mean_hr": 0.2619926996696056
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.12039331460741533,
+                        0.6139957793584073,
+                        0.2656109060341774
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 55.15523952685987,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 2.8906511891046183,
+                            "total_utility": -65.54589071596449
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 33.45723012854245,
+                            "travel_time_disutility": 27.1276476251675,
+                            "waiting_time_disutility": 9.169744488436196,
+                            "total_utility": -64.75462224214614,
+                            "mode_split": {
+                                "trip_fare": 33.45723012854245,
+                                "time_tnc": 0.3630323331191374,
+                                "time_mt": 0.7220735718875626,
+                                "wait_tnc": 0.14164710435501182,
+                                "wait_mt": 0.12034559531459377,
+                                "travel_time_disutility_tnc": 9.075808327978436,
+                                "travel_time_disutility_mt": 18.051839297189066,
+                                "waiting_disutility_tnc": 4.957648652425414,
+                                "waiting_disutility_mt": 4.212095836010782
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 515.6605153495614,
+                    "capacity_sale_revenue": 499.6993856482048,
+                    "operating_cost": 750.0,
+                    "net_profit": 265.3599009977661
+                },
+                "maas": {
+                    "rider_revenue": 710.0423626865866,
+                    "tnc_capacity_purchase_cost": 499.6993856482048,
+                    "mt_capacity_purchase_cost": 30.648252891634307,
+                    "net_profit": 179.69472414674746
+                }
+            }
+        },
+        {
+            "day": 782,
+            "update_day": 783,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 10.900061249345752,
+                    "MT": 47.16056311291721,
+                    "MaaS": 21.939375637736987
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        10.900061249345752
+                    ],
+                    "MT": [
+                        47.16056311291721
+                    ],
+                    "MaaS": [
+                        21.939375637736987
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 218.00122498691505,
+                    "capacity_for_tnc_vkm": 480.35557873033605
+                },
+                "maas": {
+                    "demand_vkm": 229.97101908764049,
+                    "purchased_tnc_capacity_vkm": 319.64442126966395
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.08731138150446892,
+                "maas_mean_hr": 0.26831600141864287
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.13944164902302972,
+                        0.5860054176512721,
+                        0.2745529333256981
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 54.79645112150129,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 3.055898352656412,
+                            "total_utility": -65.3523494741577
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 33.26590477916452,
+                            "travel_time_disutility": 27.017886794732792,
+                            "waiting_time_disutility": 9.3910600496525,
+                            "total_utility": -64.67485162354981,
+                            "mode_split": {
+                                "trip_fare": 33.26590477916452,
+                                "time_tnc": 0.36687396218435214,
+                                "time_mt": 0.7138415096049596,
+                                "wait_tnc": 0.14934241648448293,
+                                "wait_mt": 0.11897358493415991,
+                                "travel_time_disutility_tnc": 9.171849054608803,
+                                "travel_time_disutility_mt": 17.84603774012399,
+                                "waiting_disutility_tnc": 5.2269845769569026,
+                                "waiting_disutility_mt": 4.164075472695597
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 597.2846734711449,
+                    "capacity_sale_revenue": 499.4444082338499,
+                    "operating_cost": 750.0,
+                    "net_profit": 346.72908170499477
+                },
+                "maas": {
+                    "rider_revenue": 729.8331808792806,
+                    "tnc_capacity_purchase_cost": 499.4444082338499,
+                    "mt_capacity_purchase_cost": 31.32247405006489,
+                    "net_profit": 199.06629859536577
+                }
+            }
+        },
+        {
+            "day": 910,
+            "update_day": 911,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 12.596169676796395,
+                    "MT": 44.90294575300717,
+                    "MaaS": 22.500884570196394
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        12.596169676796395
+                    ],
+                    "MT": [
+                        44.90294575300717
+                    ],
+                    "MaaS": [
+                        22.500884570196394
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 251.9233935359279,
+                    "capacity_for_tnc_vkm": 480.60104545832445
+                },
+                "maas": {
+                    "demand_vkm": 238.059035023157,
+                    "purchased_tnc_capacity_vkm": 319.3989545416755
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.09351970661960568,
+                "maas_mean_hr": 0.2745563431178017
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.16007980312506528,
+                        0.5583468734359972,
+                        0.2815733234389374
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 54.39278488078631,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 3.2731897316861986,
+                            "total_utility": -65.16597461247251
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 33.07176778866721,
+                            "travel_time_disutility": 26.920014387413072,
+                            "waiting_time_disutility": 9.60947200912306,
+                            "total_utility": -64.60125418520335,
+                            "mode_split": {
+                                "trip_fare": 33.07176778866721,
+                                "time_tnc": 0.3702994964405424,
+                                "time_mt": 0.7065010790559805,
+                                "wait_tnc": 0.15680616327513827,
+                                "wait_mt": 0.11775017984266341,
+                                "travel_time_disutility_tnc": 9.25748741101356,
+                                "travel_time_disutility_mt": 17.662526976399512,
+                                "waiting_disutility_tnc": 5.488215714629839,
+                                "waiting_disutility_mt": 4.121256294493219
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 685.1407475518698,
+                    "capacity_sale_revenue": 499.06086647136794,
+                    "operating_cost": 750.0,
+                    "net_profit": 434.20161402323765
+                },
+                "maas": {
+                    "rider_revenue": 744.1440295451401,
+                    "tnc_capacity_purchase_cost": 499.06086647136794,
+                    "mt_capacity_purchase_cost": 31.793798457115628,
+                    "net_profit": 213.28936461665657
+                }
+            }
+        },
+        {
+            "day": 1031,
+            "update_day": 1032,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 14.32770460011429,
+                    "MT": 42.73427897304609,
+                    "MaaS": 22.938016426839578
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        14.32770460011429
+                    ],
+                    "MT": [
+                        42.73427897304609
+                    ],
+                    "MaaS": [
+                        22.938016426839578
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 286.5540920022858,
+                    "capacity_for_tnc_vkm": 480.9559240373648
+                },
+                "maas": {
+                    "demand_vkm": 244.61353998676844,
+                    "purchased_tnc_capacity_vkm": 319.04407596263513
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.10142962530395615,
+                "maas_mean_hr": 0.28062144274521406
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.18107751672768774,
+                        0.5318852267889173,
+                        0.287037256483395
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 53.94413229917775,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 3.550036885638465,
+                            "total_utility": -64.99416918481622
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 32.87584229645639,
+                            "travel_time_disutility": 26.83588958021025,
+                            "waiting_time_disutility": 9.821750496082492,
+                            "total_utility": -64.53348237274913,
+                            "mode_split": {
+                                "trip_fare": 32.87584229645639,
+                                "time_tnc": 0.3732438646926413,
+                                "time_mt": 0.7001917185157687,
+                                "wait_tnc": 0.16392282299258598,
+                                "wait_mt": 0.11669861975262809,
+                                "travel_time_disutility_tnc": 9.331096617316033,
+                                "travel_time_disutility_mt": 17.504792962894218,
+                                "waiting_disutility_tnc": 5.73729880474051,
+                                "waiting_disutility_mt": 4.084451691341983
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 772.895592492103,
+                    "capacity_sale_revenue": 498.5063686916174,
+                    "operating_cost": 750.0,
+                    "net_profit": 521.4019611837205
+                },
+                "maas": {
+                    "rider_revenue": 754.1066106423041,
+                    "tnc_capacity_purchase_cost": 498.5063686916174,
+                    "mt_capacity_purchase_cost": 32.12201828250347,
+                    "net_profit": 223.4782236681832
+                }
+            }
+        },
+        {
+            "day": 1143,
+            "update_day": 1144,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 15.975368819234301,
+                    "MT": 40.745253631090314,
+                    "MaaS": 23.2793775496753
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        15.975368819234301
+                    ],
+                    "MT": [
+                        40.745253631090314
+                    ],
+                    "MaaS": [
+                        23.2793775496753
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 319.50737638468604,
+                    "capacity_for_tnc_vkm": 481.4522661721911
+                },
+                "maas": {
+                    "demand_vkm": 249.86370779964813,
+                    "purchased_tnc_capacity_vkm": 318.54773382780894
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.11113001518425747,
+                "maas_mean_hr": 0.28647666731432053
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.20099545078309108,
+                        0.5077250405652113,
+                        0.29127950865169766
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 53.45377390264984,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 3.8895505314490113,
+                            "total_utility": -64.84332443409886
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 32.678904156394246,
+                            "travel_time_disutility": 26.766735879579684,
+                            "waiting_time_disutility": 10.026683356001218,
+                            "total_utility": -64.47232339197515,
+                            "mode_split": {
+                                "trip_fare": 32.678904156394246,
+                                "time_tnc": 0.37566424421471106,
+                                "time_mt": 0.6950051909684762,
+                                "wait_tnc": 0.1706424688195745,
+                                "wait_mt": 0.11583419849474604,
+                                "travel_time_disutility_tnc": 9.391606105367776,
+                                "travel_time_disutility_mt": 17.375129774211906,
+                                "waiting_disutility_tnc": 5.972486408685108,
+                                "waiting_disutility_mt": 4.054196947316111
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 853.9437528747924,
+                    "capacity_sale_revenue": 497.7308341059515,
+                    "operating_cost": 750.0,
+                    "net_profit": 601.6745869807439
+                },
+                "maas": {
+                    "rider_revenue": 760.744547766355,
+                    "tnc_capacity_purchase_cost": 497.7308341059515,
+                    "mt_capacity_purchase_cost": 32.35857647907868,
+                    "net_profit": 230.65513718132485
+                }
+            }
+        },
+        {
+            "day": 1245,
+            "update_day": 1246,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 17.44418709481894,
+                    "MT": 39.00894852642338,
+                    "MaaS": 23.54686437875758
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        17.44418709481894
+                    ],
+                    "MT": [
+                        39.00894852642338
+                    ],
+                    "MaaS": [
+                        23.54686437875758
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 348.8837418963788,
+                    "capacity_for_tnc_vkm": 482.12694758835806
+                },
+                "maas": {
+                    "demand_vkm": 253.99367552927868,
+                    "purchased_tnc_capacity_vkm": 317.8730524116419
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.12251590189874376,
+                "maas_mean_hr": 0.29210939108409417
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.21879750531816536,
+                        0.4866272817847075,
+                        0.29457521289712707
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 52.92796192630132,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 4.2880565664560315,
+                            "total_utility": -64.71601849275736
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 32.48153241407569,
+                            "travel_time_disutility": 26.71326969724194,
+                            "waiting_time_disutility": 10.223828687943296,
+                            "total_utility": -64.41863079926092,
+                            "mode_split": {
+                                "trip_fare": 32.48153241407569,
+                                "time_tnc": 0.37753556059653204,
+                                "time_mt": 0.6909952272931457,
+                                "wait_tnc": 0.17694351986856988,
+                                "wait_mt": 0.11516587121552427,
+                                "travel_time_disutility_tnc": 9.438389014913302,
+                                "travel_time_disutility_mt": 17.274880682328643,
+                                "waiting_disutility_tnc": 6.193023195399945,
+                                "waiting_disutility_mt": 4.030805492543349
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 923.2852703898538,
+                    "capacity_sale_revenue": 496.67664439319043,
+                    "operating_cost": 750.0,
+                    "net_profit": 669.9619147830442
+                },
+                "maas": {
+                    "rider_revenue": 764.8382385684585,
+                    "tnc_capacity_purchase_cost": 496.67664439319043,
+                    "mt_capacity_purchase_cost": 32.541541806880936,
+                    "net_profit": 235.6200523683871
+                }
+            }
+        },
+        {
+            "day": 1338,
+            "update_day": 1339,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 18.6926294823755,
+                    "MT": 37.55179877205484,
+                    "MaaS": 23.755571745569572
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        18.6926294823755
+                    ],
+                    "MT": [
+                        37.55179877205484
+                    ],
+                    "MaaS": [
+                        23.755571745569572
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 373.85258964751006,
+                    "capacity_for_tnc_vkm": 483.0221356174071
+                },
+                "maas": {
+                    "demand_vkm": 257.1350890048316,
+                    "purchased_tnc_capacity_vkm": 316.9778643825929
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.13535186547744213,
+                "maas_mean_hr": 0.29751135120348354
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.23401679561340055,
+                        0.46886558525757194,
+                        0.29711761912902757
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 52.374274614819754,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 4.737315291710474,
+                            "total_utility": -64.61158990653023
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 32.28415865299331,
+                            "travel_time_disutility": 26.6757987659132,
+                            "waiting_time_disutility": 10.412897292121924,
+                            "total_utility": -64.37285471102844,
+                            "mode_split": {
+                                "trip_fare": 32.28415865299331,
+                                "time_tnc": 0.3788470431930379,
+                                "time_mt": 0.68818490744349,
+                                "wait_tnc": 0.18281386662956853,
+                                "wait_mt": 0.114697484573915,
+                                "travel_time_disutility_tnc": 9.471176079825948,
+                                "travel_time_disutility_mt": 17.20462268608725,
+                                "waiting_disutility_tnc": 6.398485332034898,
+                                "waiting_disutility_mt": 4.014411960087025
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 979.0129097830105,
+                    "capacity_sale_revenue": 495.2779130978014,
+                    "operating_cost": 750.0,
+                    "net_profit": 724.2908228808119
+                },
+                "maas": {
+                    "rider_revenue": 766.9286471265333,
+                    "tnc_capacity_purchase_cost": 495.2779130978014,
+                    "mt_capacity_purchase_cost": 32.69645188598397,
+                    "net_profit": 238.95428214274793
+                }
+            }
+        },
+        {
+            "day": 1423,
+            "update_day": 1424,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 19.72544887859453,
+                    "MT": 36.360085189929954,
+                    "MaaS": 23.914465931475462
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        19.72544887859453
+                    ],
+                    "MT": [
+                        36.360085189929954
+                    ],
+                    "MaaS": [
+                        23.914465931475462
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 394.5089775718906,
+                    "capacity_for_tnc_vkm": 484.18596084551314
+                },
+                "maas": {
+                    "demand_vkm": 259.36971416094974,
+                    "purchased_tnc_capacity_vkm": 315.81403915448686
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.14933943459218013,
+                "maas_mean_hr": 0.30266538180275626
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.24672406791823176,
+                        0.4542309206617685,
+                        0.2990450114199997
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 51.80012158225476,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 5.226880210726304,
+                            "total_utility": -64.52700179298107
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 32.08711461959983,
+                            "travel_time_disutility": 26.654275286592306,
+                            "waiting_time_disutility": 10.59328836309647,
+                            "total_utility": -64.33467826928862,
+                            "mode_split": {
+                                "trip_fare": 32.08711461959983,
+                                "time_tnc": 0.37960036496926924,
+                                "time_mt": 0.686570646494423,
+                                "wait_tnc": 0.1882369407203524,
+                                "wait_mt": 0.11442844108240383,
+                                "travel_time_disutility_tnc": 9.490009124231731,
+                                "travel_time_disutility_mt": 17.164266162360576,
+                                "waiting_disutility_tnc": 6.588292925212334,
+                                "waiting_disutility_mt": 4.0049954378841335
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1021.7806501757475,
+                    "capacity_sale_revenue": 493.4594361788857,
+                    "operating_cost": 750.0,
+                    "net_profit": 765.2400863546331
+                },
+                "maas": {
+                    "rider_revenue": 767.3462094097683,
+                    "tnc_capacity_purchase_cost": 493.4594361788857,
+                    "mt_capacity_purchase_cost": 32.83794067028392,
+                    "net_profit": 241.0488325605987
+                }
+            }
+        },
+        {
+            "day": 1501,
+            "update_day": 1502,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 20.57452702077175,
+                    "MT": 35.39717804693299,
+                    "MaaS": 24.028294932295193
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        20.57452702077175
+                    ],
+                    "MT": [
+                        35.39717804693299
+                    ],
+                    "MaaS": [
+                        24.028294932295193
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 411.490540415435,
+                    "capacity_for_tnc_vkm": 485.67305394229106
+                },
+                "maas": {
+                    "demand_vkm": 260.74762145382834,
+                    "purchased_tnc_capacity_vkm": 314.3269460577089
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.16419662480861485,
+                "maas_mean_hr": 0.3075579866258378
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.25724872781299996,
+                        0.44232361603815923,
+                        0.3004276561488408
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 51.211783146155945,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 5.74688186830152,
+                            "total_utility": -64.45866501445747
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 31.890662498690475,
+                            "travel_time_disutility": 26.648309433168688,
+                            "waiting_time_disutility": 10.764529531904323,
+                            "total_utility": -64.3035014637635,
+                            "mode_split": {
+                                "trip_fare": 31.890662498690475,
+                                "time_tnc": 0.37980916983909585,
+                                "time_mt": 0.6861232074876517,
+                                "wait_tnc": 0.19320411871122917,
+                                "wait_mt": 0.11435386791460861,
+                                "travel_time_disutility_tnc": 9.495229245977397,
+                                "travel_time_disutility_mt": 17.153080187191293,
+                                "waiting_disutility_tnc": 6.762144154893021,
+                                "waiting_disutility_mt": 4.002385377011302
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1053.6582161224887,
+                    "capacity_sale_revenue": 491.13585321517013,
+                    "operating_cost": 750.0,
+                    "net_profit": 794.7940693376588
+                },
+                "maas": {
+                    "rider_revenue": 766.2782441048207,
+                    "tnc_capacity_purchase_cost": 491.13585321517013,
+                    "mt_capacity_purchase_cost": 32.97274157881132,
+                    "net_profit": 242.16964931083925
+                }
+            }
+        },
+        {
+            "day": 1574,
+            "update_day": 1575,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 21.279920770009934,
+                    "MT": 34.62158474102989,
+                    "MaaS": 24.098494488960103
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        21.279920770009934
+                    ],
+                    "MT": [
+                        34.62158474102989
+                    ],
+                    "MaaS": [
+                        24.098494488960103
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 425.5984154001987,
+                    "capacity_for_tnc_vkm": 487.5446752052145
+                },
+                "maas": {
+                    "demand_vkm": 261.29534173531937,
+                    "purchased_tnc_capacity_vkm": 312.45532479478555
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.17968319156793233,
+                "maas_mean_hr": 0.3121845394880059
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.26602699843195565,
+                        0.43269684685023074,
+                        0.3012761547178137
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 50.614194520347766,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 6.2889117048776315,
+                            "total_utility": -64.4031062252254
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 31.695025548442754,
+                            "travel_time_disutility": 26.65719229452185,
+                            "waiting_time_disutility": 10.926458882080206,
+                            "total_utility": -64.27867672504482,
+                            "mode_split": {
+                                "trip_fare": 31.695025548442754,
+                                "time_tnc": 0.37949826969173533,
+                                "time_mt": 0.6867894220891386,
+                                "wait_tnc": 0.1977196358064828,
+                                "wait_mt": 0.11446490368152308,
+                                "travel_time_disutility_tnc": 9.487456742293384,
+                                "travel_time_disutility_mt": 17.169735552228467,
+                                "waiting_disutility_tnc": 6.920187253226898,
+                                "waiting_disutility_mt": 4.006271628853308
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1077.0660492308714,
+                    "capacity_sale_revenue": 488.21144499185243,
+                    "operating_cost": 750.0,
+                    "net_profit": 815.2774942227238
+                },
+                "maas": {
+                    "rider_revenue": 763.8023985065973,
+                    "tnc_capacity_purchase_cost": 488.21144499185243,
+                    "mt_capacity_purchase_cost": 33.1011822065824,
+                    "net_profit": 242.48977130816252
+                }
+            }
+        },
+        {
+            "day": 1643,
+            "update_day": 1644,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 21.879833584152742,
+                    "MT": 33.99655390800161,
+                    "MaaS": 24.12361250784557
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        21.879833584152742
+                    ],
+                    "MT": [
+                        33.99655390800161
+                    ],
+                    "MaaS": [
+                        24.12361250784557
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 437.59667168305486,
+                    "capacity_for_tnc_vkm": 489.8686043043696
+                },
+                "maas": {
+                    "demand_vkm": 261.01924225404014,
+                    "purchased_tnc_capacity_vkm": 310.13139569563043
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.19560534557325543,
+                "maas_mean_hr": 0.3165487873827323
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.273510319807149,
+                        0.4249166274197279,
+                        0.3015730527731231
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 50.01103319697138,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 6.84618709506394,
+                            "total_utility": -64.35722029203532
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 31.500412549548095,
+                            "travel_time_disutility": 26.679927253053393,
+                            "waiting_time_disutility": 11.07920755839563,
+                            "total_utility": -64.25954736099712,
+                            "mode_split": {
+                                "trip_fare": 31.500412549548095,
+                                "time_tnc": 0.37870254614313126,
+                                "time_mt": 0.6884945439790044,
+                                "wait_tnc": 0.20179969671956488,
+                                "wait_mt": 0.11474909066316741,
+                                "travel_time_disutility_tnc": 9.467563653578281,
+                                "travel_time_disutility_mt": 17.21236359947511,
+                                "waiting_disutility_tnc": 7.062989385184771,
+                                "waiting_disutility_mt": 4.016218173210859
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1094.2330837212724,
+                    "capacity_sale_revenue": 484.5803057744225,
+                    "operating_cost": 750.0,
+                    "net_profit": 828.813389495695
+                },
+                "maas": {
+                    "rider_revenue": 759.9037461825741,
+                    "tnc_capacity_purchase_cost": 484.5803057744225,
+                    "mt_capacity_purchase_cost": 33.21795118543069,
+                    "net_profit": 242.10548922272085
+                }
+            }
+        },
+        {
+            "day": 1708,
+            "update_day": 1709,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 22.40712529524387,
+                    "MT": 33.49296726691226,
+                    "MaaS": 24.099907437843765
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        22.40712529524387
+                    ],
+                    "MT": [
+                        33.49296726691226
+                    ],
+                    "MaaS": [
+                        24.099907437843765
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 448.1425059048774,
+                    "capacity_for_tnc_vkm": 492.71895066018124
+                },
+                "maas": {
+                    "demand_vkm": 259.9108222837617,
+                    "purchased_tnc_capacity_vkm": 307.28104933981876
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.21181771751247316,
+                "maas_mean_hr": 0.3206675141772872
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.2800953993970583,
+                        0.41863656680747696,
+                        0.30126803379546463
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 49.40491945766507,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 7.41362011293656,
+                            "total_utility": -64.31853957060163
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 31.307029329457727,
+                            "travel_time_disutility": 26.715277155976658,
+                            "waiting_time_disutility": 11.223362996205053,
+                            "total_utility": -64.24566948163944,
+                            "mode_split": {
+                                "trip_fare": 31.307029329457727,
+                                "time_tnc": 0.377465299540817,
+                                "time_mt": 0.6911457866982493,
+                                "wait_tnc": 0.20547654972757898,
+                                "wait_mt": 0.11519096444970822,
+                                "travel_time_disutility_tnc": 9.436632488520424,
+                                "travel_time_disutility_mt": 17.278644667456234,
+                                "waiting_disutility_tnc": 7.191679240465264,
+                                "waiting_disutility_mt": 4.031683755739788
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1107.022220489333,
+                    "capacity_sale_revenue": 480.1266395934668,
+                    "operating_cost": 750.0,
+                    "net_profit": 837.1488600827997
+                },
+                "maas": {
+                    "rider_revenue": 754.496508993791,
+                    "tnc_capacity_purchase_cost": 480.1266395934668,
+                    "mt_capacity_purchase_cost": 33.31309897096704,
+                    "net_profit": 241.05677042935721
+                }
+            }
+        },
+        {
+            "day": 1769,
+            "update_day": 1770,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 22.88875344199102,
+                    "MT": 33.08963925306203,
+                    "MaaS": 24.021607304946833
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        22.88875344199102
+                    ],
+                    "MT": [
+                        33.08963925306203
+                    ],
+                    "MaaS": [
+                        24.021607304946833
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 457.7750688398204,
+                    "capacity_for_tnc_vkm": 496.1760071018934
+                },
+                "maas": {
+                    "demand_vkm": 257.9482582702652,
+                    "purchased_tnc_capacity_vkm": 303.8239928981066
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.22821494421935712,
+                "maas_mean_hr": 0.32456942275156625
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.2861129325022106,
+                        0.41360308857882444,
+                        0.30028397891896486
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 48.797663807937354,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 7.987523047677499,
+                            "total_utility": -64.28518685561485
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 31.115091505130714,
+                            "travel_time_disutility": 26.761823532634914,
+                            "waiting_time_disutility": 11.359929796304819,
+                            "total_utility": -64.23684483407044,
+                            "mode_split": {
+                                "trip_fare": 31.115091505130714,
+                                "time_tnc": 0.37583617635777783,
+                                "time_mt": 0.6946367649476188,
+                                "wait_tnc": 0.2087966285936298,
+                                "wait_mt": 0.11577279415793647,
+                                "travel_time_disutility_tnc": 9.395904408944446,
+                                "travel_time_disutility_mt": 17.36591912369047,
+                                "waiting_disutility_tnc": 7.307882000777043,
+                                "waiting_disutility_mt": 4.052047795527776
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1116.9176954450468,
+                    "capacity_sale_revenue": 474.72498890329155,
+                    "operating_cost": 750.0,
+                    "net_profit": 841.6426843483382
+                },
+                "maas": {
+                    "rider_revenue": 747.434509393737,
+                    "tnc_capacity_purchase_cost": 474.72498890329155,
+                    "mt_capacity_purchase_cost": 33.372583174300715,
+                    "net_profit": 239.33693731614477
+                }
+            }
+        },
+        {
+            "day": 1826,
+            "update_day": 1827,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 23.34656022914614,
+                    "MT": 32.772347105276026,
+                    "MaaS": 23.881092665577736
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        23.34656022914614
+                    ],
+                    "MT": [
+                        32.772347105276026
+                    ],
+                    "MaaS": [
+                        23.881092665577736
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 466.93120458292276,
+                    "capacity_for_tnc_vkm": 500.32621999101644
+                },
+                "maas": {
+                    "demand_vkm": 255.09722060950673,
+                    "purchased_tnc_capacity_vkm": 299.67378000898356
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.24472265391373552,
+                "maas_mean_hr": 0.32829276507221417
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.29183381808675335,
+                        0.4096434092169899,
+                        0.2985227726962568
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 48.19047630321049,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 8.565292886980743,
+                            "total_utility": -64.25576919019123
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 30.924835121100873,
+                            "travel_time_disutility": 26.818025595319412,
+                            "waiting_time_disutility": 11.490246777527496,
+                            "total_utility": -64.23310749394778,
+                            "mode_split": {
+                                "trip_fare": 30.924835121100873,
+                                "time_tnc": 0.37386910416382063,
+                                "time_mt": 0.6988519196489558,
+                                "wait_tnc": 0.21181744513072154,
+                                "wait_mt": 0.11647531994149263,
+                                "travel_time_disutility_tnc": 9.346727604095516,
+                                "travel_time_disutility_mt": 17.471297991223896,
+                                "waiting_disutility_tnc": 7.413610579575254,
+                                "waiting_disutility_mt": 4.076636197952242
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1125.0818574841435,
+                    "capacity_sale_revenue": 468.2402812640368,
+                    "operating_cost": 750.0,
+                    "net_profit": 843.3221387481804
+                },
+                "maas": {
+                    "rider_revenue": 738.5188531947229,
+                    "tnc_capacity_purchase_cost": 468.2402812640368,
+                    "mt_capacity_purchase_cost": 33.3786949053072,
+                    "net_profit": 236.89987702537883
+                }
+            }
+        },
+        {
+            "day": 1881,
+            "update_day": 1882,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 23.7983969231181,
+                    "MT": 32.532528866150685,
+                    "MaaS": 23.669074210731132
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        23.7983969231181
+                    ],
+                    "MT": [
+                        32.532528866150685
+                    ],
+                    "MaaS": [
+                        23.669074210731132
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 475.96793846236204,
+                    "capacity_for_tnc_vkm": 505.2622905377133
+                },
+                "maas": {
+                    "demand_vkm": 251.31178867052017,
+                    "purchased_tnc_capacity_vkm": 294.73770946228666
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.2612901567481964,
+                "maas_mean_hr": 0.3318837198216009
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.29748020790528346,
+                        0.4066548247813585,
+                        0.29586496731335804
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 47.58412821500177,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 9.145155486186873,
+                            "total_utility": -64.22928370118865
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 30.736525903547296,
+                            "travel_time_disutility": 26.88227213988032,
+                            "waiting_time_disutility": 11.615930193756032,
+                            "total_utility": -64.23472823718365,
+                            "mode_split": {
+                                "trip_fare": 30.736525903547296,
+                                "time_tnc": 0.3716204751041887,
+                                "time_mt": 0.7036704104910241,
+                                "wait_tnc": 0.21460531807309693,
+                                "wait_mt": 0.11727840174850401,
+                                "travel_time_disutility_tnc": 9.290511877604718,
+                                "travel_time_disutility_mt": 17.591760262275603,
+                                "waiting_disutility_tnc": 7.511186132558393,
+                                "waiting_disutility_mt": 4.104744061197641
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1132.4259705011555,
+                    "capacity_sale_revenue": 460.5276710348229,
+                    "operating_cost": 750.0,
+                    "net_profit": 842.9536415359785
+                },
+                "maas": {
+                    "rider_revenue": 727.5051125911207,
+                    "tnc_capacity_purchase_cost": 460.5276710348229,
+                    "mt_capacity_purchase_cost": 33.310454331615375,
+                    "net_profit": 233.6669872246824
+                }
+            }
+        },
+        {
+            "day": 1935,
+            "update_day": 1936,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 24.2591588330904,
+                    "MT": 32.366169467967566,
+                    "MaaS": 23.374671698942
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        24.2591588330904
+                    ],
+                    "MT": [
+                        32.366169467967566
+                    ],
+                    "MaaS": [
+                        23.374671698942
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 485.183176661808,
+                    "capacity_for_tnc_vkm": 511.0834048834489
+                },
+                "maas": {
+                    "demand_vkm": 246.53452275186308,
+                    "purchased_tnc_capacity_vkm": 288.9165951165511
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.27788378288424814,
+                "maas_mean_hr": 0.3353935565876636
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.30323869944027654,
+                        0.40458391729780097,
+                        0.29217738326192244
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 46.97907315772717,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 9.725932400948684,
+                            "total_utility": -64.20500555867585
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 30.550469853643428,
+                            "travel_time_disutility": 26.952920412010666,
+                            "waiting_time_disutility": 11.738774480568226,
+                            "total_utility": -64.24216474622231,
+                            "mode_split": {
+                                "trip_fare": 30.550469853643428,
+                                "time_tnc": 0.3691477855796266,
+                                "time_mt": 0.7089690309008001,
+                                "wait_tnc": 0.21723205143753027,
+                                "wait_mt": 0.11816150515013335,
+                                "travel_time_disutility_tnc": 9.228694639490664,
+                                "travel_time_disutility_mt": 17.724225772520004,
+                                "waiting_disutility_tnc": 7.603121800313559,
+                                "waiting_disutility_mt": 4.135652680254667
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1139.6727975646772,
+                    "capacity_sale_revenue": 451.43217986961105,
+                    "operating_cost": 750.0,
+                    "net_profit": 841.1049774342882
+                },
+                "maas": {
+                    "rider_revenue": 714.1072030773398,
+                    "tnc_capacity_purchase_cost": 451.43217986961105,
+                    "mt_capacity_purchase_cost": 33.14383668404653,
+                    "net_profit": 229.53118652368224
+                }
+            }
+        },
+        {
+            "day": 1994,
+            "update_day": 1995,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 24.74164025637239,
+                    "MT": 32.272838238880915,
+                    "MaaS": 22.985521504746625
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        24.74164025637239
+                    ],
+                    "MT": [
+                        32.272838238880915
+                    ],
+                    "MaaS": [
+                        22.985521504746625
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 494.8328051274478,
+                    "capacity_for_tnc_vkm": 517.8955512974477
+                },
+                "maas": {
+                    "demand_vkm": 240.69696404436598,
+                    "purchased_tnc_capacity_vkm": 282.1044487025523
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.2944824978784411,
+                "maas_mean_hr": 0.33887765932051217
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.3092698836314429,
+                        0.40341682194592593,
+                        0.2873132944226311
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 46.375535260475374,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 10.306887425745439,
+                            "total_utility": -64.18242268622082
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 30.367022988875764,
+                            "travel_time_disutility": 27.02832268805992,
+                            "waiting_time_disutility": 11.860718076217927,
+                            "total_utility": -64.25606375315361,
+                            "mode_split": {
+                                "trip_fare": 30.367022988875764,
+                                "time_tnc": 0.3665087059179027,
+                                "time_mt": 0.7146242016044941,
+                                "wait_tnc": 0.21977362571976317,
+                                "wait_mt": 0.11910403360074902,
+                                "travel_time_disutility_tnc": 9.162717647947566,
+                                "travel_time_disutility_mt": 17.865605040112353,
+                                "waiting_disutility_tnc": 7.692076900191711,
+                                "waiting_disutility_mt": 4.168641176026216
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1147.4068101113946,
+                    "capacity_sale_revenue": 440.78820109773795,
+                    "operating_cost": 750.0,
+                    "net_profit": 838.1950112091326
+                },
+                "maas": {
+                    "rider_revenue": 698.001859945939,
+                    "tnc_capacity_purchase_cost": 440.78820109773795,
+                    "mt_capacity_purchase_cost": 32.852019907584975,
+                    "net_profit": 224.3616389406161
+                }
+            }
+        },
+        {
+            "day": 2056,
+            "update_day": 2057,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 25.257198632152495,
+                    "MT": 32.25482740306297,
+                    "MaaS": 22.487973964784466
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        25.257198632152495
+                    ],
+                    "MT": [
+                        32.25482740306297
+                    ],
+                    "MaaS": [
+                        22.487973964784466
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 505.1439726430499,
+                    "capacity_for_tnc_vkm": 525.8118931842479
+                },
+                "maas": {
+                    "demand_vkm": 233.72113875836246,
+                    "purchased_tnc_capacity_vkm": 274.1881068157522
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.3110760718599074,
+                "maas_mean_hr": 0.34239838515132
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.31571452027065844,
+                        0.4031909103171687,
+                        0.28109456941217287
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 45.773575935821775,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 10.887662515096759,
+                            "total_utility": -64.16123845091853
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 30.18660341284516,
+                            "travel_time_disutility": 27.10683878750646,
+                            "waiting_time_disutility": 11.9839434802962,
+                            "total_utility": -64.27738568064782,
+                            "mode_split": {
+                                "trip_fare": 30.18660341284516,
+                                "time_tnc": 0.3637606424372739,
+                                "time_mt": 0.7205129090629845,
+                                "wait_tnc": 0.22231290030748924,
+                                "wait_mt": 0.12008548484383075,
+                                "travel_time_disutility_tnc": 9.094016060931848,
+                                "travel_time_disutility_mt": 18.012822726574612,
+                                "waiting_disutility_tnc": 7.780951510762123,
+                                "waiting_disutility_mt": 4.202991969534076
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1156.112299514966,
+                    "capacity_sale_revenue": 428.4189168996128,
+                    "operating_cost": 750.0,
+                    "net_profit": 834.5312164145789
+                },
+                "maas": {
+                    "rider_revenue": 678.8355516333359,
+                    "tnc_capacity_purchase_cost": 428.4189168996128,
+                    "mt_capacity_purchase_cost": 32.405751080599025,
+                    "net_profit": 218.01088365312404
+                }
+            }
+        },
+        {
+            "day": 2120,
+            "update_day": 2121,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 25.81622667567247,
+                    "MT": 32.316759149155146,
+                    "MaaS": 21.86701417517229
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        25.81622667567247
+                    ],
+                    "MT": [
+                        32.316759149155146
+                    ],
+                    "MaaS": [
+                        21.86701417517229
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 516.3245335134494,
+                    "capacity_for_tnc_vkm": 534.9532085802088
+                },
+                "maas": {
+                    "demand_vkm": 225.51829161473523,
+                    "purchased_tnc_capacity_vkm": 265.04679141979125
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.3276604429832777,
+                "maas_mean_hr": 0.34602178981073123
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.3227024729724557,
+                        0.4039645577200978,
+                        0.27333296930744655
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 45.17314754554142,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 11.468115504414719,
+                            "total_utility": -64.14126304995614
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 30.009713057411386,
+                            "travel_time_disutility": 27.186827391789603,
+                            "waiting_time_disutility": 12.110762643375592,
+                            "total_utility": -64.30730309257657,
+                            "mode_split": {
+                                "trip_fare": 30.009713057411386,
+                                "time_tnc": 0.3609610412873637,
+                                "time_mt": 0.7265120543842205,
+                                "wait_tnc": 0.22493644741336113,
+                                "wait_mt": 0.1210853423973701,
+                                "travel_time_disutility_tnc": 9.024026032184093,
+                                "travel_time_disutility_mt": 18.162801359605513,
+                                "waiting_disutility_tnc": 7.8727756594676395,
+                                "waiting_disutility_mt": 4.237986983907954
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1166.2002166892946,
+                    "capacity_sale_revenue": 414.1356115934238,
+                    "operating_cost": 750.0,
+                    "net_profit": 830.3358282827185
+                },
+                "maas": {
+                    "rider_revenue": 656.2228208192677,
+                    "tnc_capacity_purchase_cost": 414.1356115934238,
+                    "mt_capacity_purchase_cost": 31.773298783306583,
+                    "net_profit": 210.3139104425373
+                }
+            }
+        },
+        {
+            "day": 2186,
+            "update_day": 2187,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 26.42851808344342,
+                    "MT": 32.46508784353577,
+                    "MaaS": 21.1063940730207
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        26.42851808344342
+                    ],
+                    "MT": [
+                        32.46508784353577
+                    ],
+                    "MaaS": [
+                        21.1063940730207
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 528.5703616688684,
+                    "capacity_for_tnc_vkm": 545.4482075284498
+                },
+                "maas": {
+                    "demand_vkm": 215.98945501686185,
+                    "purchased_tnc_capacity_vkm": 254.55179247155021
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.3442361609524349,
+                "maas_mean_hr": 0.34981978217256193
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.33035620622882195,
+                        0.405818007743532,
+                        0.26382578602764617
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 44.57413435051873,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 12.048265633335223,
+                            "total_utility": -64.12239998385395
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 29.836956086646346,
+                            "travel_time_disutility": 27.26663402239083,
+                            "waiting_time_disutility": 12.243692376039668,
+                            "total_utility": -64.34728248507685,
+                            "mode_split": {
+                                "trip_fare": 29.836956086646346,
+                                "time_tnc": 0.3581678092163209,
+                                "time_mt": 0.7324975516793122,
+                                "wait_tnc": 0.22773685689267656,
+                                "wait_mt": 0.12208292527988536,
+                                "travel_time_disutility_tnc": 8.954195230408022,
+                                "travel_time_disutility_mt": 18.312438791982803,
+                                "waiting_disutility_tnc": 7.97078999124368,
+                                "waiting_disutility_mt": 4.272902384795987
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1178.028315736521,
+                    "capacity_sale_revenue": 397.7371757367972,
+                    "operating_cost": 750.0,
+                    "net_profit": 825.7654914733184
+                },
+                "maas": {
+                    "rider_revenue": 629.7505531041713,
+                    "tnc_capacity_purchase_cost": 397.7371757367972,
+                    "mt_capacity_purchase_cost": 30.920763966532814,
+                    "net_profit": 201.09261340084132
+                }
+            }
+        },
+        {
+            "day": 2254,
+            "update_day": 2255,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 27.10352537559127,
+                    "MT": 32.70769030061613,
+                    "MaaS": 20.18878432379248
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        27.10352537559127
+                    ],
+                    "MT": [
+                        32.70769030061613
+                    ],
+                    "MaaS": [
+                        20.18878432379248
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 542.0705075118254,
+                    "capacity_for_tnc_vkm": 557.4336781193322
+                },
+                "maas": {
+                    "demand_vkm": 205.02581297171812,
+                    "purchased_tnc_capacity_vkm": 242.56632188066774
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.36080668135081984,
+                "maas_mean_hr": 0.35387258184326853
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.3387938676178236,
+                        0.40884990531285614,
+                        0.2523562270693202
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 43.976389066089574,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 12.628233847278695,
+                            "total_utility": -64.10462291336827
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 29.66906405906461,
+                            "travel_time_disutility": 27.344568663300084,
+                            "waiting_time_disutility": 12.385540364514398,
+                            "total_utility": -64.39917308687909,
+                            "mode_split": {
+                                "trip_fare": 29.66906405906461,
+                                "time_tnc": 0.35544009678449695,
+                                "time_mt": 0.7383426497475065,
+                                "wait_tnc": 0.23081547355201748,
+                                "wait_mt": 0.12305710829125106,
+                                "travel_time_disutility_tnc": 8.886002419612424,
+                                "travel_time_disutility_mt": 18.458566243687663,
+                                "waiting_disutility_tnc": 8.078541574320612,
+                                "waiting_disutility_mt": 4.306998790193787
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1191.915176979633,
+                    "capacity_sale_revenue": 379.00987793854335,
+                    "operating_cost": 750.0,
+                    "net_profit": 820.9250549181766
+                },
+                "maas": {
+                    "rider_revenue": 598.9823353772384,
+                    "tnc_capacity_purchase_cost": 379.00987793854335,
+                    "mt_capacity_purchase_cost": 29.81248102561972,
+                    "net_profit": 190.15997641307536
+                }
+            }
+        },
+        {
+            "day": 2323,
+            "update_day": 2324,
+            "allocation": {
+                "total_by_service": {
+                    "TNC": 27.850532387490045,
+                    "MT": 33.05345169820594,
+                    "MaaS": 19.09601591430387
+                },
+                "by_service_and_type": {
+                    "TNC": [
+                        27.850532387490045
+                    ],
+                    "MT": [
+                        33.05345169820594
+                    ],
+                    "MaaS": [
+                        19.09601591430387
+                    ]
+                }
+            },
+            "capacity": {
+                "tnc": {
+                    "demand_vkm": 557.0106477498009,
+                    "capacity_for_tnc_vkm": 571.0542947401468
+                },
+                "maas": {
+                    "demand_vkm": 192.5092592321599,
+                    "purchased_tnc_capacity_vkm": 228.94570525985318
+                }
+            },
+            "waiting_times": {
+                "tnc_mean_hr": 0.3773766680873133,
+                "maas_mean_hr": 0.3582723330362381
+            },
+            "choice_probabilities": [
+                {
+                    "traveler_type": 1,
+                    "probabilities": [
+                        0.3481314817197566,
+                        0.4131719515264626,
+                        0.2386965667537809
+                    ]
+                }
+            ],
+            "utility_decomposition": [
+                {
+                    "traveler_type": 0,
+                    "trip_length": 20.0,
+                    "value_time": 25.0,
+                    "value_wait": 35.0,
+                    "services": {
+                        "TNC": {
+                            "ASC": 10.0,
+                            "fare_disutility": 43.37976690799299,
+                            "travel_time_disutility": 17.5,
+                            "waiting_time_disutility": 13.208183383055966,
+                            "total_utility": -64.08795029104895
+                        },
+                        "MT": {
+                            "ASC": 0.0,
+                            "fare_disutility": 6.0,
+                            "travel_time_disutility": 37.5,
+                            "waiting_time_disutility": 20.416666666666664,
+                            "total_utility": -63.916666666666664
+                        },
+                        "MaaS": {
+                            "ASC": 5.0,
+                            "fare_disutility": 29.50692735203347,
+                            "travel_time_disutility": 27.418878362058713,
+                            "waiting_time_disutility": 12.539531656268334,
+                            "total_utility": -64.46533737036052,
+                            "mode_split": {
+                                "trip_fare": 29.50692735203347,
+                                "time_tnc": 0.35283925732794497,
+                                "time_mt": 0.7439158771544035,
+                                "wait_tnc": 0.2342863535105042,
+                                "wait_mt": 0.12398597952573392,
+                                "travel_time_disutility_tnc": 8.820981433198623,
+                                "travel_time_disutility_mt": 18.597896928860088,
+                                "waiting_disutility_tnc": 8.200022372867647,
+                                "waiting_disutility_mt": 4.339509283400687
+                            }
+                        }
+                    }
+                }
+            ],
+            "financials": {
+                "tnc": {
+                    "rider_revenue": 1208.1496032328278,
+                    "capacity_sale_revenue": 357.7276644685206,
+                    "operating_cost": 750.0,
+                    "net_profit": 815.8772677013483
+                },
+                "maas": {
+                    "rider_revenue": 563.4647542966393,
+                    "tnc_capacity_purchase_cost": 357.7276644685206,
+                    "mt_capacity_purchase_cost": 28.411658858087627,
+                    "net_profit": 177.32543097003108
+                }
+            }
+        }
+    ]
+}
