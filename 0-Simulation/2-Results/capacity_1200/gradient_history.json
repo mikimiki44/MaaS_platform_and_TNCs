@@ -1,0 +1,6348 @@
+{
+    "events": [
+        {
+            "update_idx": 1,
+            "day": 51,
+            "grad_maas_norm": 970.1685044250544,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1997.1219417752325,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 2,
+            "day": 101,
+            "grad_maas_norm": 981.3310259749006,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 2015.7104469143117,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 3,
+            "day": 151,
+            "grad_maas_norm": 991.5539507184775,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 2028.7306202598063,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 4,
+            "day": 201,
+            "grad_maas_norm": 1000.1148173453959,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 2034.384831700269,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 5,
+            "day": 251,
+            "grad_maas_norm": 1006.4376039600222,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 2031.5103555851026,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 6,
+            "day": 301,
+            "grad_maas_norm": 1010.1135950156219,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 2019.6377629488156,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 7,
+            "day": 351,
+            "grad_maas_norm": 1010.9239376488439,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1999.0097361520639,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 8,
+            "day": 401,
+            "grad_maas_norm": 1008.8490907196441,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1970.5339071039423,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 9,
+            "day": 451,
+            "grad_maas_norm": 1004.0566864972366,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1935.6653901675916,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 10,
+            "day": 501,
+            "grad_maas_norm": 996.8676244767673,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1896.2375177004767,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 11,
+            "day": 551,
+            "grad_maas_norm": 987.707177580049,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1854.2734497123085,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 12,
+            "day": 601,
+            "grad_maas_norm": 977.0512141436963,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1811.8129472640994,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 13,
+            "day": 651,
+            "grad_maas_norm": 965.3769718460471,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1770.7800936023482,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 14,
+            "day": 701,
+            "grad_maas_norm": 953.1245157801667,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1732.9051125789322,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 15,
+            "day": 751,
+            "grad_maas_norm": 940.6710127720665,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1699.702404517158,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 16,
+            "day": 801,
+            "grad_maas_norm": 928.316722603047,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1672.5006732736315,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 17,
+            "day": 851,
+            "grad_maas_norm": 916.2797179001648,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1652.5201723270204,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 18,
+            "day": 901,
+            "grad_maas_norm": 904.6956525211892,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1640.9960494281324,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 19,
+            "day": 951,
+            "grad_maas_norm": 893.6189220273623,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1639.3551627663453,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 20,
+            "day": 1001,
+            "grad_maas_norm": 883.0217815126213,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1649.467496191462,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 21,
+            "day": 1051,
+            "grad_maas_norm": 872.7879710260198,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1674.0152379480314,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 22,
+            "day": 1101,
+            "grad_maas_norm": 862.6967709003422,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1717.0575914126225,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 23,
+            "day": 1151,
+            "grad_maas_norm": 852.3917503583336,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1784.92227636868,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 24,
+            "day": 1201,
+            "grad_maas_norm": 841.3252417063547,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 1887.6165445223946,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 25,
+            "day": 1251,
+            "grad_maas_norm": 828.6643996538538,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 2040.9350929363618,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 26,
+            "day": 1301,
+            "grad_maas_norm": 813.1399318466757,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 2268.9251922392823,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 27,
+            "day": 1351,
+            "grad_maas_norm": 792.8334306888721,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 2603.6532425404193,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 28,
+            "day": 1401,
+            "grad_maas_norm": 765.0359644848392,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 3069.0573557452103,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 29,
+            "day": 1451,
+            "grad_maas_norm": 726.9608993662548,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 3613.4338946528733,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 30,
+            "day": 1501,
+            "grad_maas_norm": 679.6584636486317,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 3992.192538221472,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 31,
+            "day": 1554,
+            "grad_maas_norm": 636.8461241212116,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 3943.925812316571,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 32,
+            "day": 1606,
+            "grad_maas_norm": 612.3092165140864,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 3768.3405777289245,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 33,
+            "day": 1656,
+            "grad_maas_norm": 610.7841432038636,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 4123.815581300539,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 34,
+            "day": 1706,
+            "grad_maas_norm": 635.3888606094204,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 5836.83874270061,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 35,
+            "day": 1756,
+            "grad_maas_norm": 690.7548207180074,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 10387.772469769621,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 36,
+            "day": 1806,
+            "grad_maas_norm": 774.6082484031751,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 20694.776065082562,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 37,
+            "day": 1859,
+            "grad_maas_norm": 875.5839803896866,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 44013.66432064611,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 38,
+            "day": 1956,
+            "grad_maas_norm": 904.0262908034427,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 92622.54585286981,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 39,
+            "day": 2060,
+            "grad_maas_norm": 726.0854096181339,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 160712.81815141186,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 40,
+            "day": 2143,
+            "grad_maas_norm": 507.50884915244313,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 215631.15692275847,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 41,
+            "day": 2202,
+            "grad_maas_norm": 407.8271747849405,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 244237.5146017746,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 42,
+            "day": 2258,
+            "grad_maas_norm": 364.19919021637764,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 248558.9502156633,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 43,
+            "day": 2314,
+            "grad_maas_norm": 337.36049430819577,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 235867.34887699608,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 44,
+            "day": 2370,
+            "grad_maas_norm": 318.5063850758613,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 215130.0777900103,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 45,
+            "day": 2426,
+            "grad_maas_norm": 305.7954103291018,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 192946.42581259285,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 46,
+            "day": 2482,
+            "grad_maas_norm": 299.44874165170825,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 173242.7671446334,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 47,
+            "day": 2537,
+            "grad_maas_norm": 300.9940118286064,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 158065.53656271507,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 48,
+            "day": 2592,
+            "grad_maas_norm": 311.8899354589907,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 148215.14459198163,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 49,
+            "day": 2647,
+            "grad_maas_norm": 332.1051795989786,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 143512.7182709472,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 50,
+            "day": 2702,
+            "grad_maas_norm": 359.81136067231245,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 143254.3967906528,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 51,
+            "day": 2757,
+            "grad_maas_norm": 392.50772984324533,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 146601.71850923778,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 52,
+            "day": 2813,
+            "grad_maas_norm": 428.28571854615234,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 152758.4464381247,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 53,
+            "day": 2869,
+            "grad_maas_norm": 465.1890624171948,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 161121.86769376494,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 54,
+            "day": 2926,
+            "grad_maas_norm": 498.3007648217322,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170932.5523242226,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 55,
+            "day": 2985,
+            "grad_maas_norm": 512.6626589824446,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 181148.30234011862,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 56,
+            "day": 3050,
+            "grad_maas_norm": 479.3673991853323,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 189769.08256456716,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 57,
+            "day": 3122,
+            "grad_maas_norm": 376.51110448342786,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 195813.28384252446,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 58,
+            "day": 3195,
+            "grad_maas_norm": 199.65827542408374,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 198764.41505245434,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 59,
+            "day": 3257,
+            "grad_maas_norm": 21.3583085852702,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 189443.68172918915,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 60,
+            "day": 3319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 169832.87261497966,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 61,
+            "day": 3369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 169979.2812856013,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 62,
+            "day": 3419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170109.54389631285,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 63,
+            "day": 3469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170225.37783767076,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 64,
+            "day": 3519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170328.34847096738,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 65,
+            "day": 3569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170419.87379032144,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 66,
+            "day": 3619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170501.23145499043,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 67,
+            "day": 3669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170573.5674214441,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 68,
+            "day": 3719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170637.9055336999,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 69,
+            "day": 3769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170695.1575625736,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 70,
+            "day": 3819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170746.13329593214,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 71,
+            "day": 3869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170791.55038880935,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 72,
+            "day": 3919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170832.0437662644,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 73,
+            "day": 3969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170868.1744444324,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 74,
+            "day": 4019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170900.43769032264,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 75,
+            "day": 4069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170929.27048339727,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 76,
+            "day": 4119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170955.0582774886,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 77,
+            "day": 4169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170978.14107818963,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 78,
+            "day": 4219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 170998.81887335418,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 79,
+            "day": 4269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171017.35645823216,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 80,
+            "day": 4319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171033.9877042123,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 81,
+            "day": 4369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171048.91932400074,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 82,
+            "day": 4419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171062.33418096628,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 83,
+            "day": 4469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171074.39419322615,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 84,
+            "day": 4519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171085.2428774986,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 85,
+            "day": 4569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171095.00757443163,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 86,
+            "day": 4619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171103.8013946265,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 87,
+            "day": 4669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171111.72491934744,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 88,
+            "day": 4719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171118.86768649987,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 89,
+            "day": 4769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171125.30949031896,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 90,
+            "day": 4819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171131.12151716827,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 91,
+            "day": 4869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171136.36734112637,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 92,
+            "day": 4919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171141.10379398326,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 93,
+            "day": 4969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171145.38173055105,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 94,
+            "day": 5019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171149.24669862798,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 95,
+            "day": 5069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171152.73952864297,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 96,
+            "day": 5119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171155.8968534758,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 97,
+            "day": 5169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171158.7515644846,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 98,
+            "day": 5219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171161.33321677102,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 99,
+            "day": 5269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171163.66838495247,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 100,
+            "day": 5319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171165.78097964005,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 101,
+            "day": 5369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171167.6925272176,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 102,
+            "day": 5419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171169.4224183459,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 103,
+            "day": 5469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171170.98812906712,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 104,
+            "day": 5519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171172.40541719546,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 105,
+            "day": 5569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171173.68849761446,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 106,
+            "day": 5619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171174.85019854543,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 107,
+            "day": 5669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171175.90210114035,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 108,
+            "day": 5719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171176.85466423852,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 109,
+            "day": 5769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171177.71733628947,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 110,
+            "day": 5819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171178.49865511706,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 111,
+            "day": 5869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171179.20633829228,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 112,
+            "day": 5919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171179.84736282018,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 113,
+            "day": 5969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171180.42803836757,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 114,
+            "day": 6019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171180.95407178896,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 115,
+            "day": 6069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171181.43062572528,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 116,
+            "day": 6119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171181.86237145177,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 117,
+            "day": 6169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171182.25353628164,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 118,
+            "day": 6219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171182.60794597596,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 119,
+            "day": 6269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171182.92906374153,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 120,
+            "day": 6319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171183.22002482056,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 121,
+            "day": 6369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171183.48366772203,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 122,
+            "day": 6419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171183.7225625499,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 123,
+            "day": 6469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171183.93903679601,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 124,
+            "day": 6519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171184.13519825216,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 125,
+            "day": 6569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171184.3129558979,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 126,
+            "day": 6619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171184.47403872877,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 127,
+            "day": 6669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171184.62001318196,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 128,
+            "day": 6719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171184.7522976533,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 129,
+            "day": 6769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171184.87217748424,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 130,
+            "day": 6819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171184.98081701004,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 131,
+            "day": 6869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.07927113867,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 132,
+            "day": 6919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.1684953229,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 133,
+            "day": 6969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.24935567816,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 134,
+            "day": 7019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.3226366656,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 135,
+            "day": 7069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.3890490526,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 136,
+            "day": 7119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.4492370879,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 137,
+            "day": 7169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.50378443583,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 138,
+            "day": 7219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.55321988038,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 139,
+            "day": 7269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.5980226543,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 140,
+            "day": 7319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.638627063,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 141,
+            "day": 7369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.67542671293,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 142,
+            "day": 7419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.70877814124,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 143,
+            "day": 7469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.7390045845,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 144,
+            "day": 7519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.766398967,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 145,
+            "day": 7569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.79122656613,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 146,
+            "day": 7619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.8137280826,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 147,
+            "day": 7669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.8341214454,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 148,
+            "day": 7719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.85260406102,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 149,
+            "day": 7769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.8693551344,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 150,
+            "day": 7819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.88453691415,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 151,
+            "day": 7869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.8982963378,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 152,
+            "day": 7919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.91076669775,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 153,
+            "day": 7969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.92206886824,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 154,
+            "day": 8019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.9323121188,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 155,
+            "day": 8069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.94159586594,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 156,
+            "day": 8119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.9500098016,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 157,
+            "day": 8169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.95763566348,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 158,
+            "day": 8219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.96454703587,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 159,
+            "day": 8269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.97081093138,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 160,
+            "day": 8319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.97648808893,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 161,
+            "day": 8369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.98163347188,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 162,
+            "day": 8419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.98629671178,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 163,
+            "day": 8469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.99052317246,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 164,
+            "day": 8519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.9943537583,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 165,
+            "day": 8569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171185.9978254719,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 166,
+            "day": 8619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.00097201916,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 167,
+            "day": 8669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.00382369777,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 168,
+            "day": 8719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.00640830243,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 169,
+            "day": 8769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.00875078523,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 170,
+            "day": 8819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.01087389965,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 171,
+            "day": 8869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0127980571,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 172,
+            "day": 8919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.01454196835,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 173,
+            "day": 8969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.01612259392,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 174,
+            "day": 9019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.01755505565,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 175,
+            "day": 9069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.018853347,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 176,
+            "day": 9119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02003000645,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 177,
+            "day": 9169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02109654687,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 178,
+            "day": 9219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02206311485,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 179,
+            "day": 9269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02293912132,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 180,
+            "day": 9319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02373308825,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 181,
+            "day": 9369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02445267726,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 182,
+            "day": 9419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0251048929,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 183,
+            "day": 9469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02569597785,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 184,
+            "day": 9519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0262316747,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 185,
+            "day": 9569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02671726272,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 186,
+            "day": 9619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.027157284,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 187,
+            "day": 9669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02755609827,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 188,
+            "day": 9719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02791758106,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 189,
+            "day": 9769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02824519065,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 190,
+            "day": 9819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0285420848,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 191,
+            "day": 9869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0288111939,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 192,
+            "day": 9919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0290551412,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 193,
+            "day": 9969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02927614452,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 194,
+            "day": 10019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02947649543,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 195,
+            "day": 10069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0296581215,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 196,
+            "day": 10119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02982261576,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 197,
+            "day": 10169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.02997177318,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 198,
+            "day": 10219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03010699945,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 199,
+            "day": 10269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0302295179,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 200,
+            "day": 10319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03034055405,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 201,
+            "day": 10369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0304412162,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 202,
+            "day": 10419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0305324201,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 203,
+            "day": 10469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03061505232,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 204,
+            "day": 10519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0306900058,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 205,
+            "day": 10569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03075788406,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 206,
+            "day": 10619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03081944966,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 207,
+            "day": 10669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0308752828,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 208,
+            "day": 10719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03092580306,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 209,
+            "day": 10769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03097159244,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 210,
+            "day": 10819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.031013124,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 211,
+            "day": 10869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03105077846,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 212,
+            "day": 10919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03108488064,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 213,
+            "day": 10969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03111580675,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 214,
+            "day": 11019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03114383845,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 215,
+            "day": 11069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0311692528,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 216,
+            "day": 11119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0311922324,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 217,
+            "day": 11169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03121309652,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 218,
+            "day": 11219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0312320366,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 219,
+            "day": 11269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03124914615,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 220,
+            "day": 11319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03126463725,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 221,
+            "day": 11369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03127871285,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 222,
+            "day": 11419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0312914982,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 223,
+            "day": 11469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0313031023,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 224,
+            "day": 11519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03131356926,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 225,
+            "day": 11569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03132302596,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 226,
+            "day": 11619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03133164227,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 227,
+            "day": 11669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03133952463,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 228,
+            "day": 11719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03134653065,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 229,
+            "day": 11769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03135292823,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 230,
+            "day": 11819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03135872743,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 231,
+            "day": 11869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03136404173,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 232,
+            "day": 11919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0313687332,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 233,
+            "day": 11969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03137309547,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 234,
+            "day": 12019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0313770095,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 235,
+            "day": 12069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03138052358,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 236,
+            "day": 12119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03138380212,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 237,
+            "day": 12169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03138666583,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 238,
+            "day": 12219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03138934282,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 239,
+            "day": 12269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03139172707,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 240,
+            "day": 12319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03139393165,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 241,
+            "day": 12369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0313959058,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 242,
+            "day": 12419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0313976611,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 243,
+            "day": 12469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03139936828,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 244,
+            "day": 12519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03140081323,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 245,
+            "day": 12569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314020909,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 246,
+            "day": 12619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03140326016,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 247,
+            "day": 12669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03140438994,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 248,
+            "day": 12719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.031405364,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 249,
+            "day": 12769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03140624714,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 250,
+            "day": 12819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03140709066,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 251,
+            "day": 12869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314077746,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 252,
+            "day": 12919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03140846614,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 253,
+            "day": 12969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03140908302,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 254,
+            "day": 13019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314095991,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 255,
+            "day": 13069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314101676,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 256,
+            "day": 13119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141060247,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 257,
+            "day": 13169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314110291,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 258,
+            "day": 13219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314113357,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 259,
+            "day": 13269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141164663,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 260,
+            "day": 13319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141198566,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 261,
+            "day": 13369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141226334,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 262,
+            "day": 13419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141249414,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 263,
+            "day": 13469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141277758,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 264,
+            "day": 13519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141295843,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 265,
+            "day": 13569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141313235,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 266,
+            "day": 13619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141333372,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 267,
+            "day": 13669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314134238,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 268,
+            "day": 13719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141361056,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 269,
+            "day": 13769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141372965,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 270,
+            "day": 13819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141383972,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 271,
+            "day": 13869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141395195,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 272,
+            "day": 13919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141403853,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 273,
+            "day": 13969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314141044,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 274,
+            "day": 14019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141425076,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 275,
+            "day": 14069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141422983,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 276,
+            "day": 14119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314143571,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 277,
+            "day": 14169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.031414403,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 278,
+            "day": 14219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141446592,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 279,
+            "day": 14269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314144981,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 280,
+            "day": 14319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314144893,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 281,
+            "day": 14369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141455963,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 282,
+            "day": 14419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314146106,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 283,
+            "day": 14469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314145943,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 284,
+            "day": 14519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314145981,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 285,
+            "day": 14569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141469517,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 286,
+            "day": 14619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141471543,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 287,
+            "day": 14669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141477902,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 288,
+            "day": 14719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141478906,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 289,
+            "day": 14769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314147949,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 290,
+            "day": 14819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141480262,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 291,
+            "day": 14869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141488324,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 292,
+            "day": 14919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141480146,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 293,
+            "day": 14969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314148193,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 294,
+            "day": 15019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141482416,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 295,
+            "day": 15069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141482288,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 296,
+            "day": 15119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141488403,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 297,
+            "day": 15169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141487078,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 298,
+            "day": 15219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141489692,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 299,
+            "day": 15269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149257,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 300,
+            "day": 15319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141489386,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 301,
+            "day": 15369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141487966,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 302,
+            "day": 15419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141488132,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 303,
+            "day": 15469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141489736,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 304,
+            "day": 15519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314148626,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 305,
+            "day": 15569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141488394,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 306,
+            "day": 15619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141485606,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 307,
+            "day": 15669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141488548,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 308,
+            "day": 15719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141489878,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 309,
+            "day": 15769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141493283,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 310,
+            "day": 15819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141491927,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 311,
+            "day": 15869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149333,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 312,
+            "day": 15919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141493784,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 313,
+            "day": 15969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141493557,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 314,
+            "day": 16019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141489494,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 315,
+            "day": 16069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141488897,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 316,
+            "day": 16119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314148786,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 317,
+            "day": 16169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141486552,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 318,
+            "day": 16219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141491412,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 319,
+            "day": 16269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141491814,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 320,
+            "day": 16319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141491883,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 321,
+            "day": 16369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.031414949,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 322,
+            "day": 16419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141497067,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 323,
+            "day": 16469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141492163,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 324,
+            "day": 16519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141487928,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 325,
+            "day": 16569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141497332,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 326,
+            "day": 16619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141495076,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 327,
+            "day": 16669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314148651,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 328,
+            "day": 16719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141492346,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 329,
+            "day": 16769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.031414905,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 330,
+            "day": 16819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149212,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 331,
+            "day": 16869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141499788,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 332,
+            "day": 16919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149301,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 333,
+            "day": 16969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141497236,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 334,
+            "day": 17019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141490894,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 335,
+            "day": 17069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141492064,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 336,
+            "day": 17119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141489654,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 337,
+            "day": 17169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141487605,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 338,
+            "day": 17219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149562,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 339,
+            "day": 17269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149882,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 340,
+            "day": 17319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149825,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 341,
+            "day": 17369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149128,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 342,
+            "day": 17419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149536,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 343,
+            "day": 17469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.031414921,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 344,
+            "day": 17519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141492713,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 345,
+            "day": 17569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141496424,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 346,
+            "day": 17619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149951,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 347,
+            "day": 17669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141492256,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 348,
+            "day": 17719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141489532,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 349,
+            "day": 17769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141493772,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 350,
+            "day": 17819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149716,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 351,
+            "day": 17869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149345,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 352,
+            "day": 17919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141493653,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 353,
+            "day": 17969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141490612,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 354,
+            "day": 18019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141494526,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 355,
+            "day": 18069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141494544,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 356,
+            "day": 18119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141494503,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 357,
+            "day": 18169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149451,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 358,
+            "day": 18219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.03141494485,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 359,
+            "day": 18269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 360,
+            "day": 18319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 361,
+            "day": 18369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 362,
+            "day": 18419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 363,
+            "day": 18469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 364,
+            "day": 18519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 365,
+            "day": 18569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 366,
+            "day": 18619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 367,
+            "day": 18669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 368,
+            "day": 18719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 369,
+            "day": 18769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 370,
+            "day": 18819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 371,
+            "day": 18869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 372,
+            "day": 18919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 373,
+            "day": 18969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 374,
+            "day": 19019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 375,
+            "day": 19069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 376,
+            "day": 19119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 377,
+            "day": 19169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 378,
+            "day": 19219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 379,
+            "day": 19269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 380,
+            "day": 19319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 381,
+            "day": 19369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 382,
+            "day": 19419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 383,
+            "day": 19469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 384,
+            "day": 19519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 385,
+            "day": 19569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 386,
+            "day": 19619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 387,
+            "day": 19669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 388,
+            "day": 19719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 389,
+            "day": 19769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 390,
+            "day": 19819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 391,
+            "day": 19869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 392,
+            "day": 19919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 393,
+            "day": 19969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 394,
+            "day": 20019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 395,
+            "day": 20069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 396,
+            "day": 20119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 397,
+            "day": 20169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 398,
+            "day": 20219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 399,
+            "day": 20269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 400,
+            "day": 20319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 401,
+            "day": 20369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 402,
+            "day": 20419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 403,
+            "day": 20469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 404,
+            "day": 20519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 405,
+            "day": 20569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 406,
+            "day": 20619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 407,
+            "day": 20669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 408,
+            "day": 20719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 409,
+            "day": 20769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 410,
+            "day": 20819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 411,
+            "day": 20869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 412,
+            "day": 20919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 413,
+            "day": 20969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 414,
+            "day": 21019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 415,
+            "day": 21069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 416,
+            "day": 21119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 417,
+            "day": 21169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 418,
+            "day": 21219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 419,
+            "day": 21269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 420,
+            "day": 21319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 421,
+            "day": 21369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 422,
+            "day": 21419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 423,
+            "day": 21469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 424,
+            "day": 21519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 425,
+            "day": 21569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 426,
+            "day": 21619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 427,
+            "day": 21669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 428,
+            "day": 21719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 429,
+            "day": 21769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 430,
+            "day": 21819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 431,
+            "day": 21869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 432,
+            "day": 21919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 433,
+            "day": 21969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 434,
+            "day": 22019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 435,
+            "day": 22069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 436,
+            "day": 22119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 437,
+            "day": 22169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 438,
+            "day": 22219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 439,
+            "day": 22269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 440,
+            "day": 22319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 441,
+            "day": 22369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 442,
+            "day": 22419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 443,
+            "day": 22469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 444,
+            "day": 22519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 445,
+            "day": 22569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 446,
+            "day": 22619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 447,
+            "day": 22669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 448,
+            "day": 22719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 449,
+            "day": 22769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 450,
+            "day": 22819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 451,
+            "day": 22869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 452,
+            "day": 22919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 453,
+            "day": 22969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 454,
+            "day": 23019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 455,
+            "day": 23069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 456,
+            "day": 23119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 457,
+            "day": 23169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 458,
+            "day": 23219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 459,
+            "day": 23269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 460,
+            "day": 23319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 461,
+            "day": 23369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 462,
+            "day": 23419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 463,
+            "day": 23469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 464,
+            "day": 23519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 465,
+            "day": 23569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 466,
+            "day": 23619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 467,
+            "day": 23669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 468,
+            "day": 23719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 469,
+            "day": 23769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 470,
+            "day": 23819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 471,
+            "day": 23869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 472,
+            "day": 23919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 473,
+            "day": 23969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 474,
+            "day": 24019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 475,
+            "day": 24069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 476,
+            "day": 24119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 477,
+            "day": 24169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 478,
+            "day": 24219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 479,
+            "day": 24269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 480,
+            "day": 24319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 481,
+            "day": 24369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 482,
+            "day": 24419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 483,
+            "day": 24469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 484,
+            "day": 24519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 485,
+            "day": 24569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 486,
+            "day": 24619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 487,
+            "day": 24669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 488,
+            "day": 24719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 489,
+            "day": 24769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 490,
+            "day": 24819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 491,
+            "day": 24869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 492,
+            "day": 24919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 493,
+            "day": 24969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 494,
+            "day": 25019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 495,
+            "day": 25069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 496,
+            "day": 25119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 497,
+            "day": 25169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 498,
+            "day": 25219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 499,
+            "day": 25269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 500,
+            "day": 25319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 501,
+            "day": 25369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 502,
+            "day": 25419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 503,
+            "day": 25469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 504,
+            "day": 25519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 505,
+            "day": 25569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 506,
+            "day": 25619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 507,
+            "day": 25669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 508,
+            "day": 25719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 509,
+            "day": 25769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 510,
+            "day": 25819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 511,
+            "day": 25869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 512,
+            "day": 25919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 513,
+            "day": 25969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 514,
+            "day": 26019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 515,
+            "day": 26069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 516,
+            "day": 26119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 517,
+            "day": 26169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 518,
+            "day": 26219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 519,
+            "day": 26269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 520,
+            "day": 26319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 521,
+            "day": 26369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 522,
+            "day": 26419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 523,
+            "day": 26469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 524,
+            "day": 26519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 525,
+            "day": 26569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 526,
+            "day": 26619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 527,
+            "day": 26669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 528,
+            "day": 26719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 529,
+            "day": 26769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 530,
+            "day": 26819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 531,
+            "day": 26869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 532,
+            "day": 26919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 533,
+            "day": 26969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 534,
+            "day": 27019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 535,
+            "day": 27069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 536,
+            "day": 27119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 537,
+            "day": 27169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 538,
+            "day": 27219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 539,
+            "day": 27269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 540,
+            "day": 27319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 541,
+            "day": 27369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 542,
+            "day": 27419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 543,
+            "day": 27469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 544,
+            "day": 27519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 545,
+            "day": 27569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 546,
+            "day": 27619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 547,
+            "day": 27669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 548,
+            "day": 27719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 549,
+            "day": 27769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 550,
+            "day": 27819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 551,
+            "day": 27869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 552,
+            "day": 27919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 553,
+            "day": 27969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 554,
+            "day": 28019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 555,
+            "day": 28069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 556,
+            "day": 28119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 557,
+            "day": 28169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 558,
+            "day": 28219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 559,
+            "day": 28269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 560,
+            "day": 28319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 561,
+            "day": 28369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 562,
+            "day": 28419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 563,
+            "day": 28469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 564,
+            "day": 28519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 565,
+            "day": 28569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 566,
+            "day": 28619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 567,
+            "day": 28669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 568,
+            "day": 28719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 569,
+            "day": 28769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 570,
+            "day": 28819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 571,
+            "day": 28869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 572,
+            "day": 28919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 573,
+            "day": 28969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 574,
+            "day": 29019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 575,
+            "day": 29069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 576,
+            "day": 29119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 577,
+            "day": 29169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 578,
+            "day": 29219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 579,
+            "day": 29269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 580,
+            "day": 29319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 581,
+            "day": 29369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 582,
+            "day": 29419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 583,
+            "day": 29469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 584,
+            "day": 29519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 585,
+            "day": 29569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 586,
+            "day": 29619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 587,
+            "day": 29669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 588,
+            "day": 29719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 589,
+            "day": 29769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 590,
+            "day": 29819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 591,
+            "day": 29869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 592,
+            "day": 29919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 593,
+            "day": 29969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 594,
+            "day": 30019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 595,
+            "day": 30069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 596,
+            "day": 30119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 597,
+            "day": 30169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 598,
+            "day": 30219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 599,
+            "day": 30269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 600,
+            "day": 30319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 601,
+            "day": 30369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 602,
+            "day": 30419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 603,
+            "day": 30469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 604,
+            "day": 30519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 605,
+            "day": 30569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 606,
+            "day": 30619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 607,
+            "day": 30669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 608,
+            "day": 30719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 609,
+            "day": 30769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 610,
+            "day": 30819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 611,
+            "day": 30869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 612,
+            "day": 30919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 613,
+            "day": 30969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 614,
+            "day": 31019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 615,
+            "day": 31069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 616,
+            "day": 31119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 617,
+            "day": 31169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 618,
+            "day": 31219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 619,
+            "day": 31269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 620,
+            "day": 31319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 621,
+            "day": 31369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 622,
+            "day": 31419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 623,
+            "day": 31469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 624,
+            "day": 31519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 625,
+            "day": 31569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 626,
+            "day": 31619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 627,
+            "day": 31669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 628,
+            "day": 31719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 629,
+            "day": 31769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 630,
+            "day": 31819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 631,
+            "day": 31869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 632,
+            "day": 31919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 633,
+            "day": 31969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 634,
+            "day": 32019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 635,
+            "day": 32069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 636,
+            "day": 32119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 637,
+            "day": 32169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 638,
+            "day": 32219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 639,
+            "day": 32269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 640,
+            "day": 32319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 641,
+            "day": 32369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 642,
+            "day": 32419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 643,
+            "day": 32469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 644,
+            "day": 32519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 645,
+            "day": 32569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 646,
+            "day": 32619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 647,
+            "day": 32669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 648,
+            "day": 32719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 649,
+            "day": 32769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 650,
+            "day": 32819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 651,
+            "day": 32869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 652,
+            "day": 32919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 653,
+            "day": 32969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 654,
+            "day": 33019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 655,
+            "day": 33069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 656,
+            "day": 33119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 657,
+            "day": 33169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 658,
+            "day": 33219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 659,
+            "day": 33269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 660,
+            "day": 33319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 661,
+            "day": 33369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 662,
+            "day": 33419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 663,
+            "day": 33469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 664,
+            "day": 33519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 665,
+            "day": 33569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 666,
+            "day": 33619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 667,
+            "day": 33669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 668,
+            "day": 33719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 669,
+            "day": 33769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 670,
+            "day": 33819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 671,
+            "day": 33869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 672,
+            "day": 33919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 673,
+            "day": 33969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 674,
+            "day": 34019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 675,
+            "day": 34069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 676,
+            "day": 34119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 677,
+            "day": 34169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 678,
+            "day": 34219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 679,
+            "day": 34269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 680,
+            "day": 34319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 681,
+            "day": 34369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 682,
+            "day": 34419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 683,
+            "day": 34469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 684,
+            "day": 34519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 685,
+            "day": 34569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 686,
+            "day": 34619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 687,
+            "day": 34669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 688,
+            "day": 34719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 689,
+            "day": 34769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 690,
+            "day": 34819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 691,
+            "day": 34869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 692,
+            "day": 34919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 693,
+            "day": 34969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 694,
+            "day": 35019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 695,
+            "day": 35069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 696,
+            "day": 35119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 697,
+            "day": 35169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 698,
+            "day": 35219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 699,
+            "day": 35269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 700,
+            "day": 35319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 701,
+            "day": 35369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 702,
+            "day": 35419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 703,
+            "day": 35469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 704,
+            "day": 35519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 705,
+            "day": 35569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 706,
+            "day": 35619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 707,
+            "day": 35669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 708,
+            "day": 35719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 709,
+            "day": 35769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 710,
+            "day": 35819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 711,
+            "day": 35869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 712,
+            "day": 35919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 713,
+            "day": 35969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 714,
+            "day": 36019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 715,
+            "day": 36069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 716,
+            "day": 36119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 717,
+            "day": 36169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 718,
+            "day": 36219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 719,
+            "day": 36269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 720,
+            "day": 36319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 721,
+            "day": 36369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 722,
+            "day": 36419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 723,
+            "day": 36469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 724,
+            "day": 36519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 725,
+            "day": 36569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 726,
+            "day": 36619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 727,
+            "day": 36669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 728,
+            "day": 36719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 729,
+            "day": 36769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 730,
+            "day": 36819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 731,
+            "day": 36869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 732,
+            "day": 36919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 733,
+            "day": 36969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 734,
+            "day": 37019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 735,
+            "day": 37069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 736,
+            "day": 37119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 737,
+            "day": 37169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 738,
+            "day": 37219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 739,
+            "day": 37269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 740,
+            "day": 37319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 741,
+            "day": 37369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 742,
+            "day": 37419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 743,
+            "day": 37469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 744,
+            "day": 37519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 745,
+            "day": 37569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 746,
+            "day": 37619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 747,
+            "day": 37669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 748,
+            "day": 37719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 749,
+            "day": 37769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 750,
+            "day": 37819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 751,
+            "day": 37869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 752,
+            "day": 37919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 753,
+            "day": 37969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 754,
+            "day": 38019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 755,
+            "day": 38069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 756,
+            "day": 38119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 757,
+            "day": 38169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 758,
+            "day": 38219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 759,
+            "day": 38269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 760,
+            "day": 38319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 761,
+            "day": 38369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 762,
+            "day": 38419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 763,
+            "day": 38469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 764,
+            "day": 38519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 765,
+            "day": 38569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 766,
+            "day": 38619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 767,
+            "day": 38669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 768,
+            "day": 38719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 769,
+            "day": 38769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 770,
+            "day": 38819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 771,
+            "day": 38869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 772,
+            "day": 38919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 773,
+            "day": 38969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 774,
+            "day": 39019,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 775,
+            "day": 39069,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 776,
+            "day": 39119,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 777,
+            "day": 39169,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 778,
+            "day": 39219,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 779,
+            "day": 39269,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 780,
+            "day": 39319,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 781,
+            "day": 39369,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 782,
+            "day": 39419,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 783,
+            "day": 39469,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 784,
+            "day": 39519,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 785,
+            "day": 39569,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 786,
+            "day": 39619,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 787,
+            "day": 39669,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 788,
+            "day": 39719,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 789,
+            "day": 39769,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 790,
+            "day": 39819,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 791,
+            "day": 39869,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 792,
+            "day": 39919,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        },
+        {
+            "update_idx": 793,
+            "day": 39969,
+            "grad_maas_norm": 0.0,
+            "maas_autograd_match": null,
+            "grad_TNC1_norm": 171186.0314149444,
+            "TNC1_autograd_match": null
+        }
+    ]
+}

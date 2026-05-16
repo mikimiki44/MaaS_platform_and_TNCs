@@ -1,521 +1,174 @@
-from entities import Service, TNC, MT, MaaS, Travelers, distribute_travelers
-# import numpy as np
+from entities import (
+    Service,
+    TNC,
+    MT,
+    MaaS,
+    Travelers,
+    distribute_travelers,
+    compute_utilities,
+    compute_choice_probabilities,
+    project_tnc_params,
+    project_maas_params,
+    store_allocations,
+)
 import autograd.numpy as np
-import matplotlib.pyplot as plt
 from autograd import grad
 import json
 import os
+from typing import Dict, List
+
 try:
     from tqdm.notebook import tqdm
 except ImportError:
     from tqdm import tqdm
 
-def plot_total_allocations(services, allocation_history, number_days, save_path=None):
-    """
-    Description
-    - Plot total allocations per service over time or store the image.
-
-    Parameters
-    - services: list of service objects used in the simulation.
-    - allocation_history: number of travelers per service for each day (e.g. {"TNC": [10, 15, 15, ..., 15], ...}).
-    - number_days: length of the simulation (number of days).
-    - save_path: path to save the plot image. If None, the plot is shown instead.
-
-    Output
-    - Shows a plot or saves it to the specified path.
-    """
-    plt.figure(figsize=(8, 5))
-    for service in services:
-        plt.plot(range(number_days),
-                 allocation_history[service.name],
-                 label=service.name,
-                 linewidth=2)
-    plt.title("Evolution of Total Service Allocations")
-    plt.xlabel("Day")
-    plt.ylabel("Number of Travelers (total)")
-    plt.legend()
-    plt.grid(True, linestyle="--", alpha=0.6)
-    plt.tight_layout()
-
-    if save_path:
-        plt.savefig(save_path, dpi=300)
-        plt.close()
-    else:
-        plt.show()
-
-def plot_per_type_allocations(services, allocation_by_type, travelers, number_days, save_path=None):
-    """
-    Description
-    - Plot allocations per traveler type for each service over time or store the image.
-
-    Parameters
-    - services: list of service objects used in the simulation.
-    - allocation_by_type: number of travelers per service for each day split by type
-                         (e.g. {"TNC": [[10, 14, ..., 15], [2, 3, ..., 3], [2, 3, ..., 3]], ...}).
-    - travelers: list of traveler group objects used in the simulation.
-    - number_days: length of the simulation (number of days).
-    - save_path: path to save the plot image. If None, the plot is shown instead.
-
-    Output
-    - Shows a plot or saves it to the specified path.
-    """
-    fig, axes = plt.subplots(len(travelers), 1, figsize=(8, 4 * len(travelers)), sharex=True)
-    if len(travelers) == 1:
-        axes = [axes]
-
-    for t_idx, ax in enumerate(axes):
-        for service in services:
-            y_vals = [day_vals[t_idx] for day_vals in zip(*allocation_by_type[service.name])]
-            ax.plot(range(number_days), y_vals, label=service.name, linewidth=2)
-        ax.set_title(f"Traveler Type {t_idx + 1}")
-        ax.set_ylabel("Number of Travelers")
-        ax.legend()
-        ax.grid(True, linestyle="--", alpha=0.6)
-
-    axes[-1].set_xlabel("Day")
-    plt.tight_layout()
-
-    if save_path:
-        plt.savefig(save_path, dpi=300)
-        plt.close()
-    else:
-        plt.show()
-
-
-def plot_gradient_evolution(gradient_history, save_path=None):
-    """
-    Description
-    - Plot upper-level gradient norm evolution across updates.
-
-    Parameters
-    - gradient_history: list of dicts with keys: update_idx, day, grad_tnc_norm, grad_maas_norm.
-    - save_path: path to save the plot image. If None, the plot is shown instead.
-
-    Output
-    - Shows a plot or saves it to the specified path.
-    """
-    if not gradient_history:
-        return
-
-    updates = [item["update_idx"] for item in gradient_history]
-    grad_tnc_norm = [item["grad_tnc_norm"] for item in gradient_history]
-    grad_maas_norm = [item["grad_maas_norm"] for item in gradient_history]
-
-    plt.figure(figsize=(8, 5))
-    plt.plot(updates, grad_tnc_norm, label="||grad_TNC||", linewidth=2)
-    plt.plot(updates, grad_maas_norm, label="||grad_MaaS||", linewidth=2)
-    plt.title("Upper-Level Gradient Norm Evolution")
-    plt.xlabel("Upper-Level Update Index")
-    plt.ylabel("Gradient Norm")
-    plt.grid(True, linestyle="--", alpha=0.6)
-    plt.legend()
-    plt.tight_layout()
-
-    if save_path:
-        plt.savefig(save_path, dpi=300)
-        plt.close()
-    else:
-        plt.show()
-
-def compute_utilities(travelers: list[Travelers], services: list[Service]) -> np.ndarray:
-    """
-    Description
-    - Compute the utility matrix for all traveler types and services.
-
-    Parameters
-    - travelers: list of traveler group objects used in the simulation.
-    - services: list of service objects used in the simulation.
-
-    Output
-    - utilities: 2D numpy array where utilities[i][j] is the utility for traveler type i using service j.
-    """
-    utilities = []
-    for traveler in travelers:
-        row = []
-        for service in services:
-            utility = service.compute_utility(
-                traveler.trip_length, traveler.value_time, traveler.value_wait
-            )
-            row.append(utility)  
-        utilities.append(row)
-    return np.array(utilities)
-
-def check_gradients(travelers: list[Travelers], services: list[Service], utilities: np.ndarray) -> bool:
-    """
-    Description
-    - Verify the manually computed gradients against those computed using autograd.
-
-    Parameters
-    - travelers: list of traveler group objects used in the simulation.
-    - services: list of service objects used in the simulation.
-    - utilities: 2D numpy array where utilities[i][j] is the utility for traveler type i using service j.
-
-    Output
-    - True if all gradients match within a tolerance, False otherwise.
-    """
-    # ======== TNC GRADIENTS WITH AUTOGRAD ========
-    tnc = next(service for service in services if service.name == "TNC")
-    params_T = np.array([tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T])
-    grad_tnc = grad(lambda p: tnc.compute_objective_function(p, travelers, services))(params_T) 
-
-    manual_grad_tnc = tnc.gradient_objective(utilities, next(service for service in services if service.name == "MaaS"))
-    if not np.allclose(grad_tnc, manual_grad_tnc, atol=1e-5):
-        return False
-
-    # ======== MAAS GRADIENTS WITH AUTOGRAD ========
-    maas = next(service for service in services if service.name == "MaaS")
-    params_M = np.array([maas.fare, maas.share_TNC, maas.lambda_M]) 
-    grad_maas = grad(lambda p: maas.compute_objective_function(p, travelers, services))(params_M)
-
-    manual_grad_maas = maas.gradient_objective(utilities)
-    if not np.allclose(grad_maas, manual_grad_maas, atol=1e-5):
-        return False
-
-    return True
-
-def store_allocations(day: int, travelers: list[Travelers], services: list[Service], allocation: dict[str, list[float]], allocation_history: dict[str, list[float]], allocation_by_type: dict[str, list[list[float]]]):
-    """
-    Description
-    - Store allocations for each service and traveler type.
-
-    Parameters
-    - day: current day of the simulation.
-    - travelers: list of traveler group objects used in the simulation.
-    - services: list of service objects used in the simulation.
-    - allocation: current allocation dictionary.
-
-    Output
-    - allocation_history: updated total allocations per service.
-    - allocation_by_type: updated allocations per service and traveler type.
-    """
-
-    for service in services:
-        total_travelers = sum(allocation[service.name])
-        allocation_history[service.name].append(total_travelers)
-        for t_idx in range(len(travelers)):
-            if len(allocation_by_type[service.name][t_idx]) < day + 1:
-                allocation_by_type[service.name][t_idx].append(allocation[service.name][t_idx])
-            else:
-                allocation_by_type[service.name][t_idx][day] = allocation[service.name][t_idx]
-
-    return allocation_history, allocation_by_type
-
-def project_tnc_params(params):
-    fare, cap_ratio, lambda_T = params
-    fare = max(fare, 0.0)
-    cap_ratio = np.clip(cap_ratio, 0.0, 1.0)
-    lambda_T = max(lambda_T, 0.0)
-    return np.array([fare, cap_ratio, lambda_T])
-
-
-def project_maas_params(params):
-    fare, share_TNC, lambda_M = params
-    fare = max(fare, 0.0)
-    share_TNC = np.clip(share_TNC, 0.0, 1.0)
-    lambda_M = max(lambda_M, 0.0)
-    return np.array([fare, share_TNC, lambda_M])
-
-
-def compute_choice_probabilities(utilities: np.ndarray) -> np.ndarray:
-    """
-    Description
-    - Compute stabilized softmax choice probabilities from utility matrix.
-
-    Parameters
-    - utilities: shape (n_types, n_services) utility matrix.
-
-    Output
-    - Returns probabilities with the same shape as utilities.
-    """
-    stabilized = utilities - np.max(utilities, axis=1, keepdims=True)
-    exp_utilities = np.exp(stabilized)
-    return exp_utilities / np.sum(exp_utilities, axis=1, keepdims=True)
-
-
-def compute_operator_financials(travelers: list[Travelers], tnc: TNC, maas: MaaS, allocation: dict[str, list[float]]) -> dict[str, dict[str, float]]:
-    """
-    Description
-    - Compute detailed income/cost decomposition for TNC and MaaS.
-
-    Output
-    - Returns a nested dictionary with detailed operator economics.
-    """
-    n_types = len(travelers)
-
-    tnc_rider_revenue = np.sum([
-        tnc.fare * allocation["TNC"][i] * tnc.detour_ratio * travelers[i].trip_length
-        for i in range(n_types)
-    ])
-    tnc_capacity_sale_revenue = (
-        tnc.cost_purchasing_capacity_TNC
-        * tnc.capacity_ratio_to_MaaS
-        * tnc.total_service_capacity
-        / tnc.average_veh_travel_dist_per_day
-    )
-    tnc_operating_cost = (
-        tnc.operating_cost * tnc.total_service_capacity / tnc.average_veh_travel_dist_per_day
-    )
-    tnc_net_profit = tnc_rider_revenue + tnc_capacity_sale_revenue - tnc_operating_cost
-
-    maas_rider_revenue = np.sum([
-        maas.fare * allocation["MaaS"][i] * travelers[i].trip_length
-        for i in range(n_types)
-    ])
-    maas_tnc_capacity_purchase_cost = (
-        maas.cost_purchasing_capacity_TNC
-        * maas.capacity_ratio_from_TNC
-        * tnc.total_service_capacity
-        / tnc.average_veh_travel_dist_per_day
-    )
-    maas_mt_capacity_purchase_cost = (
-        maas.cost_purchasing_capacity_MT * (1 - maas.share_TNC) * np.sum(allocation["MaaS"])
-    )
-    maas_net_profit = (
-        maas_rider_revenue - maas_tnc_capacity_purchase_cost - maas_mt_capacity_purchase_cost
-    )
-
-    return {
-        "tnc": {
-            "rider_revenue": float(tnc_rider_revenue),
-            "capacity_sale_revenue": float(tnc_capacity_sale_revenue),
-            "operating_cost": float(tnc_operating_cost),
-            "net_profit": float(tnc_net_profit),
-        },
-        "maas": {
-            "rider_revenue": float(maas_rider_revenue),
-            "tnc_capacity_purchase_cost": float(maas_tnc_capacity_purchase_cost),
-            "mt_capacity_purchase_cost": float(maas_mt_capacity_purchase_cost),
-            "net_profit": float(maas_net_profit),
-        },
-    }
-
-
-def build_debug_snapshot(
-    day: int,
-    travelers: list[Travelers],
-    services: list[Service],
-    allocation: dict[str, list[float]],
-    utilities: np.ndarray,
-    probabilities: np.ndarray,
-) -> dict:
-    """
-    Description
-    - Build a streamlined debug snapshot for one upper-level pre-update event.
-    """
-    tnc = next(service for service in services if service.name == "TNC")
-    mt = next(service for service in services if service.name == "MT")
-    maas = next(service for service in services if service.name == "MaaS")
-
-    trip_lengths = np.array([traveler.trip_length for traveler in travelers], dtype=float)
-
-    tnc_demand_vkm = np.sum(trip_lengths * np.array(allocation["TNC"], dtype=float))
-    maas_tnc_demand_vkm = maas.share_TNC * np.sum(
-        trip_lengths * np.array(allocation["MaaS"], dtype=float)
-    )
-
-    tnc_capacity_for_tnc_vkm = (1 - tnc.capacity_ratio_to_MaaS) * tnc.total_service_capacity
-    tnc_waiting_per_type = [
-        float(np.sum(tnc.waiting_time(traveler.trip_length))) for traveler in travelers
-    ]
-    maas_waiting_per_type = [
-        float(np.sum(maas.waiting_time(traveler.trip_length))) for traveler in travelers
-    ]
-
-    utility_decomposition = []
-    for i, traveler in enumerate(travelers):
-        per_service = {}
-        for service in services:
-            components = service.decompose_utility_components(
-                trip_length=traveler.trip_length,
-                value_time=traveler.value_time,
-                value_wait=traveler.value_wait,
-            )
-            serialized = {k: float(np.sum(v)) for k, v in components.items()}
-
-            if service.name == "MaaS":
-                maas_modes = service.decompose_mode_components(
-                    trip_length=traveler.trip_length,
-                    value_time=traveler.value_time,
-                    value_wait=traveler.value_wait,
-                )
-                serialized["mode_split"] = {
-                    k: float(np.sum(v)) for k, v in maas_modes.items()
-                }
-
-            per_service[service.name] = serialized
-
-        utility_decomposition.append({
-            "traveler_type": i,
-            "trip_length": float(traveler.trip_length),
-            "value_time": float(traveler.value_time),
-            "value_wait": float(traveler.value_wait),
-            "services": per_service,
-        })
-
-    demand_by_service = {
-        service.name: [float(v) for v in allocation[service.name]] for service in services
-    }
-    total_demand_by_service = {
-        service.name: float(np.sum(allocation[service.name])) for service in services
-    }
-
-    choice_probabilities_by_type = []
-    for i, probs in enumerate(np.asarray(probabilities)):
-        choice_probabilities_by_type.append({
-            "traveler_type": int(i + 1),
-            "probabilities": [float(p) for p in probs],
-        })
-
-    return {
-        "day": int(day),
-        "update_day": int(day + 1),
-        "allocation": {
-            "total_by_service": total_demand_by_service,
-            "by_service_and_type": demand_by_service,
-        },
-        "capacity": {
-            "tnc": {
-                "demand_vkm": float(tnc_demand_vkm),
-                "capacity_for_tnc_vkm": float(tnc_capacity_for_tnc_vkm),
-            },
-            "maas": {
-                "demand_vkm": float(maas_tnc_demand_vkm),
-                "purchased_tnc_capacity_vkm": float(maas.capacity_ratio_from_TNC * maas.total_service_capacity_TNC),
-            },
-        },
-        "waiting_times": {
-            "tnc_mean_hr": float(np.mean(tnc_waiting_per_type)),
-            "maas_mean_hr": float(np.mean(maas_waiting_per_type)),
-        },
-        "choice_probabilities": choice_probabilities_by_type,
-        "utility_decomposition": utility_decomposition,
-        "financials": compute_operator_financials(travelers, tnc, maas, allocation),
-    }
-
-
-def store_debug_snapshots(output_dir: str, snapshots: list[dict]) -> None:
-    """
-    Description
-    - Store all upper-level pre-update debug snapshots to a single JSON file.
-    """
-    debug_path = os.path.join(output_dir, "debug_upper_level_preupdate.json")
-    with open(debug_path, "w") as f:
-        json.dump({"events": snapshots}, f, indent=4)
+from plotting import (
+    plot_total_allocations,
+    plot_per_type_allocations,
+    plot_gradient_evolution,
+)
+from debug_utils import (
+    build_debug_snapshot,
+    store_debug_snapshots,
+    compute_operator_financials,
+)
 
 
 def run_simulation(
-    tnc_capacity: float,
+    tnc_capacities: Dict[str, float] | List[float],
     output_dir: str,
     number_days: int,
     debug_enabled: bool = False,
+    enable_gradient_checks: bool = True,
+    logit_scale_mu: float = 1,
 ):
+    """
+    Description
+    - Run the full bi-level simulation for ``number_days`` days with the supplied
+      TNC capacities, then write results, gradient history, and plots into
+      ``output_dir``.
 
+    Parameters
+    - tnc_capacities: either a dict ``{tnc_name: capacity}`` or a positional
+      list of capacities (auto-named ``TNC1, TNC2, ...``).
+    - output_dir: directory to write outputs into (created if missing).
+    - number_days: simulation horizon.
+    - debug_enabled: when True, store the pre-update debug snapshot JSON.
+    - enable_gradient_checks: when True, cross-check analytical gradients
+      against autograd at every upper-level update.
+    - logit_scale_mu: logit scale parameter (passed to travelers and services).
 
-    # --------------------------
-    # 0. Initialization
-    # --------------------------
-    number_days = number_days
-    # --------------------------
-    # 1. Define traveler groups
-    # --------------------------
+    Output
+    - Writes ``final_results.json``, ``gradient_history.json``,
+      ``total_allocation.png``, ``allocation_by_type.png``,
+      ``gradient_evolution.png``, and (if ``debug_enabled``) the debug snapshot.
+    """
     travelers = [
-        Travelers(number_traveler=80, trip_length=20, value_time=25, value_wait=35), # count, km, monetary unit/h, monetary unit/h
+        Travelers(number_traveler=20, trip_length=30, value_time=25, value_wait=35, logit_scale_mu=logit_scale_mu),
+        Travelers(number_traveler=20, trip_length=20, value_time=25, value_wait=35, logit_scale_mu=logit_scale_mu),
+        Travelers(number_traveler=20, trip_length=10, value_time=25, value_wait=35, logit_scale_mu=logit_scale_mu),
+        Travelers(number_traveler=20, trip_length=8, value_time=25, value_wait=35, logit_scale_mu=logit_scale_mu),
     ]
 
-    # --------------------------
-    # 2. Define services
-    # --------------------------
+    if isinstance(tnc_capacities, list):
+        tnc_capacities = {f"TNC{i+1}": cap for i, cap in enumerate(tnc_capacities)}
 
-    tnc = TNC(
-        ASC=10, 
-        fare=2, # monetary units per km
-        detour_ratio=1.4, # 1.4 times the direct distance
-        average_speed=40, # in km/h
-        average_veh_travel_dist_per_day=8*40/1000, # 320 km per veh per day
-        capacity_ratio_to_MaaS=0.4, # TNC gives 40% of its capacity to MaaS
-        total_service_capacity=tnc_capacity, # in veh * km per day
-        trip_length_per_traveler_type=[traveler.trip_length for traveler in travelers], # km
-        value_waiting_time_per_traveler_type=[traveler.value_wait for traveler in travelers], # monetary units per time
-        cost_purchasing_capacity_TNC= 0.50, # monetary units per veh 
-        operating_cost= 0.300, # monetary units per veh 
-        lambda_T=0 # Lagrange multiplier for the capacity constraint [$/(veh·km)]
-    )   
+    tnc_services = []
+    for idx, (name, capacity) in enumerate(tnc_capacities.items()):
+        tnc_services.append(
+            TNC(
+                name=name,
+                ASC=5,
+                fare=2.0 - 0.5 * idx,
+                detour_ratio=1.4,
+                average_speed=40,
+                average_veh_travel_dist_per_day=8 * 40 / 1000,
+                capacity_ratio_to_MaaS=0.4,
+                total_service_capacity=capacity,
+                trip_length_per_traveler_type=[traveler.trip_length for traveler in travelers],
+                value_waiting_time_per_traveler_type=[traveler.value_wait for traveler in travelers],
+                cost_purchasing_capacity_TNC=0.40 - 0.05 * idx,
+                operating_cost=0.300,
+                lambda_T=0,
+                logit_scale_mu=logit_scale_mu,
+            )
+        )
 
     mt = MT(
         ASC=0.0,
         fare=2,
-        detour_ratio=1.5, # 1.5 times the direct distance
-        average_speed=20, # in km/h
-        n_transfer_per_length=0.15, # per km
-        access_time=1/6, # hours
-        transit_time=1/12 # hours
+        detour_ratio=1.5,
+        average_speed=25,
+        n_transfer_per_length=0.15,
+        access_time=1 / 6,
+        transit_time=1 / 12,
     )
 
+    tnc_capacity_ratio_map = {tnc.name: tnc.capacity_ratio_to_MaaS for tnc in tnc_services}
+    tnc_total_capacity_map = {tnc.name: tnc.total_service_capacity for tnc in tnc_services}
+    ref_tnc = tnc_services[0]
+
     maas = MaaS(
-        ASC=5, 
-        fare=1.7, # additional maas operation cost * (...) monetary units per km 
-        share_TNC=0.50, # share of TNC inside MaaS (first and last kilometers)
-        detour_ratio_TNC=tnc.detour_ratio,
-        average_speed_TNC=tnc.average_speed,
-        capacity_ratio_from_TNC=tnc.capacity_ratio_to_MaaS,
-        total_service_capacity_TNC=tnc.total_service_capacity,
-        average_veh_travel_dist_per_day_TNC=tnc.average_veh_travel_dist_per_day,
-        cost_purchasing_capacity_TNC=tnc.cost_purchasing_capacity_TNC, 
-        trip_length_per_traveler_type=tnc.trip_length_per_traveler_type,
+        ASC=2,
+        fare=1.7,
+        share_TNC_per_traveler_type=[0.40 for _ in travelers],
+        detour_ratio_TNC=ref_tnc.detour_ratio,
+        average_speed_TNC=ref_tnc.average_speed,
+        capacity_ratio_from_TNC=tnc_capacity_ratio_map,
+        total_service_capacity_TNC=tnc_total_capacity_map,
+        average_veh_travel_dist_per_day_TNC=ref_tnc.average_veh_travel_dist_per_day,
+        cost_purchasing_capacity_TNC=ref_tnc.cost_purchasing_capacity_TNC,
+        trip_length_per_traveler_type=ref_tnc.trip_length_per_traveler_type,
         value_travel_time_per_traveler_type=[traveler.value_time for traveler in travelers],
-        value_waiting_time_per_traveler_type=tnc.value_waiting_time_per_traveler_type,
+        value_waiting_time_per_traveler_type=ref_tnc.value_waiting_time_per_traveler_type,
         detour_ratio_MT=mt.detour_ratio,
         average_speed_MT=mt.average_speed,
         transit_time_MT=mt.transit_time,
         n_transfer_per_length_MT=mt.n_transfer_per_length,
-        cost_purchasing_capacity_MT=3, # MM unit ??
-        lambda_M=0 # Lagrange multiplier for the capacity constraint [$/(veh·km)] 
-        )
+        cost_purchasing_capacity_MT=4,
+        lambda_M=0,
+        logit_scale_mu=logit_scale_mu,
+    )
 
-    services = [tnc, mt, maas]
+    services = [*tnc_services, mt, maas]
+    service_indices = {service.name: idx for idx, service in enumerate(services)}
 
-    # --------------------------
-    # 3. Uniform initial allocation
-    # --------------------------
     allocation = {service.name: [0] * len(travelers) for service in services}
-
     for type_i, traveler in enumerate(travelers):
         for service in services:
             allocation[service.name][type_i] += traveler.number_traveler / len(services)
 
-    # store allocation history
     allocation_history = {service.name: [] for service in services}
     allocation_by_type = {service.name: [[] for _ in travelers] for service in services}
 
-    tnc.get_allocation(allocation)
-    maas.get_allocation(allocation)
+    for service in services:
+        service.get_allocation(allocation)
 
-    # --------------------------
-    # 4. Simulation loop
-    # --------------------------
     converged_at_day = None
     upper_level_updates = 0
-    debug_snapshots: list[dict] = []
-    gradient_history: list[dict[str, float | int]] = []
+    debug_snapshots = []
+    gradient_history = []
     total_travelers = float(sum(traveler.number_traveler for traveler in travelers))
-    upper_level_relative_tolerance = 1e-4
+    upper_level_relative_tolerance = 0.001
     convergence_stability_window = 50
     stable_convergence_days = 0
-    
+
     for day in tqdm(range(number_days), desc="Simulation Progress", unit="day"):
         allocation = distribute_travelers(travelers, services)
+
         for t_idx in range(len(travelers)):
             for service in services:
-                # smooth allocations
-                allocation[service.name][t_idx] = 0.99*allocation_by_type[service.name][t_idx][day-1]+ 0.01*allocation[service.name][t_idx] if day >=1 else allocation[service.name][t_idx]
+                if day >= 1:
+                    prev = allocation_by_type[service.name][t_idx][day - 1]
+                    allocation[service.name][t_idx] = 0.99 * prev + 0.01 * allocation[service.name][t_idx]
 
-        tnc.get_allocation(allocation)
-        maas.get_allocation(allocation)
+        for service in services:
+            service.get_allocation(allocation)
 
-        # Store allocations
-        allocation_history, allocation_by_type = store_allocations(day, travelers, services, allocation, allocation_history, allocation_by_type) 
+        allocation_history, allocation_by_type = store_allocations(
+            day, travelers, services, allocation, allocation_history, allocation_by_type
+        )
 
-        # Check convergence of lower level using relative error and update upper level if converged
         if day >= 1:
             max_relative_change = max(
                 abs(allocation_history[service.name][-1] - allocation_history[service.name][-2])
@@ -524,153 +177,177 @@ def run_simulation(
             )
         else:
             max_relative_change = np.inf
-        #print(allocation)
+
         if day >= 1 and max_relative_change <= upper_level_relative_tolerance:
             stable_convergence_days += 1
         else:
             stable_convergence_days = 0
 
-        if day >= 1 and stable_convergence_days >= convergence_stability_window: # and check_gradients(travelers, services, utilities): not necessary to check gradients every time
-            # Track first convergence
+        if day >= 1 and stable_convergence_days >= convergence_stability_window:
             if converged_at_day is None:
                 converged_at_day = day
-                tqdm.write(
-                    f"\n✓ Lower level FIRST convergence at Day {day + 1} "
-                    f"(stable for {convergence_stability_window} iterations)"
-                )
-            else:
-                tqdm.write(
-                    f"✓ Lower level reconverged at Day {day + 1} "
-                    f"(stable for {convergence_stability_window} iterations)"
-                )
+            tqdm.write(
+                f"Lower level converged at Day {day + 1} "
+                f"(stable for {convergence_stability_window} iterations)"
+            )
 
             upper_level_updates += 1
             stable_convergence_days = 0
-            
-            # Use parameter-specific step sizes: [fare, ratio/share, multiplier]
-            # Smaller ratio/share steps help avoid oscillation near [0, 1] bounds.
-            step_sizes_T = np.array([1e-6, 6e-8, 1e-5])
-            step_sizes_M = np.array([1e-6, 6e-7, 1e-5])
 
-            # Define update directions: Descent (-), Descent (-), Ascent (+)
-            # Multiplying the step by [1, 1, -1] turns a subtraction into an addition for the 3rd term.
-            update_direction = np.array([1.0, 1.0, -1.0])
+            n_types = len(travelers)
+            step_sizes_t = np.array([1e-5, 1e-7, 1e-5])
+            step_sizes_m = np.concatenate(([1e-5], np.full(n_types, 1e-6), [1e-5]))
+            update_direction_t = np.array([1.0, 1.0, -1.0])
+            update_direction_m = np.ones_like(step_sizes_m)
+            update_direction_m[-1] = -1.0
 
-            # Compute utilities (State A)
             utilities = compute_utilities(travelers, services)
 
-            # === Get TNC & MaaS Initial Params & Manual Gradients ===
-            tnc = next(service for service in services if service.name == "TNC")
-            params_T = np.array([tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T])
-            grad_tnc = tnc.gradient_objective(utilities, next(service for service in services if service.name == "MaaS"))
+            grad_t_by_name = {}
+            params_t_by_name = {}
+            auto_check_by_name = {}
+            for tnc in tnc_services:
+                params_t = np.array([tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T])
+                grad_t = tnc.gradient_objective(
+                    utilities,
+                    maas,
+                    service_index_T=service_indices[tnc.name],
+                    service_index_M=service_indices["MaaS"],
+                )
+                params_t_by_name[tnc.name] = params_t
+                grad_t_by_name[tnc.name] = grad_t
 
-            maas = next(service for service in services if service.name == "MaaS")
-            params_M = np.array([maas.fare, maas.share_TNC, maas.lambda_M])
-            grad_maas = maas.gradient_objective(utilities)
+            if enable_gradient_checks:
+                tnc_ref = tnc
+                grad_auto_t = grad(
+                    lambda p, tnc_obj=tnc_ref: tnc_obj.compute_objective_function(
+                        p,
+                        travelers,
+                        services,
+                        service_index_T=service_indices[tnc_obj.name],
+                    )
+                )(params_t)
+                auto_check_by_name[tnc.name] = bool(np.allclose(grad_t, grad_auto_t, atol=1e-5))
 
-            gradient_history.append({
+            params_m = np.concatenate(([maas.fare], np.asarray(maas.share_TNC_per_traveler_type), [maas.lambda_M]))
+            grad_maas = maas.gradient_objective(utilities, service_index_M=service_indices["MaaS"])
+            maas_auto_check = None
+            if enable_gradient_checks:
+                grad_auto_m = grad(
+                    lambda p: maas.compute_objective_function(
+                        p,
+                        travelers,
+                        services,
+                        service_index_M=service_indices["MaaS"],
+                    )
+                )(params_m)
+                maas_auto_check = bool(np.allclose(grad_maas, grad_auto_m, atol=1e-5))
+
+            grad_event = {
                 "update_idx": int(upper_level_updates),
                 "day": int(day + 1),
-                "grad_tnc_norm": float(np.linalg.norm(grad_tnc)),
                 "grad_maas_norm": float(np.linalg.norm(grad_maas)),
-            })
-            
-            # ========== GRADIENT VERIFICATION (Done BEFORE mutating objects) ==========
-            #grad_tnc_auto = grad(lambda p: tnc.compute_objective_function(p, travelers, services))(params_T)
-            #grad_maas_auto = grad(lambda p: maas.compute_objective_function(p, travelers, services))(params_M)
-            #tqdm.write(f"  [Gradient Check] TNC  Manual: {grad_tnc}, Autograd: {grad_tnc_auto}, Match: {np.allclose(grad_tnc, grad_tnc_auto, atol=1e-5)}")
-            #tqdm.write(f"  [Gradient Check] MaaS Manual: {grad_maas}, Autograd: {grad_maas_auto}, Match: {np.allclose(grad_maas, grad_maas_auto, atol=1e-5)}")
-            # =========================================================================
+                "maas_autograd_match": maas_auto_check,
+            }
+            for tnc in tnc_services:
+                grad_event[f"grad_{tnc.name}_norm"] = float(np.linalg.norm(grad_t_by_name[tnc.name]))
+                grad_event[f"{tnc.name}_autograd_match"] = auto_check_by_name.get(tnc.name)
+            gradient_history.append(grad_event)
 
             if debug_enabled:
-                probabilities_pre = compute_choice_probabilities(utilities)
-                snapshot_pre = build_debug_snapshot(
-                    day=day,
-                    travelers=travelers,
-                    services=services,
-                    allocation=allocation,
-                    utilities=utilities,
-                    probabilities=probabilities_pre,
-                )
+                probabilities_pre = compute_choice_probabilities(utilities, mu=logit_scale_mu)
+                snapshot_pre = build_debug_snapshot(day, travelers, services, allocation, utilities, probabilities_pre)
                 debug_snapshots.append(snapshot_pre)
 
-            # === APPLY UPDATES (Move to State B) ===
-            new_params_T = params_T - step_sizes_T * grad_tnc * update_direction
-            new_params_T = project_tnc_params(new_params_T)
-            tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T = new_params_T
+            for tnc in tnc_services:
+                new_params_t = params_t_by_name[tnc.name] - step_sizes_t * grad_t_by_name[tnc.name] * update_direction_t
+                new_params_t = project_tnc_params(new_params_t)
+                tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T = new_params_t
 
-            new_params_M = params_M - step_sizes_M * grad_maas * update_direction
-            new_params_M = project_maas_params(new_params_M) 
-            maas.fare, maas.share_TNC, maas.lambda_M = new_params_M
+            new_params_m = params_m - step_sizes_m * grad_maas * update_direction_m
+            new_params_m = project_maas_params(new_params_m, n_types=n_types)
+            maas.fare = new_params_m[0]
+            maas.share_TNC_per_traveler_type = np.array(new_params_m[1:1 + n_types])
+            maas.lambda_M = new_params_m[1 + n_types]
 
-            maas.capacity_ratio_from_TNC = tnc.capacity_ratio_to_MaaS
-            
-            # Print update info on every upper-level update
-            tqdm.write(f"  [Update {upper_level_updates}] TNC:  fare={tnc.fare:.4f}, cap_ratio={tnc.capacity_ratio_to_MaaS:.4f}, λ_T={tnc.lambda_T:.6f}")
-            tqdm.write(f"  [Update {upper_level_updates}] MaaS: fare={maas.fare:.4f}, share_TNC={maas.share_TNC:.4f}, λ_M={maas.lambda_M:.6f}")
+            maas.capacity_ratio_from_TNC_by_name = {
+                tnc.name: float(tnc.capacity_ratio_to_MaaS) for tnc in tnc_services
+            }
+            maas.total_service_capacity_TNC_by_name = {
+                tnc.name: float(tnc.total_service_capacity) for tnc in tnc_services
+            }
+            maas.sync_tnc_pool_aliases()
 
-    ###########################################################################
-    ############################## END of the SIMULATION ######################
-    ###########################################################################
+            for tnc in tnc_services:
+                tqdm.write(
+                    f"[Update {upper_level_updates}] {tnc.name}: fare={tnc.fare:.4f}, "
+                    f"cap_ratio={tnc.capacity_ratio_to_MaaS:.4f}, lambda={tnc.lambda_T:.6f}"
+                )
+            share_str = ", ".join(f"{v:.4f}" for v in maas.share_TNC_per_traveler_type)
+            tqdm.write(f"[Update {upper_level_updates}] MaaS: fare={maas.fare:.4f}, share_TNC_per_type=[{share_str}], lambda={maas.lambda_M:.6f}")
 
-    print("\n" + "="*80)
+    print("\n" + "=" * 80)
     print("SIMULATION SUMMARY")
-    print("="*80)
-    
+    print("=" * 80)
+
     if converged_at_day is not None:
-        print(f"\n✓ Convergence reached at Day {converged_at_day + 1}")
-        print(f"  Upper-level optimization updates: {upper_level_updates}")
+        print(f"\nConvergence reached at Day {converged_at_day + 1}")
+        print(f"Upper-level optimization updates: {upper_level_updates}")
     else:
-        print("\n⚠ Maximum iterations reached without convergence")
-    
+        print("\nMaximum iterations reached without convergence")
+
     print("\nFinal Allocation:")
     for service_name, allocation_vals in allocation.items():
         print(f"  {service_name}: {[round(v, 2) for v in allocation_vals]}")
 
-    print(f"\nFinal TNC params:")
-    print(f"  fare={tnc.fare:.4f}, capacity_ratio_to_MaaS={tnc.capacity_ratio_to_MaaS:.4f}, lambda_T={tnc.lambda_T:.6f}")
-    print(f"\nFinal MaaS params:")
-    print(f"  fare={maas.fare:.4f}, share_TNC={maas.share_TNC:.4f}, lambda_M={maas.lambda_M:.6f}")
-    
-    # Compute profits
-    income_tnc = np.sum([tnc.fare * allocation['TNC'][i] * tnc.detour_ratio * travelers[i].trip_length for i in range(len(travelers))]) + tnc.cost_purchasing_capacity_TNC * tnc.capacity_ratio_to_MaaS * tnc.total_service_capacity / tnc.average_veh_travel_dist_per_day
-    outcome_tnc = tnc.operating_cost * tnc.total_service_capacity / tnc.average_veh_travel_dist_per_day
-    profit_tnc = income_tnc - outcome_tnc
-    
-    income_maas = np.sum([maas.fare * allocation['MaaS'][i] * travelers[i].trip_length for i in range(len(travelers))]) 
-    outcome_maas = maas.cost_purchasing_capacity_TNC * maas.capacity_ratio_from_TNC * tnc.total_service_capacity / tnc.average_veh_travel_dist_per_day + maas.cost_purchasing_capacity_MT * (1 - maas.share_TNC) * np.sum(allocation['MaaS'])
-    profit_maas = income_maas - outcome_maas
-    
-    print("\nFinancial Results:")
-    print(f"  TNC:  Income=${income_tnc:.2f}, Cost=${outcome_tnc:.2f}, Profit=${profit_tnc:.2f}")
-    print(f"  MaaS: Income=${income_maas:.2f}, Cost=${outcome_maas:.2f}, Profit=${profit_maas:.2f}")
-    
-    # Gradient information (only available if convergence was reached)
-    if converged_at_day is not None:
-        print("\nGradient Information (Upper Level):")
-        print(f"  ||grad_TNC||  = {np.linalg.norm(grad_tnc):.6f}")
-        print(f"  ||grad_MaaS|| = {np.linalg.norm(grad_maas):.6f}")
-    
-    print("="*80 + "\n")
+    print("\nFinal TNC params:")
+    for tnc in tnc_services:
+        print(
+            f"  {tnc.name}: fare={tnc.fare:.4f}, capacity_ratio_to_MaaS={tnc.capacity_ratio_to_MaaS:.4f}, "
+            f"lambda_T={tnc.lambda_T:.6f}"
+        )
+    print("\nFinal MaaS params:")
+    print(
+        f"  fare={maas.fare:.4f}, share_TNC_per_type={[round(float(v), 4) for v in maas.share_TNC_per_traveler_type]}, "
+        f"lambda_M={maas.lambda_M:.6f}"
+    )
 
-    # Store final results in a JSON file
+    financials = compute_operator_financials(travelers, tnc_services, maas, allocation)
+    print("\nFinancial Results:")
+    for name, vals in financials["tnc"].items():
+        print(
+            f"  {name}: Income=${vals['rider_revenue'] + vals['capacity_sale_revenue']:.2f}, "
+            f"Cost=${vals['operating_cost']:.2f}, Profit=${vals['net_profit']:.2f}"
+        )
+    print(
+        f"  MaaS: Income=${financials['maas']['rider_revenue']:.2f}, "
+        f"Cost=${financials['maas']['tnc_capacity_purchase_cost'] + financials['maas']['mt_capacity_purchase_cost']:.2f}, "
+        f"Profit=${financials['maas']['net_profit']:.2f}"
+    )
+
+    print("=" * 80 + "\n")
+
     results = {
-        "tnc_capacity": tnc_capacity,
+        "tnc_capacities": {tnc.name: float(tnc.total_service_capacity) for tnc in tnc_services},
         "final_allocation": allocation,
         "tnc_params": {
-            "fare": tnc.fare,
-            "capacity_ratio_to_MaaS": tnc.capacity_ratio_to_MaaS,
-            "lambda_T": tnc.lambda_T,
+            tnc.name: {
+                "fare": float(tnc.fare),
+                "capacity_ratio_to_MaaS": float(tnc.capacity_ratio_to_MaaS),
+                "lambda_T": float(tnc.lambda_T),
+            }
+            for tnc in tnc_services
         },
         "maas_params": {
-            "fare": maas.fare,
-            "share_TNC": maas.share_TNC,
-            "lambda_M": maas.lambda_M,
+            "fare": float(maas.fare),
+            "share_TNC_per_traveler_type": [float(v) for v in maas.share_TNC_per_traveler_type],
+            "lambda_M": float(maas.lambda_M),
+            "pooled_tnc_capacity_vkm": float(maas.get_pooled_tnc_capacity()),
         },
         "profits": {
-            "tnc_profit": float(profit_tnc),
-            "maas_profit": float(profit_maas),
-        }
+            "tnc": {name: vals["net_profit"] for name, vals in financials["tnc"].items()},
+            "maas": float(financials["maas"]["net_profit"]),
+        },
     }
 
     os.makedirs(output_dir, exist_ok=True)
@@ -678,13 +355,12 @@ def run_simulation(
     if debug_enabled:
         store_debug_snapshots(output_dir=output_dir, snapshots=debug_snapshots)
 
-    with open(os.path.join(output_dir, "final_results.json"), "w") as f:
+    with open(os.path.join(output_dir, "final_results.json"), "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4)
 
-    with open(os.path.join(output_dir, "gradient_history.json"), "w") as f:
+    with open(os.path.join(output_dir, "gradient_history.json"), "w", encoding="utf-8") as f:
         json.dump({"events": gradient_history}, f, indent=4)
 
-    # Plot results 
     plot_total_allocations(
         services,
         allocation_history,
@@ -702,18 +378,16 @@ def run_simulation(
 
     plot_gradient_evolution(
         gradient_history,
+        [tnc.name for tnc in tnc_services],
         save_path=os.path.join(output_dir, "gradient_evolution.png"),
     )
 
 
 if __name__ == "__main__":
-    capacities = [4000, 8000, 32000]
-    number_days = [150000, 3000, 3000]
-
-    for i, cap in enumerate(capacities):
-        print(f"\nRunning simulation for TNC capacity = {cap}")
-        run_simulation(
-            tnc_capacity=cap,
-            output_dir=f"./2-Results/tnc_capacity_{cap}",
-            number_days=number_days[i]
-        )
+    run_simulation(
+        tnc_capacities={"TNC1": 1200, "TNC2": 1200},
+        output_dir="./2-Results/v3_demo",
+        number_days=1000,
+        debug_enabled=True,
+        enable_gradient_checks=True,
+    )
