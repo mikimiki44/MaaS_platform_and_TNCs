@@ -26,6 +26,7 @@ from plotting import (
     plot_total_allocations,
     plot_per_type_allocations,
     plot_gradient_evolution,
+    plot_param_delta_evolution,
 )
 from debug_utils import (
     build_debug_snapshot,
@@ -78,16 +79,16 @@ def run_simulation(
         tnc_services.append(
             TNC(
                 name=name,
-                ASC=5,
-                fare=2.0 - 0.5 * idx,
+                ASC=10,
+                fare=2.5 - 0.5 * idx,
                 detour_ratio=1.4,
                 average_speed=40,
                 average_veh_travel_dist_per_day=8 * 40 / 1000,
-                capacity_ratio_to_MaaS=0.4,
+                capacity_ratio_to_MaaS=0.2,
                 total_service_capacity=capacity,
                 trip_length_per_traveler_type=[traveler.trip_length for traveler in travelers],
                 value_waiting_time_per_traveler_type=[traveler.value_wait for traveler in travelers],
-                cost_purchasing_capacity_TNC=0.40 - 0.05 * idx,
+                cost_purchasing_capacity_TNC=0.35 - 0.05 * idx,
                 operating_cost=0.300,
                 lambda_T=0,
                 logit_scale_mu=logit_scale_mu,
@@ -109,9 +110,9 @@ def run_simulation(
     ref_tnc = tnc_services[0]
 
     maas = MaaS(
-        ASC=2,
-        fare=1.7,
-        share_TNC_per_traveler_type=[0.40 for _ in travelers],
+        ASC=5,
+        fare=1,
+        share_TNC_per_traveler_type=[0.30 for _ in travelers],
         detour_ratio_TNC=ref_tnc.detour_ratio,
         average_speed_TNC=ref_tnc.average_speed,
         capacity_ratio_from_TNC=tnc_capacity_ratio_map,
@@ -138,6 +139,7 @@ def run_simulation(
         for service in services:
             allocation[service.name][type_i] += traveler.number_traveler / len(services)
 
+    n_types = len(travelers)
     allocation_history = {service.name: [] for service in services}
     allocation_by_type = {service.name: [[] for _ in travelers] for service in services}
 
@@ -149,9 +151,20 @@ def run_simulation(
     debug_snapshots = []
     gradient_history = []
     total_travelers = float(sum(traveler.number_traveler for traveler in travelers))
-    upper_level_relative_tolerance = 0.001
+    upper_level_relative_tolerance = 0.01
     convergence_stability_window = 50
     stable_convergence_days = 0
+    base_step_sizes_t = np.array([5e-4, 4e-5, 5e-5])             # was [1e-4, 1e-6, 1e-5]
+    base_step_sizes_m = np.concatenate(([5e-4], np.full(n_types, 6e-5), [5e-5]))  # was [1e-4, 1e-5, 1e-5]
+    update_direction_t = np.array([1.0, 1.0, -1.0])
+    update_direction_m = np.ones_like(base_step_sizes_m)
+    update_direction_m[-1] = -1.0
+    ls_alpha0_t = 1.0
+    ls_alpha0_m = 1.0
+    ls_rho = 0.3
+    ls_c = 1e-4
+    ls_max_iter = 200
+    ls_min_alpha = 1e-7
 
     for day in tqdm(range(number_days), desc="Simulation Progress", unit="day"):
         allocation = distribute_travelers(travelers, services)
@@ -160,7 +173,7 @@ def run_simulation(
             for service in services:
                 if day >= 1:
                     prev = allocation_by_type[service.name][t_idx][day - 1]
-                    allocation[service.name][t_idx] = 0.99 * prev + 0.01 * allocation[service.name][t_idx]
+                    allocation[service.name][t_idx] = 0.999 * prev + 0.001 * allocation[service.name][t_idx]
 
         for service in services:
             service.get_allocation(allocation)
@@ -193,13 +206,6 @@ def run_simulation(
 
             upper_level_updates += 1
             stable_convergence_days = 0
-
-            n_types = len(travelers)
-            step_sizes_t = np.array([1e-5, 1e-7, 1e-5])
-            step_sizes_m = np.concatenate(([1e-5], np.full(n_types, 1e-6), [1e-5]))
-            update_direction_t = np.array([1.0, 1.0, -1.0])
-            update_direction_m = np.ones_like(step_sizes_m)
-            update_direction_m[-1] = -1.0
 
             utilities = compute_utilities(travelers, services)
 
@@ -252,7 +258,6 @@ def run_simulation(
             for tnc in tnc_services:
                 grad_event[f"grad_{tnc.name}_norm"] = float(np.linalg.norm(grad_t_by_name[tnc.name]))
                 grad_event[f"{tnc.name}_autograd_match"] = auto_check_by_name.get(tnc.name)
-            gradient_history.append(grad_event)
 
             if debug_enabled:
                 probabilities_pre = compute_choice_probabilities(utilities, mu=logit_scale_mu)
@@ -260,15 +265,75 @@ def run_simulation(
                 debug_snapshots.append(snapshot_pre)
 
             for tnc in tnc_services:
-                new_params_t = params_t_by_name[tnc.name] - step_sizes_t * grad_t_by_name[tnc.name] * update_direction_t
+                signed_grad_t = grad_t_by_name[tnc.name] * update_direction_t
+                direction_t = -signed_grad_t
+                params_t_current = params_t_by_name[tnc.name]
+                obj_curr_t = tnc.compute_objective_function(
+                    params_t_current,
+                    travelers,
+                    services,
+                    service_index_T=service_indices[tnc.name],
+                )
+                alpha_t = ls_alpha0_t
+                for _ in range(ls_max_iter):
+                    candidate_t = params_t_current + alpha_t * base_step_sizes_t * direction_t
+                    candidate_t = project_tnc_params(candidate_t)
+                    obj_next_t = tnc.compute_objective_function(
+                        candidate_t,
+                        travelers,
+                        services,
+                        service_index_T=service_indices[tnc.name],
+                    )
+                    if obj_next_t <= obj_curr_t + ls_c * alpha_t * float(np.dot(signed_grad_t, direction_t)):
+                        break
+                    alpha_t *= ls_rho
+                    if alpha_t < ls_min_alpha:
+                        break
+                new_params_t = params_t_current + alpha_t * base_step_sizes_t * direction_t
                 new_params_t = project_tnc_params(new_params_t)
                 tnc.fare, tnc.capacity_ratio_to_MaaS, tnc.lambda_T = new_params_t
+                grad_event[f"ls_alpha_{tnc.name}"] = float(alpha_t)
+                param_den_t = float(np.linalg.norm(params_t_current)) + 1e-8
+                grad_event[f"param_delta_rel_{tnc.name}"] = float(
+                    np.linalg.norm(new_params_t - params_t_current) / param_den_t
+                )
 
-            new_params_m = params_m - step_sizes_m * grad_maas * update_direction_m
+            signed_grad_m = grad_maas * update_direction_m
+            direction_m = -signed_grad_m
+            params_m_current = params_m
+            obj_curr_m = maas.compute_objective_function(
+                params_m_current,
+                travelers,
+                services,
+                service_index_M=service_indices["MaaS"],
+            )
+            alpha_m = ls_alpha0_m
+            for _ in range(ls_max_iter):
+                candidate_m = params_m_current + alpha_m * base_step_sizes_m * direction_m
+                candidate_m = project_maas_params(candidate_m, n_types=n_types)
+                obj_next_m = maas.compute_objective_function(
+                    candidate_m,
+                    travelers,
+                    services,
+                    service_index_M=service_indices["MaaS"],
+                )
+                if obj_next_m <= obj_curr_m + ls_c * alpha_m * float(np.dot(signed_grad_m, direction_m)):
+                    break
+                alpha_m *= ls_rho
+                if alpha_m < ls_min_alpha:
+                    break
+            new_params_m = params_m_current + alpha_m * base_step_sizes_m * direction_m
             new_params_m = project_maas_params(new_params_m, n_types=n_types)
             maas.fare = new_params_m[0]
             maas.share_TNC_per_traveler_type = np.array(new_params_m[1:1 + n_types])
             maas.lambda_M = new_params_m[1 + n_types]
+            grad_event["ls_alpha_MaaS"] = float(alpha_m)
+            param_den_m = float(np.linalg.norm(params_m_current)) + 1e-8
+            grad_event["param_delta_rel_MaaS"] = float(
+                np.linalg.norm(new_params_m - params_m_current) / param_den_m
+            )
+
+            gradient_history.append(grad_event)
 
             maas.capacity_ratio_from_TNC_by_name = {
                 tnc.name: float(tnc.capacity_ratio_to_MaaS) for tnc in tnc_services
@@ -380,6 +445,12 @@ def run_simulation(
         gradient_history,
         [tnc.name for tnc in tnc_services],
         save_path=os.path.join(output_dir, "gradient_evolution.png"),
+    )
+
+    plot_param_delta_evolution(
+        gradient_history,
+        [tnc.name for tnc in tnc_services],
+        save_path=os.path.join(output_dir, "param_delta_evolution.png"),
     )
 
 

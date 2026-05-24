@@ -118,3 +118,49 @@ def plot_gradient_evolution(gradient_history, tnc_names, save_path=None):
         plt.close()
     else:
         plt.show()
+
+
+def plot_param_delta_evolution(gradient_history, tnc_names, save_path=None):
+    """
+    Description
+    - Plot the per-operator normalized parameter change across upper-level updates.
+
+    Parameters
+    - gradient_history: list of per-update dicts with keys
+            ``update_idx``, ``param_delta_rel_<tnc_name>`` for every TNC operator,
+            and ``param_delta_rel_MaaS``.
+    - tnc_names: list of TNC operator names whose objective deltas should be
+      drawn (e.g. ``["TNC1", "TNC2"]``).
+    - save_path: file path to save the figure; if None, the figure is shown.
+
+    Output
+    - Either displays the figure or writes a PNG to ``save_path``.
+    """
+    if not gradient_history:
+        return
+
+    required_keys = [f"param_delta_rel_{name}" for name in tnc_names] + ["param_delta_rel_MaaS"]
+    if not all(required_key in gradient_history[0] for required_key in required_keys):
+        return
+
+    updates = [item["update_idx"] for item in gradient_history]
+    plt.figure(figsize=(8, 5))
+    for name in tnc_names:
+        key = f"param_delta_rel_{name}"
+        vals = [item[key] for item in gradient_history]
+        plt.plot(updates, vals, label=f"Δparam_rel_{name}", linewidth=2)
+
+    maas_vals = [item["param_delta_rel_MaaS"] for item in gradient_history]
+    plt.plot(updates, maas_vals, label="Δparam_rel_MaaS", linewidth=2)
+
+    plt.title("Upper-Level Normalized Parameter Change per Update")
+    plt.xlabel("Upper-Level Update Index")
+    plt.ylabel("Relative Parameter Change")
+    plt.grid(True, linestyle="--", alpha=0.6)
+    plt.legend()
+    plt.tight_layout()
+    if save_path:
+        plt.savefig(save_path, dpi=300)
+        plt.close()
+    else:
+        plt.show()
