@@ -78,6 +78,79 @@ def plot_per_type_allocations(services, allocation_by_type, travelers, number_da
         plt.show()
 
 
+def plot_gradient_components(gradient_history, tnc_names, n_types, save_path=None):
+    """
+    Description
+    - Plot each upper-level gradient *component* (per parameter) across updates,
+      one subplot per operator. Complements ``plot_gradient_evolution`` (which
+      only shows the norm) so that boundary-pinned components (e.g. the ``lambda``
+      constraint-slack terms) can be told apart from the free decision variables.
+
+    Parameters
+    - gradient_history: list of per-update dicts containing
+      ``grad_<tnc_name>_components`` ([d/dfare, d/dcap_ratio, d/dlambda_T]) and
+      ``grad_maas_components`` ([d/dfare, d/dalpha_0..K-1, d/dlambda_M]).
+    - tnc_names: list of TNC operator names (one subplot each).
+    - n_types: number of traveler types (length of the MaaS alpha vector).
+    - save_path: file path to save the figure; if None, the figure is shown.
+
+    Output
+    - Either displays the figure or writes a PNG to ``save_path``. The y-axis is
+      symmetric-log so large (lambda) and small (fare/alpha) components are both
+      legible on one axis.
+    """
+    if not gradient_history:
+        return
+
+    updates = [item["update_idx"] for item in gradient_history]
+    n_panels = len(tnc_names) + 1
+    fig, axes = plt.subplots(n_panels, 1, figsize=(9, 3.2 * n_panels), sharex=True)
+    if n_panels == 1:
+        axes = [axes]
+
+    tnc_labels = [r"$\partial/\partial f$ (fare)",
+                  r"$\partial/\partial y$ (cap_ratio)",
+                  r"$\partial/\partial \lambda_T$"]
+    for ax, name in zip(axes, tnc_names):
+        key = f"grad_{name}_components"
+        comps = [item.get(key) for item in gradient_history]
+        if any(c is None for c in comps):
+            continue
+        comps = list(zip(*comps))  # transpose -> one series per component
+        for series, label in zip(comps, tnc_labels):
+            ax.plot(updates, series, label=label, linewidth=2)
+        ax.axhline(0.0, color="black", linewidth=0.8, alpha=0.5)
+        ax.set_yscale("symlog")
+        ax.set_title(f"{name} gradient components")
+        ax.set_ylabel("Gradient")
+        ax.legend(loc="best", fontsize=8)
+        ax.grid(True, linestyle="--", alpha=0.6)
+
+    ax = axes[-1]
+    maas_comps = [item.get("grad_maas_components") for item in gradient_history]
+    if not any(c is None for c in maas_comps):
+        maas_comps = list(zip(*maas_comps))
+        maas_labels = ([r"$\partial/\partial f_M$ (fare)"]
+                       + [rf"$\partial/\partial \alpha_{i}$" for i in range(n_types)]
+                       + [r"$\partial/\partial \lambda_M$"])
+        for series, label in zip(maas_comps, maas_labels):
+            ax.plot(updates, series, label=label, linewidth=2)
+        ax.axhline(0.0, color="black", linewidth=0.8, alpha=0.5)
+        ax.set_yscale("symlog")
+        ax.set_title("MaaS gradient components")
+        ax.set_ylabel("Gradient")
+        ax.legend(loc="best", fontsize=8, ncol=2)
+        ax.grid(True, linestyle="--", alpha=0.6)
+
+    axes[-1].set_xlabel("Upper-Level Update Index")
+    plt.tight_layout()
+    if save_path:
+        plt.savefig(save_path, dpi=300)
+        plt.close()
+    else:
+        plt.show()
+
+
 def plot_gradient_evolution(gradient_history, tnc_names, save_path=None):
     """
     Description
@@ -110,52 +183,6 @@ def plot_gradient_evolution(gradient_history, tnc_names, save_path=None):
     plt.title("Upper-Level Gradient Norm Evolution")
     plt.xlabel("Upper-Level Update Index")
     plt.ylabel("Gradient Norm")
-    plt.grid(True, linestyle="--", alpha=0.6)
-    plt.legend()
-    plt.tight_layout()
-    if save_path:
-        plt.savefig(save_path, dpi=300)
-        plt.close()
-    else:
-        plt.show()
-
-
-def plot_param_delta_evolution(gradient_history, tnc_names, save_path=None):
-    """
-    Description
-    - Plot the per-operator normalized parameter change across upper-level updates.
-
-    Parameters
-    - gradient_history: list of per-update dicts with keys
-            ``update_idx``, ``param_delta_rel_<tnc_name>`` for every TNC operator,
-            and ``param_delta_rel_MaaS``.
-    - tnc_names: list of TNC operator names whose objective deltas should be
-      drawn (e.g. ``["TNC1", "TNC2"]``).
-    - save_path: file path to save the figure; if None, the figure is shown.
-
-    Output
-    - Either displays the figure or writes a PNG to ``save_path``.
-    """
-    if not gradient_history:
-        return
-
-    required_keys = [f"param_delta_rel_{name}" for name in tnc_names] + ["param_delta_rel_MaaS"]
-    if not all(required_key in gradient_history[0] for required_key in required_keys):
-        return
-
-    updates = [item["update_idx"] for item in gradient_history]
-    plt.figure(figsize=(8, 5))
-    for name in tnc_names:
-        key = f"param_delta_rel_{name}"
-        vals = [item[key] for item in gradient_history]
-        plt.plot(updates, vals, label=f"Δparam_rel_{name}", linewidth=2)
-
-    maas_vals = [item["param_delta_rel_MaaS"] for item in gradient_history]
-    plt.plot(updates, maas_vals, label="Δparam_rel_MaaS", linewidth=2)
-
-    plt.title("Upper-Level Normalized Parameter Change per Update")
-    plt.xlabel("Upper-Level Update Index")
-    plt.ylabel("Relative Parameter Change")
     plt.grid(True, linestyle="--", alpha=0.6)
     plt.legend()
     plt.tight_layout()

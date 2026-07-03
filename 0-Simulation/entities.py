@@ -1114,7 +1114,7 @@ def project_tnc_params(params):
     ``fare >= 0``, ``cap_ratio in [0, 1]``, ``lambda_T >= 0``."""
     fare, cap_ratio, lambda_t = params
     fare = max(fare, 0.0)
-    cap_ratio = np.clip(cap_ratio, 0.0, 1.0)
+    cap_ratio = np.clip(cap_ratio, 0, 1.0)
     lambda_t = max(lambda_t, 0.0)
     return np.array([fare, cap_ratio, lambda_t])
 
